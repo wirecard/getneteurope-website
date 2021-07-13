@@ -1,0 +1,593 @@
+/*
+ Theme Name:   GeneratePress Child
+ Theme URI:    https://generatepress.com
+ Description:  Default GeneratePress child theme
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+
+/*
+ * Begin GetNet Colour Palette
+ * */
+.has-santander-background-color {
+     background-color: #EC0000;
+ }
+.has-santander-color {
+     color: #EC0000;
+ }
+
+.has-boston-background-color {
+     background-color: #CC0000;
+ }
+.has-boston-color {
+     color: #CC0000;
+ }
+
+ .has-ruby-background-color {
+     background-color: #990000;
+ }
+.has-ruby-color {
+     color: #990000;
+ }
+
+ .has-dark-grey-background-color {
+     background-color: #444;
+ }
+.has-dark-grey-color {
+     color: #444;
+ }
+
+ .has-darker-gray-background-color {
+     background-color: #222;
+ }
+.has-darker-gray-color {
+     color: #222;
+ }
+
+ .has-medium-gray-background-color {
+     background-color: #767676;
+ }
+.has-medium-gray-color {
+     color: #767676;
+ }
+
+ .has-light-grey-background-color {
+     background-color: #CCC;
+ }
+.has-light-grey-color {
+     color: #CCC;
+ }
+
+ .has-lighter-grey-background-color {
+     background-color: #F0F0F0;
+ }
+.has-lighter-grey-color {
+     color: #F0F0F0;
+ }
+
+ .has-natural-05-background-color {
+     background-color: #F6F6F6;
+ }
+.has-natural-05-color {
+     color: #F6F6F6;
+ }
+
+ .has-light-sky-background-color {
+     background-color: #DEEDF2;
+ }
+.has-light-sky-color {
+     color: #DEEDF2;
+ }
+
+ .has-medium-sky-background-color {
+     background-color: #CEDEE7;
+ }
+.has-medium-sky-color {
+     color: #CEDEE7;
+ }
+
+ .has-dark-sky-background-color {
+     background-color: #9BC3D3;
+ }
+.has-dark-sky-color {
+     color: #9BC3D3;
+ }
+
+ .has-sky-background-background-color {
+     background-color: #F6FAFC;
+ }
+.has-sky-background-color {
+     color: #F6FAFC;
+ }
+
+ .has-white-background-color {
+     background-color: #fff;
+ }
+.has-white-color {
+     color: #fff;
+ }
+
+ .has-black-background-color {
+     background-color: #000;
+ }
+.has-black-color {
+     color: #000;
+ }
+
+
+
+/* CF Forms style */
+.cf-form .cf-form-row input[type=datetime], .cf-form .cf-form-row input[type=datetime-local], .cf-form .cf-form-row input[type=email], .cf-form .cf-form-row input[type=month], .cf-form .cf-form-row input[type=number], .cf-form .cf-form-row input[type=password], .cf-form .cf-form-row input[type=range], .cf-form .cf-form-row input[type=search], .cf-form .cf-form-row input[type=tel], .cf-form .cf-form-row input[type=text], .cf-form .cf-form-row input[type=time], .cf-form .cf-form-row input[type=url], .cf-form .cf-form-row input[type=week], .cf-form .cf-form-row select, .cf-form .cf-form-row textarea {
+	border: 1px solid #DEEDF2;
+	border-bottom: 1px solid #257FA4;
+	padding: 20px 10px 8px;
+	height: auto;
+}
+
+.cf-form .cf-form-row input[type=datetime]:invalid, .cf-form .cf-form-row input[type=datetime-local]:invalid, .cf-form .cf-form-row input[type=email]:not(:placeholder-shown):invalid, .cf-form .cf-form-row input[type=month]:invalid, .cf-form .cf-form-row input[type=number]:invalid, .cf-form .cf-form-row input[type=password]:invalid, .cf-form .cf-form-row input[type=range]:invalid, .cf-form .cf-form-row input[type=search]:invalid, .cf-form .cf-form-row input[type=tel]:invalid, .cf-form .cf-form-row input[type=text]:not(:placeholder-shown):invalid, .cf-form .cf-form-row input[type=time]:invalid, .cf-form .cf-form-row input[type=url]:invalid, .cf-form .cf-form-row input[type=week]:invalid, .cf-form .cf-form-row select:invalid, .cf-form .cf-form-row textarea:invalid {
+	border-bottom: 1px solid #CC0000;
+}
+
+.cf-form ::placeholder {
+	color: transparent;
+}
+
+.cf-form .cf-form-row select {
+	padding: 20px 10px 8px 5px;
+}
+
+.cf-form .cf-form-row textarea {
+	height: 88px;
+}
+
+.cf-form .cf-form-row input[type=submit], .cf-form .cf-form-row button[type=submit] {
+	background-color: #EC0000!important;
+	padding: 12px 60px!important;
+  display: inline-block!important;
+	border-radius: 30px!important;
+	color: #fff!important;
+	font-weight: 700!important;
+	border: none!important;
+}
+
+.cf-form .cf-form-row input[type=submit]:hover, .cf-form .cf-form-row button[type=submit]:hover, .cf-form .cf-form-row input[type=submit]:active, .cf-form .cf-form-row button[type=submit]:active {
+	background-color: #990000!important;
+}
+
+.cf-form .cf-form-row select {
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url("/wp-content/uploads/ARROW_FORM_DOWN.png") no-repeat;
+  background-position: right 5px top 50%;
+	width: 100%;
+}
+
+.cf-form input[type="text"], .cf-form input[type="email"], .cf-form input[type="url"], .cf-form input[type="password"], .cf-form input[type="search"], .cf-form input[type="tel"], .cf-form input[type="number"], .cf-form textarea, .cf-form select {
+	background-color: #fff;
+	color: #767676;
+}
+
+
+/**
+ * Column Form
+ * */
+.cf-form {
+    width: 100%;
+    margin: 0 auto;
+}
+.cf-form-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.cf-form-row .wpcf7-form-control {
+    width: 100%;
+}
+.cf-form-column {
+    flex: 1;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+.cf-form-column-xs {
+	flex: initial;
+	width: 15%;
+}
+
+.cf-form-column-m {
+	flex: initial;
+	width: 35%;
+}
+
+.form-group {
+	position: relative;
+}
+
+.cf-form-column .control-label {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  pointer-events: none;
+  padding-left: 0.125rem;
+  z-index: 1;
+  color: #767676;
+  font-weight: normal;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+}
+
+.form-group select ~ .control-label,
+.form-group input:focus ~ .control-label,
+.form-group input:valid ~ .control-label,
+.form-group input.form-file ~ .control-label,
+.form-group input.has-value ~ .control-label,
+.form-group textarea:focus ~ .control-label,
+.form-group textarea:valid ~ .control-label,
+.form-group textarea.form-file ~ .control-label,
+.form-group textarea.has-value ~ .control-label {
+  font-size: 12px;
+  top: 2px;
+  left: 8px;
+}
+.form-group select:focus,
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+}
+.form-group select:focus ~ .control-label,
+.form-group input:focus ~ .control-label,
+.form-group textarea:focus ~ .control-label {
+  color: #767676;
+}
+.form-group .bar {
+  position: relative;
+  border-bottom: 2px solid transparent;
+  display: block;
+}
+
+.form-group .bar::before {
+  content: '';
+  height: 2px;
+  width: 0;
+  left: 50%;
+  bottom: 0px;
+  position: absolute;
+  background: #257FA4;
+  -webkit-transition: left 0.28s ease, width 0.28s ease;
+  transition: left 0.28s ease, width 0.28s ease;
+  z-index: 2;
+}
+
+.form-group select:focus ~ .bar::before,
+.form-group input:focus ~ .bar::before,
+.form-group textarea:focus ~ .bar::before {
+  width: 100%;
+  left: 0;
+}
+
+.form-group input,
+.form-group textarea {
+  display: block;
+  border-width: 0;
+  border-color: transparent;
+  width: 100%;
+  /*-webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;*/
+  box-shadow: none;
+}
+
+/* Notebook / Desktop */
+@media only screen and ( min-width: 769px ) { 
+    .cf-form-row {
+        flex-direction: row;
+    }
+    .cf-form-column {
+        padding: 12px 24px 21px 0;
+    }
+	.half-column {
+		width: 50%;
+	}
+}
+
+.checkbox label,
+.form-radio label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 2rem;
+  text-align: left;
+  color: #333;
+  display: block;
+}
+.checkbox input,
+.form-radio input {
+  width: auto;
+  opacity: 0.00000001;
+  position: absolute;
+  left: 0;
+}
+
+
+.radio {
+  margin-bottom: 1rem;
+}
+.radio .helper {
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+  cursor: pointer;
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #999;
+}
+.radio .helper::before, .radio .helper::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  /*-webkit-transition: -webkit-transform 0.28s ease;
+  transition: -webkit-transform 0.28s ease;
+  transition: transform 0.28s ease;
+  transition: transform 0.28s ease, -webkit-transform 0.28s ease;*/
+  border-radius: 50%;
+  border: 0.125rem solid currentColor;
+}
+.radio .helper::after {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background-color: #EC0000;
+  border-color: #EC0000;
+}
+.radio label:hover .helper {
+  color: #EC0000;
+}
+.radio input:checked ~ .helper::after {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+.radio input:checked ~ .helper::before {
+  color: #EC0000;
+}
+
+.checkbox {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.checkbox .helper {
+  color: #999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  z-index: 0;
+  border: 0.125rem solid currentColor;
+  border-radius: 0.0625rem;
+  /*-webkit-transition: border-color 0.28s ease;
+  transition: border-color 0.28s ease;*/
+}
+.checkbox .helper::before, .checkbox .helper::after {
+  position: absolute;
+  height: 0;
+  width: 2px;
+  background-color: #EC0000;
+  display: block;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  border-radius: 0.25rem;
+  content: '';
+  /*-webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
+  transition: opacity 0.28s ease, height 0s linear 0.28s;*/
+  opacity: 0;
+}
+.checkbox .helper::before {
+  top: 15px;
+  left: 9px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  box-shadow: 0 0 0 0.0625rem #fff;
+}
+.checkbox .helper::after {
+  top: 10px;
+  left: 4px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.checkbox label:hover .helper {
+  color: #EC0000;
+}
+.checkbox input:checked ~ .helper {
+  color: #EC0000;
+}
+.checkbox input:checked ~ .helper::after, .checkbox input:checked ~ .helper::before {
+  opacity: 1;
+  /*-webkit-transition: height 0.28s ease;
+  transition: height 0.28s ease;*/
+}
+.checkbox input:checked ~ .helper::after {
+  height: 5px;
+}
+.checkbox input:checked ~ .helper::before {
+  height: 13px;
+  /*-webkit-transition-delay: 0.28s;
+          transition-delay: 0.28s;*/
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: 1rem;
+}
+
+.has-error .legend.legend, .has-error.form-group .control-label.control-label {
+  color: #d9534f;
+}
+.has-error.form-group .form-help,
+.has-error.form-group .helper, .has-error.checkbox .form-help,
+.has-error.checkbox .helper, .has-error.radio .form-help,
+.has-error.radio .helper, .has-error.form-radio .form-help,
+.has-error.form-radio .helper {
+  color: #d9534f;
+}
+.has-error .bar::before {
+  background: #d9534f;
+  left: 0;
+  width: 100%;
+}
+
+/**
+ * MEGA Menu*/
+
+#menu-hauptmenu li {
+	margin-left: 2rem;
+	margin-right: 0.5rem;
+}
+
+.main-navigation .main-nav ul li.menu-item-has-children.gn-main-menu::after,  .main-navigation .main-nav ul li.gn-main-menu:not(.menu-item-has-children)::after {
+	content: '';
+	margin-left: 5px;
+	position: relative;
+	top: 6px;
+	height: 4px;
+	display: block;
+	width: 100%;
+	background-color: transparent;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.main-navigation.navigation-stick .main-nav ul li.menu-item-has-children.gn-main-menu::after {
+	top: 0px;
+}
+
+.main-navigation.toggled .main-nav > ul {
+	background-color: #f6f6f6;
+}
+
+.main-navigation .main-nav ul li:hover > a, .main-navigation .main-nav ul li:focus > a, .main-navigation .main-nav ul li.sfHover > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a, .main-navigation .main-nav ul li[class*="current-menu-"] > a:hover, .main-navigation .main-nav ul li[class*="current-menu-"].sfHover > a {
+	color: #ec0000;
+	background-color: transparent;
+}
+
+nav.main-navigation #primary-menu ul li.sfHover::after {
+	background-color: #ec0000;
+}
+/* red triangle */
+#menu-hauptmenu li.menu-item-has-children.gn-main-menu a::after {
+	content: "";
+	width: 0; 
+  height: 0; 
+  border-left: 0.4rem solid transparent;
+  border-right: 0.4rem solid transparent;
+  border-top: 0.4rem solid #ec0000;
+	margin-left: 0.6rem;
+}
+#menu-hauptmenu li.menu-item-has-children.gn-main-menu ul li a::after {
+  border: none;
+}
+#menu-hauptmenu .menu-item-has-children.gn-main-menu > a {
+	display: flex;
+	align-items: center;
+}
+/* disable default arrow */
+.dropdown-menu-toggle {
+	display: none !important;
+}
+/* SUB-NAVIGATION */
+#primary-menu ul.sub-menu {
+	position: static;
+	margin-top: 10px;
+}
+#primary-menu ul.sub-menu {
+	position: static;
+	margin-top: 10px;
+	box-shadow: none;
+}
+#primary-menu ul li.menu-item-has-children.gn-main-menu, #primary-menu ul.sub-menu ul.sub-menu.toggled-on {
+	position: static;
+}
+#primary-menu ul.sub-menu li {
+	padding: 1rem;
+}
+#primary-menu .sub-menu.toggled-on {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	margin-top: 10px;
+}
+.navigation-stick #primary-menu .sub-menu.toggled-on {
+	margin-top: 4px;
+}
+
+/* MEGA MENU */
+
+@media (max-width: 768px) {
+	/**
+	 * Mobile
+	 * */
+	#primary-menu ul.sf-menu ul.sub-menu.toggled-on {
+		position: static;
+	}
+	#menu-hauptmenu li {
+		margin-left: 0;
+	}
+	.main-nav ul.sub-menu.toggled-on li.mega-menu-column ul.sub-menu {
+		visibility: visible;
+		display: block!important;
+		opacity: 1;
+		height: auto;
+		position: static;
+		background-color: #F6F6F6;
+		margin-bottom: 24px;
+		float: none;
+		box-shadow: none;
+	}
+}
+
+@media (min-width: 769px) {
+	/**
+	 * Desktop
+	 * */
+	.main-nav .menu-item > ul.sub-menu {
+		display: none!important;
+	}
+
+	.main-nav ul.sub-menu li.mega-menu-column {
+		width: 25%;
+		margin-left: 0!important;
+		min-height: 444px;
+	}
+	.main-nav .menu-item > ul.sub-menu.toggled-on {
+		display: flex!important;
+	}
+	.main-nav ul.sub-menu li.mega-menu-column ul.sub-menu {
+		display: none!important;
+	}
+	.main-nav ul.sub-menu.toggled-on li.mega-menu-column ul.sub-menu {
+		visibility: visible;
+		flex-direction: column;
+		display: flex!important;
+		opacity: 1;
+		height: auto;
+	}
+	.main-nav ul.sub-menu.toggled-on li.mega-menu-column ul.sub-menu li.menu-item {
+		padding: 0!important;
+		margin: 0!important;
+	}
+	
+	ul ul.sub-menu.toggled-on li.mega-menu-column.mega-menu-visual:hover > a {
+		background-color: transparent;
+	}
+}
+
+.menu-item-description {
+	display: none;
+}
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Getnet</title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>We make payments easier for everyone, everywhere.</description>
+	<lastBuildDate>Mon, 17 May 2021 20:28:39 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7.2</generator>
+
+<image>
+	<url>/wp-content/uploads/favicon.jpg</url>
+	<title>Getnet</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Sodales sed tortor, nibh vitae</title>
+		<link>/magna-neque-convallis-pulvinar-2/</link>
+					<comments>/magna-neque-convallis-pulvinar-2/#respond</comments>
+		
+		<dc:creator><![CDATA[suphi]]></dc:creator>
+		<pubDate>Mon, 17 May 2021 20:27:26 +0000</pubDate>
+				<category><![CDATA[Travel & mobility]]></category>
+		<category><![CDATA[Case Study]]></category>
+		<guid isPermaLink="false">/?p=976</guid>
+
+					<description><![CDATA[This is a description of the case study that summarizes it and helps the user to get an idea of what they will find inside. It’s not the first lines of the case, it&#8217;s an ad-hoc summary.]]></description>
+										<content:encoded><![CDATA[
+<p>This is a description of the case study that summarizes it and helps the user to get an idea of what they will find inside. It’s not the first lines of the case, it&#8217;s an ad-hoc summary.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/magna-neque-convallis-pulvinar-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Magna neque convallis pulvinar</title>
+		<link>/magna-neque-convallis-pulvinar/</link>
+					<comments>/magna-neque-convallis-pulvinar/#respond</comments>
+		
+		<dc:creator><![CDATA[suphi]]></dc:creator>
+		<pubDate>Mon, 17 May 2021 12:30:20 +0000</pubDate>
+				<category><![CDATA[Institutions]]></category>
+		<category><![CDATA[Case Study]]></category>
+		<guid isPermaLink="false">/?p=942</guid>
+
+					<description><![CDATA[This is a description of the case study that summarizes it and helps the user to get an idea of what they will find inside. It’s not the first lines of the case, it&#8217;s an ad-hoc summary.]]></description>
+										<content:encoded><![CDATA[
+<p>This is a description of the case study that summarizes it and helps the user to get an idea of what they will find inside. It’s not the first lines of the case, it&#8217;s an ad-hoc summary.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/magna-neque-convallis-pulvinar/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
