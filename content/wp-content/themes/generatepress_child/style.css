@@ -202,6 +202,19 @@
 	width: 35%;
 }
 
+@media (max-width: 768px) {
+	
+.cf-form-column-xs {
+	flex: 1;
+	width: 100%;
+}
+
+.cf-form-column-m {
+	flex: 1;
+	width: 100%;
+}
+}
+
 .form-group {
 	position: relative;
 }
