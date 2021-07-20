@@ -14,12 +14,22 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
 			'event': 'consentSave'
 		});
 	}
-	/*
-	let mySelect = new vanillaSelectBox("#ms00N3O000002DEkw",{
-		search: true
-	});
-console.log('vanillaSelectBox');
-	*/
+	
+	var homeform = !!document.getElementById('mshome00N3O000002DEkw');
+	var omnichannelform = !!document.getElementById('msomnichannel00N3O000002DEkw');
+	var travelform = !!document.getElementById('mstravel00N3O000002DEkw');
+	
+	if(homeform) {
+		let mySelectHome = new vanillaSelectBox("#mshome00N3O000002DEkw",{search: true});
+	}
+	if(omnichannelform) {
+		let mySelectOmnichannel = new vanillaSelectBox("#msomnichannel00N3O000002DEkw",{search: true});
+	}
+	if(travelform) {
+		let mySelectTravel = new vanillaSelectBox("#mstravel00N3O000002DEkw",{search: true});
+	}
+	
+
 });
 
 function checkAndSetACookieExists() {
@@ -30,4 +40,3 @@ function checkAndSetACookieExists() {
 }
 
 checkAndSetACookieExists();
- 
