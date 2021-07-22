@@ -156,13 +156,92 @@
 	background-color: #990000!important;
 }
 
-.cf-form .cf-form-row select {
+.cf-form .cf-form-row select, .vsb-main {
 	-webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background: #fff url("/wp-content/uploads/ARROW_FORM_DOWN.png") no-repeat;
   background-position: right 5px top 50%;
 	width: 100%;
+}
+
+.vsb-main .caret {
+  background: #fff url("/wp-content/uploads/ARROW_FORM_DOWN.png") no-repeat!important;
+  background-position: right 5px top 50%!important;
+  border: none;
+  width: 30px;
+  height: 10px;
+  margin-top: 4px!important;
+}
+
+.vsb-js-search-zone {
+	left: 0;
+	width: 100%;
+	border: 1px none;
+	border: none;
+	padding: 15px 10px 13px;
+	height: auto;
+	position: relative;
+	background-color: #f6f6f6;
+}
+
+.cf-form .cf-form-row .vsb-js-search-zone  input[type="text"] {
+	border: none;
+	background: #f6f6f6 url("/wp-content/uploads/SEARCH.png") no-repeat right 5px top 50%;
+}
+
+div.gb-inside-container .vsb-menu ul li::before {
+	top: 1px!important;
+	left: 15px!important;
+	margin-left: 0!important;
+}
+
+div.vsb-main button {
+	max-width: 100%!important;
+	padding: 20px 12px 10px!important;
+	border: 1px solid #DEEDF2!important;
+    border-bottom: 1px solid #257FA4!important;
+	font-size: 16px!important;
+    height: auto;
+}
+
+.vsb-main .vsb-menu, .vsb-main .vsb-menu .multi {
+	width: 100%;
+	max-width: 100%!important;
+}
+
+.vsb-menu .multi li:not(.grouped-option).active::after {
+	width: 8px;
+	height: 12px;
+	border-color: #ec0000;
+	margin-left: -23px;
+}
+
+.vsb-menu ul {
+	padding-left: 0;
+	padding-right: 0;
+	color: #222;
+	margin-top: 0;
+}
+
+.vsb-menu .multi li {
+	padding-left: 47px;
+	font-size: 16px;
+}
+
+.vsb-main .title {
+	font-weight: 400;
+	color: #444;
+	font-size: 16px!important;
+}
+
+.vsb-menu .multi li:not(.grouped-option)::before {
+	border-color: #767676;
+	padding: 11px;
+}
+
+.vsb-menu .multi li.active:not(.grouped-option)::before {
+	border-color: #ec0000;
 }
 
 .cf-form input[type="text"], .cf-form input[type="email"], .cf-form input[type="url"], .cf-form input[type="password"], .cf-form input[type="search"], .cf-form input[type="tel"], .cf-form input[type="number"], .cf-form textarea, .cf-form select {
