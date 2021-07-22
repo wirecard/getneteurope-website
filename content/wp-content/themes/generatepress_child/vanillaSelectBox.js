@@ -180,8 +180,7 @@ function vanillaSelectBox(domSelector, options) {
                 { "key": "text-align", "value": "left" },
                 { "key": "z-index", "value": "1" },
                 { "key": "color", "value": "#333" },
-                { "key": "background", "value": "white !important" },
-                { "key": "border", "value": "1px solid #999 !important" },
+                { "key": "background", "value": "white" },
                 { "key": "line-height", "value": "20px" },
                 { "key": "font-size", "value": "14px" },
                 { "key": "padding", "value": "6px 12px" }
