@@ -619,6 +619,14 @@ div div.wpsm_tab_content ul li::before {
 	font-weight: bold;
 }
 
+.footer-widgets div.gb-inside-container ul li::before, footer div.gb-inside-container ul li::before {
+	content: '';
+}
+
+.getnet-social-footer-wrapper ul {
+	margin-bottom: 0.5em;
+}
+
 div.gn22-text-and-tabs-container ul.wpsm_nav-tabs li {
 	border-bottom: 1px solid #CEDEE7;
 }
@@ -869,13 +877,36 @@ div.anchor-links-wrapper .gb-button-wrapper::-webkit-scrollbar {
  * Footer style
  * */
 
+#footer-widgets {
+	display: none;
+}
+
+.footer-widgets div p:last-child {
+	display: none;
+}
+
 div.footer-widgets-container {
     padding: 40px 40px 40px 40px;
+}
+
+div.footer-widgets-container ul {
+	margin: 0;
+}
+
+div.footer-widgets-container .gb-grid-column {
+	width: 100%;
+}
+
+div.footer-widgets-container .gb-grid-column h5 {
+	color: #ec0000;
 }
 
 @media (min-width: 769px) {
   div.footer-widgets-container {
     padding: 40px 40px 40px 40px;
+}
+	div.footer-widgets-container .gb-grid-column {
+	width: 16%;
 }
 }
 @media (min-width: 1025px) {
@@ -1408,7 +1439,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2979-hybwihnYlz" data-post_id="2979">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2979-Qp4AjrqwM8" data-post_id="2979">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1533,7 +1564,7 @@ div.ewd-ufaq-faq-body {
 		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ufaq/6-contact-form/#respond" style="display:none;">Cancel reply</a></small>
 </h3>
 <form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
-<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="bb6f51c655" name="bb6f51c655" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "ad1aababc66ea4a06ffb7c3a52c5cf4e" );document.getElementById("bb6f51c655").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="bb6f51c655" name="bb6f51c655" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a593fef07dd3a05ba2bc1d3cec603e0c" );document.getElementById("bb6f51c655").setAttribute( "id", "comment" );</script></p>
 <input name="wpml_language_code" type="hidden" value="en"><label for="author" class="screen-reader-text">Name</label><input placeholder="Name *" id="author" name="author" type="text" value="" size="30">
 <label for="email" class="screen-reader-text">Email</label><input placeholder="Email *" id="email" name="email" type="email" value="" size="30">
 <label for="url" class="screen-reader-text">Website</label><input placeholder="Website" id="url" name="url" type="url" value="" size="30">
@@ -1556,7 +1587,7 @@ div.ewd-ufaq-faq-body {
 </div>
 
 
-<div class="site-footer footer-bar-active footer-bar-align-left">
+<div class="site-footer footer-bar-active footer-bar-align-right">
 				<div id="footer-widgets" class="site footer-widgets">
 				<div class="footer-widgets-container grid-container">
 					<div class="inside-footer-widgets">
@@ -1600,7 +1631,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2979-AMA0mvHeUa" data-post_id="2979">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2979-QYlq6eHqCC" data-post_id="2979">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1727,7 +1758,132 @@ div.ewd-ufaq-faq-body {
 <li id="menu-item-2220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2220"><a href="/legal-notice/">Legal notice</a></li>
 </ul></div></aside>		</div>
 						<div class="copyright-bar">
-					<div class="getnet-logo-footer-wrapper"><img src="/wp-content/uploads/PagoNxt_Getnet_logo.png" class="getnet-logo-footer"></div> &copy; 2021 Santander  				</div>
+					<div class="getnet-social-footer-wrapper"><div class="ewd-ufaq-faq-list ewd-ufaq-page-type-distinct" id="ewd-ufaq-faq-list">
+
+	<input type="hidden" name="include_category" value="" id="ewd-ufaq-include-category">
+<input type="hidden" name="exclude_category" value="" id="ewd-ufaq-exclude-category">
+<input type="hidden" name="orderby" value="date" id="ewd-ufaq-orderby">
+<input type="hidden" name="order" value="asc" id="ewd-ufaq-order">
+<input type="hidden" name="post_count" value="-1" id="ewd-ufaq-post-count">
+<input type="hidden" name="current_url" value="/ufaq/6-contact-form/" id="ewd-ufaq-current-url">
+	
+	
+	<div class="ewd-ufaq-faqs">
+
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2979-eTuY9uKSjT" data-post_id="2979">
+
+	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
+	
+	<a class="ewd-ufaq-post-margin" href="/ufaq/6-contact-form/">
+
+		<div class="ewd-ufaq-post-margin-symbol ewd-ufaq-">
+			<span>A</span>
+		</div>
+
+		<div class="ewd-ufaq-faq-title-text">
+
+			<h4>
+				6.	Contact form			</h4>
+
+		</div>
+
+		<div class="ewd-ufaq-clear"></div>
+
+	</a>
+	
+</div>
+	
+	<div class="ewd-ufaq-faq-body ">
+
+		
+			
+		
+			<div class="ewd-ufaq-post-margin ewd-ufaq-faq-post">
+	
+<p><strong>a) Type and scope of data processing</strong></p>
+
+
+
+<p>On our website, you can contact us via a form provided. During the process of sending your request via the contact form, reference is made to this data protection declaration in order to obtain your consent.</p>
+
+
+
+<p>If you make use of the contact form under <a href="/contact-sales-team/" data-type="page">Contact sales team</a>, the following personal data of you can be processed:</p>
+
+
+
+<ul>
+<li>Company</li>
+<li>Email</li>
+<li>First name</li>
+<li>Last name</li>
+<li>Country you want to operate</li>
+<li>Salutation</li>
+<li>Website</li>
+<li>Annual Revenue</li>
+<li>Description</li>
+</ul>
+
+
+
+<p>This data is stored in our customer relationship management system (“CRM system”). When using the contact form, your personal data will not be passed on to third parties.</p>
+
+
+
+<p><strong>b) Purpose and legal basis of the data processing</strong></p>
+
+
+
+<p>The purpose of processing your contact information is</p>
+
+
+
+<ul>
+<li>to respond to your inquiry;</li>
+<li>anonimously to support our internal business objectives, namely data analysis, audits, new product development, improving this website, improving our services, identifying usage trends and determining the effectiveness of our advertising campaigns;</li>
+<li>to prevent and identify abuse or fraud.</li>
+</ul>
+
+
+
+<p>The legal basis for the processing is your consent according to Art. 6 para. 1 lit. a) GDPR, which you can revoke at any time for the future.</p>
+
+
+
+<p><strong>c) Storage period</strong></p>
+
+
+
+<p>The data you enter in the contact form will remain with us until you request us to delete it, revoke your consent to store it, or the purpose for storing the data no longer applies (e.g. after we have completed processing your request).</p>
+
+
+
+<p>Mandatory legal provisions &#8211; in particular retention periods according to the German Commercial Code (HGB) or the German Fiscal Code (AO) &#8211; remain unaffected.</p>
+</div>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+
+</div>
+	</div>
+
+	
+</div></div> &copy; 2021 Santander  				</div>
 			</div>
 		</footer>
 		</div>
@@ -1906,7 +2062,7 @@ document.cookie = document.cookie + ";Referrer=" + document.referrer;
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHKSW7K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"6.\tContact form","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On our website, you can contact us via a form provided. During the process of sending your request via the contact form, reference is made to this data protection declaration in order to obtain your consent.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you make use of the contact form under <a href=\"\/contact-sales-team\/\" data-type=\"page\">Contact sales team<\/a>, the following personal data of you can be processed:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Company<\/li><li>Email<\/li><li>First name<\/li><li>Last name<\/li><li>Country you want to operate<\/li><li>Salutation<\/li><li>Website<\/li><li>Annual Revenue<\/li><li>Description<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>This data is stored in our customer relationship management system (“CRM system”). When using the contact form, your personal data will not be passed on to third parties.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis of the data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The purpose of processing your contact information is<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>to respond to your inquiry;<\/li><li>anonimously to support our internal business objectives, namely data analysis, audits, new product development, improving this website, improving our services, identifying usage trends and determining the effectiveness of our advertising campaigns;<\/li><li>to prevent and identify abuse or fraud.<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>The legal basis for the processing is your consent according to Art. 6 para. 1 lit. a) GDPR, which you can revoke at any time for the future.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Storage period<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The data you enter in the contact form will remain with us until you request us to delete it, revoke your consent to store it, or the purpose for storing the data no longer applies (e.g. after we have completed processing your request).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Mandatory legal provisions - in particular retention periods according to the German Commercial Code (HGB) or the German Fiscal Code (AO) - remain unaffected.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"6.\tContact form","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On our website, you can contact us via a form provided. During the process of sending your request via the contact form, reference is made to this data protection declaration in order to obtain your consent.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you make use of the contact form under <a href=\"\/contact-sales-team\/\" data-type=\"page\">Contact sales team<\/a>, the following personal data of you can be processed:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Company<\/li><li>Email<\/li><li>First name<\/li><li>Last name<\/li><li>Country you want to operate<\/li><li>Salutation<\/li><li>Website<\/li><li>Annual Revenue<\/li><li>Description<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>This data is stored in our customer relationship management system (“CRM system”). When using the contact form, your personal data will not be passed on to third parties.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis of the data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The purpose of processing your contact information is<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>to respond to your inquiry;<\/li><li>anonimously to support our internal business objectives, namely data analysis, audits, new product development, improving this website, improving our services, identifying usage trends and determining the effectiveness of our advertising campaigns;<\/li><li>to prevent and identify abuse or fraud.<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>The legal basis for the processing is your consent according to Art. 6 para. 1 lit. a) GDPR, which you can revoke at any time for the future.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Storage period<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The data you enter in the contact form will remain with us until you request us to delete it, revoke your consent to store it, or the purpose for storing the data no longer applies (e.g. after we have completed processing your request).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Mandatory legal provisions - in particular retention periods according to the German Commercial Code (HGB) or the German Fiscal Code (AO) - remain unaffected.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
+<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"6.\tContact form","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On our website, you can contact us via a form provided. During the process of sending your request via the contact form, reference is made to this data protection declaration in order to obtain your consent.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you make use of the contact form under <a href=\"\/contact-sales-team\/\" data-type=\"page\">Contact sales team<\/a>, the following personal data of you can be processed:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Company<\/li><li>Email<\/li><li>First name<\/li><li>Last name<\/li><li>Country you want to operate<\/li><li>Salutation<\/li><li>Website<\/li><li>Annual Revenue<\/li><li>Description<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>This data is stored in our customer relationship management system (“CRM system”). When using the contact form, your personal data will not be passed on to third parties.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis of the data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The purpose of processing your contact information is<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>to respond to your inquiry;<\/li><li>anonimously to support our internal business objectives, namely data analysis, audits, new product development, improving this website, improving our services, identifying usage trends and determining the effectiveness of our advertising campaigns;<\/li><li>to prevent and identify abuse or fraud.<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>The legal basis for the processing is your consent according to Art. 6 para. 1 lit. a) GDPR, which you can revoke at any time for the future.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Storage period<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The data you enter in the contact form will remain with us until you request us to delete it, revoke your consent to store it, or the purpose for storing the data no longer applies (e.g. after we have completed processing your request).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Mandatory legal provisions - in particular retention periods according to the German Commercial Code (HGB) or the German Fiscal Code (AO) - remain unaffected.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"6.\tContact form","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On our website, you can contact us via a form provided. During the process of sending your request via the contact form, reference is made to this data protection declaration in order to obtain your consent.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you make use of the contact form under <a href=\"\/contact-sales-team\/\" data-type=\"page\">Contact sales team<\/a>, the following personal data of you can be processed:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Company<\/li><li>Email<\/li><li>First name<\/li><li>Last name<\/li><li>Country you want to operate<\/li><li>Salutation<\/li><li>Website<\/li><li>Annual Revenue<\/li><li>Description<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>This data is stored in our customer relationship management system (“CRM system”). When using the contact form, your personal data will not be passed on to third parties.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis of the data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The purpose of processing your contact information is<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>to respond to your inquiry;<\/li><li>anonimously to support our internal business objectives, namely data analysis, audits, new product development, improving this website, improving our services, identifying usage trends and determining the effectiveness of our advertising campaigns;<\/li><li>to prevent and identify abuse or fraud.<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>The legal basis for the processing is your consent according to Art. 6 para. 1 lit. a) GDPR, which you can revoke at any time for the future.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Storage period<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The data you enter in the contact form will remain with us until you request us to delete it, revoke your consent to store it, or the purpose for storing the data no longer applies (e.g. after we have completed processing your request).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Mandatory legal provisions - in particular retention periods according to the German Commercial Code (HGB) or the German Fiscal Code (AO) - remain unaffected.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"6.\tContact form","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On our website, you can contact us via a form provided. During the process of sending your request via the contact form, reference is made to this data protection declaration in order to obtain your consent.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you make use of the contact form under <a href=\"\/contact-sales-team\/\" data-type=\"page\">Contact sales team<\/a>, the following personal data of you can be processed:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Company<\/li><li>Email<\/li><li>First name<\/li><li>Last name<\/li><li>Country you want to operate<\/li><li>Salutation<\/li><li>Website<\/li><li>Annual Revenue<\/li><li>Description<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>This data is stored in our customer relationship management system (“CRM system”). When using the contact form, your personal data will not be passed on to third parties.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis of the data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The purpose of processing your contact information is<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>to respond to your inquiry;<\/li><li>anonimously to support our internal business objectives, namely data analysis, audits, new product development, improving this website, improving our services, identifying usage trends and determining the effectiveness of our advertising campaigns;<\/li><li>to prevent and identify abuse or fraud.<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>The legal basis for the processing is your consent according to Art. 6 para. 1 lit. a) GDPR, which you can revoke at any time for the future.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Storage period<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The data you enter in the contact form will remain with us until you request us to delete it, revoke your consent to store it, or the purpose for storing the data no longer applies (e.g. after we have completed processing your request).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Mandatory legal provisions - in particular retention periods according to the German Commercial Code (HGB) or the German Fiscal Code (AO) - remain unaffected.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
 <link rel="stylesheet" id="cookie-law-info-table-css" href="/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-table.css?ver=2.0.4" media="all">
 <script src="/wp-content/plugins/gp-premium/menu-plus/functions/js/sticky.min.js?ver=2.0.3" id="generate-sticky-js"></script>
 <script src="/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7" id="regenerator-runtime-js"></script>
@@ -1916,7 +2072,7 @@ var wpcf7 = {"api":{"root":"\/wp-json\/","namespace":"contact-form-7\/v1"}};
 </script>
 <script src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2" id="contact-form-7-js"></script>
 <script id="pt-cv-content-views-script-js-extra">
-var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"538c87a8bb","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"49a3b34f88","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
 var PT_CV_PAGINATION = {"first":"«","prev":"‹","next":"›","last":"»","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
 </script>
 <script src="/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=2.4.0.2" id="pt-cv-content-views-script-js"></script>
@@ -1935,6 +2091,7 @@ var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub
 <script src="/wp-includes/js/wp-embed.min.js?ver=5.8" id="wp-embed-js"></script>
 <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
 <script id="ewd-ufaq-js-js-extra">
+var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["6.\tContact form"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["6.\tContact form"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["6.\tContact form"],"display_faq":"0"};
 </script>

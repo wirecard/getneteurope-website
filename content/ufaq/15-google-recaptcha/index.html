@@ -619,6 +619,14 @@ div div.wpsm_tab_content ul li::before {
 	font-weight: bold;
 }
 
+.footer-widgets div.gb-inside-container ul li::before, footer div.gb-inside-container ul li::before {
+	content: '';
+}
+
+.getnet-social-footer-wrapper ul {
+	margin-bottom: 0.5em;
+}
+
 div.gn22-text-and-tabs-container ul.wpsm_nav-tabs li {
 	border-bottom: 1px solid #CEDEE7;
 }
@@ -869,13 +877,36 @@ div.anchor-links-wrapper .gb-button-wrapper::-webkit-scrollbar {
  * Footer style
  * */
 
+#footer-widgets {
+	display: none;
+}
+
+.footer-widgets div p:last-child {
+	display: none;
+}
+
 div.footer-widgets-container {
     padding: 40px 40px 40px 40px;
+}
+
+div.footer-widgets-container ul {
+	margin: 0;
+}
+
+div.footer-widgets-container .gb-grid-column {
+	width: 100%;
+}
+
+div.footer-widgets-container .gb-grid-column h5 {
+	color: #ec0000;
 }
 
 @media (min-width: 769px) {
   div.footer-widgets-container {
     padding: 40px 40px 40px 40px;
+}
+	div.footer-widgets-container .gb-grid-column {
+	width: 16%;
 }
 }
 @media (min-width: 1025px) {
@@ -1408,7 +1439,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2995-QvCSyF9egR" data-post_id="2995">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2995-bdd4EmB0sw" data-post_id="2995">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1519,7 +1550,7 @@ div.ewd-ufaq-faq-body {
 		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ufaq/15-google-recaptcha/#respond" style="display:none;">Cancel reply</a></small>
 </h3>
 <form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
-<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="bd34679a01" name="bd34679a01" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a860c93c218ab55406f5ba28120045aa" );document.getElementById("bd34679a01").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="bd34679a01" name="bd34679a01" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "ac702f52f045dca690b3893e04b76b55" );document.getElementById("bd34679a01").setAttribute( "id", "comment" );</script></p>
 <input name="wpml_language_code" type="hidden" value="en"><label for="author" class="screen-reader-text">Name</label><input placeholder="Name *" id="author" name="author" type="text" value="" size="30">
 <label for="email" class="screen-reader-text">Email</label><input placeholder="Email *" id="email" name="email" type="email" value="" size="30">
 <label for="url" class="screen-reader-text">Website</label><input placeholder="Website" id="url" name="url" type="url" value="" size="30">
@@ -1542,7 +1573,7 @@ div.ewd-ufaq-faq-body {
 </div>
 
 
-<div class="site-footer footer-bar-active footer-bar-align-left">
+<div class="site-footer footer-bar-active footer-bar-align-right">
 				<div id="footer-widgets" class="site footer-widgets">
 				<div class="footer-widgets-container grid-container">
 					<div class="inside-footer-widgets">
@@ -1586,7 +1617,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2995-LYIpisrYCO" data-post_id="2995">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2995-MAM8fCTJcF" data-post_id="2995">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1699,7 +1730,118 @@ div.ewd-ufaq-faq-body {
 <li id="menu-item-2220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2220"><a href="/legal-notice/">Legal notice</a></li>
 </ul></div></aside>		</div>
 						<div class="copyright-bar">
-					<div class="getnet-logo-footer-wrapper"><img src="/wp-content/uploads/PagoNxt_Getnet_logo.png" class="getnet-logo-footer"></div> &copy; 2021 Santander  				</div>
+					<div class="getnet-social-footer-wrapper"><div class="ewd-ufaq-faq-list ewd-ufaq-page-type-distinct" id="ewd-ufaq-faq-list">
+
+	<input type="hidden" name="include_category" value="" id="ewd-ufaq-include-category">
+<input type="hidden" name="exclude_category" value="" id="ewd-ufaq-exclude-category">
+<input type="hidden" name="orderby" value="date" id="ewd-ufaq-orderby">
+<input type="hidden" name="order" value="asc" id="ewd-ufaq-order">
+<input type="hidden" name="post_count" value="-1" id="ewd-ufaq-post-count">
+<input type="hidden" name="current_url" value="/ufaq/15-google-recaptcha/" id="ewd-ufaq-current-url">
+	
+	
+	<div class="ewd-ufaq-faqs">
+
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2995-tDTCo8lrPk" data-post_id="2995">
+
+	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
+	
+	<a class="ewd-ufaq-post-margin" href="/ufaq/15-google-recaptcha/">
+
+		<div class="ewd-ufaq-post-margin-symbol ewd-ufaq-">
+			<span>A</span>
+		</div>
+
+		<div class="ewd-ufaq-faq-title-text">
+
+			<h4>
+				15. Google reCAPTCHA			</h4>
+
+		</div>
+
+		<div class="ewd-ufaq-clear"></div>
+
+	</a>
+	
+</div>
+	
+	<div class="ewd-ufaq-faq-body ">
+
+		
+			
+		
+			<div class="ewd-ufaq-post-margin ewd-ufaq-faq-post">
+	
+<p><strong>a) Type and scope of data processing</strong></p>
+
+
+
+<p>We use reCAPTCHA, a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland, Tel: +353 1 543 1000, Fax: +353 1 686 5660, Email: support-deutschland@google.com (&#8220;Google&#8221;).</p>
+
+
+
+<p>This service enables Google to determine which website is sending a request and from which IP address you are using the so-called reCAPTCHA input box.</p>
+
+
+
+<p>In addition to your IP address, Google may collect other information necessary to provide and guarantee this service. </p>
+
+
+
+<p><strong>b) Purpose and legal basis   </strong></p>
+
+
+
+<p>The purpose of using Google reCAPTCHA is to ensure data security during the transmission of forms.</p>
+
+
+
+<p>This serves above all to differentiate whether the input is made by a natural person or whether it is misused by mechanical and automated processing. The service includes sending the IP address and any other data required by Google for the reCAPTCHA service to Google.</p>
+
+
+
+<p>The legal basis is Art. 6 par. 1 lit. f) GDPR. Our legitimate interest lies in the security of our internet presence and in the defence against unwanted, automated access in the form of spam.</p>
+
+
+
+<p><strong>c) Right to object       </strong></p>
+
+
+
+<p>You may refuse the use of cookies by selecting the appropriate settings on your browser, however, please note that if you do this you may not be able to use the full functionality of this website.</p>
+
+
+
+<p>If you do not wish your data to be collected by Google via our website, so-called opt-out cookies can also be used. These prevent future processing of your personal data when you visit our website. In order to prevent the processing of your personal data across different systems, you must use the opt-out cookie on all systems used.</p>
+
+
+
+<p>For more information see Google&#8217;s privacy policy: <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noreferrer noopener">https://policies.google.com/privacy?hl=en</a>.</p>
+</div>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+
+</div>
+	</div>
+
+	
+</div></div> &copy; 2021 Santander  				</div>
 			</div>
 		</footer>
 		</div>
@@ -1878,7 +2020,7 @@ document.cookie = document.cookie + ";Referrer=" + document.referrer;
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHKSW7K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"15. Google reCAPTCHA","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We use reCAPTCHA, a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland, Tel: +353 1 543 1000, Fax: +353 1 686 5660, Email: support-deutschland@google.com (\"Google\").<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This service enables Google to determine which website is sending a request and from which IP address you are using the so-called reCAPTCHA input box.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition to your IP address, Google may collect other information necessary to provide and guarantee this service. <\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis&nbsp;&nbsp;&nbsp;<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The purpose of using Google reCAPTCHA is to ensure data security during the transmission of forms.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This serves above all to differentiate whether the input is made by a natural person or whether it is misused by mechanical and automated processing. The service includes sending the IP address and any other data required by Google for the reCAPTCHA service to Google.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The legal basis is Art. 6 par. 1 lit. f) GDPR. Our legitimate interest lies in the security of our internet presence and in the defence against unwanted, automated access in the form of spam.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right to object&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may refuse the use of cookies by selecting the appropriate settings on your browser, however, please note that if you do this you may not be able to use the full functionality of this website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you do not wish your data to be collected by Google via our website, so-called opt-out cookies can also be used. These prevent future processing of your personal data when you visit our website. In order to prevent the processing of your personal data across different systems, you must use the opt-out cookie on all systems used.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information see Google's privacy policy: <a href=\"https:\/\/policies.google.com\/privacy?hl=en\" target=\"_blank\" rel=\"noreferrer noopener\">https:\/\/policies.google.com\/privacy?hl=en<\/a>.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"15. Google reCAPTCHA","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We use reCAPTCHA, a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland, Tel: +353 1 543 1000, Fax: +353 1 686 5660, Email: support-deutschland@google.com (\"Google\").<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This service enables Google to determine which website is sending a request and from which IP address you are using the so-called reCAPTCHA input box.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition to your IP address, Google may collect other information necessary to provide and guarantee this service. <\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis&nbsp;&nbsp;&nbsp;<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The purpose of using Google reCAPTCHA is to ensure data security during the transmission of forms.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This serves above all to differentiate whether the input is made by a natural person or whether it is misused by mechanical and automated processing. The service includes sending the IP address and any other data required by Google for the reCAPTCHA service to Google.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The legal basis is Art. 6 par. 1 lit. f) GDPR. Our legitimate interest lies in the security of our internet presence and in the defence against unwanted, automated access in the form of spam.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right to object&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may refuse the use of cookies by selecting the appropriate settings on your browser, however, please note that if you do this you may not be able to use the full functionality of this website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you do not wish your data to be collected by Google via our website, so-called opt-out cookies can also be used. These prevent future processing of your personal data when you visit our website. In order to prevent the processing of your personal data across different systems, you must use the opt-out cookie on all systems used.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information see Google's privacy policy: <a href=\"https:\/\/policies.google.com\/privacy?hl=en\" target=\"_blank\" rel=\"noreferrer noopener\">https:\/\/policies.google.com\/privacy?hl=en<\/a>.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
+<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"15. Google reCAPTCHA","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We use reCAPTCHA, a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland, Tel: +353 1 543 1000, Fax: +353 1 686 5660, Email: support-deutschland@google.com (\"Google\").<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This service enables Google to determine which website is sending a request and from which IP address you are using the so-called reCAPTCHA input box.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition to your IP address, Google may collect other information necessary to provide and guarantee this service. <\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis&nbsp;&nbsp;&nbsp;<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The purpose of using Google reCAPTCHA is to ensure data security during the transmission of forms.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This serves above all to differentiate whether the input is made by a natural person or whether it is misused by mechanical and automated processing. The service includes sending the IP address and any other data required by Google for the reCAPTCHA service to Google.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The legal basis is Art. 6 par. 1 lit. f) GDPR. Our legitimate interest lies in the security of our internet presence and in the defence against unwanted, automated access in the form of spam.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right to object&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may refuse the use of cookies by selecting the appropriate settings on your browser, however, please note that if you do this you may not be able to use the full functionality of this website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you do not wish your data to be collected by Google via our website, so-called opt-out cookies can also be used. These prevent future processing of your personal data when you visit our website. In order to prevent the processing of your personal data across different systems, you must use the opt-out cookie on all systems used.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information see Google's privacy policy: <a href=\"https:\/\/policies.google.com\/privacy?hl=en\" target=\"_blank\" rel=\"noreferrer noopener\">https:\/\/policies.google.com\/privacy?hl=en<\/a>.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"15. Google reCAPTCHA","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We use reCAPTCHA, a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland, Tel: +353 1 543 1000, Fax: +353 1 686 5660, Email: support-deutschland@google.com (\"Google\").<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This service enables Google to determine which website is sending a request and from which IP address you are using the so-called reCAPTCHA input box.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition to your IP address, Google may collect other information necessary to provide and guarantee this service. <\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis&nbsp;&nbsp;&nbsp;<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The purpose of using Google reCAPTCHA is to ensure data security during the transmission of forms.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This serves above all to differentiate whether the input is made by a natural person or whether it is misused by mechanical and automated processing. The service includes sending the IP address and any other data required by Google for the reCAPTCHA service to Google.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The legal basis is Art. 6 par. 1 lit. f) GDPR. Our legitimate interest lies in the security of our internet presence and in the defence against unwanted, automated access in the form of spam.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right to object&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may refuse the use of cookies by selecting the appropriate settings on your browser, however, please note that if you do this you may not be able to use the full functionality of this website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you do not wish your data to be collected by Google via our website, so-called opt-out cookies can also be used. These prevent future processing of your personal data when you visit our website. In order to prevent the processing of your personal data across different systems, you must use the opt-out cookie on all systems used.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information see Google's privacy policy: <a href=\"https:\/\/policies.google.com\/privacy?hl=en\" target=\"_blank\" rel=\"noreferrer noopener\">https:\/\/policies.google.com\/privacy?hl=en<\/a>.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"15. Google reCAPTCHA","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We use reCAPTCHA, a service of Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland, Tel: +353 1 543 1000, Fax: +353 1 686 5660, Email: support-deutschland@google.com (\"Google\").<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This service enables Google to determine which website is sending a request and from which IP address you are using the so-called reCAPTCHA input box.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition to your IP address, Google may collect other information necessary to provide and guarantee this service. <\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis&nbsp;&nbsp;&nbsp;<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The purpose of using Google reCAPTCHA is to ensure data security during the transmission of forms.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This serves above all to differentiate whether the input is made by a natural person or whether it is misused by mechanical and automated processing. The service includes sending the IP address and any other data required by Google for the reCAPTCHA service to Google.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The legal basis is Art. 6 par. 1 lit. f) GDPR. Our legitimate interest lies in the security of our internet presence and in the defence against unwanted, automated access in the form of spam.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right to object&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may refuse the use of cookies by selecting the appropriate settings on your browser, however, please note that if you do this you may not be able to use the full functionality of this website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you do not wish your data to be collected by Google via our website, so-called opt-out cookies can also be used. These prevent future processing of your personal data when you visit our website. In order to prevent the processing of your personal data across different systems, you must use the opt-out cookie on all systems used.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information see Google's privacy policy: <a href=\"https:\/\/policies.google.com\/privacy?hl=en\" target=\"_blank\" rel=\"noreferrer noopener\">https:\/\/policies.google.com\/privacy?hl=en<\/a>.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
 <link rel="stylesheet" id="cookie-law-info-table-css" href="/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-table.css?ver=2.0.4" media="all">
 <script src="/wp-content/plugins/gp-premium/menu-plus/functions/js/sticky.min.js?ver=2.0.3" id="generate-sticky-js"></script>
 <script src="/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7" id="regenerator-runtime-js"></script>
@@ -1888,7 +2030,7 @@ var wpcf7 = {"api":{"root":"\/wp-json\/","namespace":"contact-form-7\/v1"}};
 </script>
 <script src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2" id="contact-form-7-js"></script>
 <script id="pt-cv-content-views-script-js-extra">
-var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"538c87a8bb","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"49a3b34f88","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
 var PT_CV_PAGINATION = {"first":"«","prev":"‹","next":"›","last":"»","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
 </script>
 <script src="/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=2.4.0.2" id="pt-cv-content-views-script-js"></script>
@@ -1907,6 +2049,7 @@ var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub
 <script src="/wp-includes/js/wp-embed.min.js?ver=5.8" id="wp-embed-js"></script>
 <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
 <script id="ewd-ufaq-js-js-extra">
+var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["15. Google reCAPTCHA"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["15. Google reCAPTCHA"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["15. Google reCAPTCHA"],"display_faq":"0"};
 </script>

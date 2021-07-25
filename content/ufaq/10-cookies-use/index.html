@@ -619,6 +619,14 @@ div div.wpsm_tab_content ul li::before {
 	font-weight: bold;
 }
 
+.footer-widgets div.gb-inside-container ul li::before, footer div.gb-inside-container ul li::before {
+	content: '';
+}
+
+.getnet-social-footer-wrapper ul {
+	margin-bottom: 0.5em;
+}
+
 div.gn22-text-and-tabs-container ul.wpsm_nav-tabs li {
 	border-bottom: 1px solid #CEDEE7;
 }
@@ -869,13 +877,36 @@ div.anchor-links-wrapper .gb-button-wrapper::-webkit-scrollbar {
  * Footer style
  * */
 
+#footer-widgets {
+	display: none;
+}
+
+.footer-widgets div p:last-child {
+	display: none;
+}
+
 div.footer-widgets-container {
     padding: 40px 40px 40px 40px;
+}
+
+div.footer-widgets-container ul {
+	margin: 0;
+}
+
+div.footer-widgets-container .gb-grid-column {
+	width: 100%;
+}
+
+div.footer-widgets-container .gb-grid-column h5 {
+	color: #ec0000;
 }
 
 @media (min-width: 769px) {
   div.footer-widgets-container {
     padding: 40px 40px 40px 40px;
+}
+	div.footer-widgets-container .gb-grid-column {
+	width: 16%;
 }
 }
 @media (min-width: 1025px) {
@@ -1408,7 +1439,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2986-3bhnULrAch" data-post_id="2986">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2986-lMeOIFcAK6" data-post_id="2986">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1574,7 +1605,7 @@ div.ewd-ufaq-faq-body {
 		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ufaq/10-cookies-use/#respond" style="display:none;">Cancel reply</a></small>
 </h3>
 <form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
-<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="de07852da8" name="de07852da8" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a4722b1ad949102c2218d025c0b98070" );document.getElementById("de07852da8").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="de07852da8" name="de07852da8" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a0672d36faa1b6392192de056d48714a" );document.getElementById("de07852da8").setAttribute( "id", "comment" );</script></p>
 <input name="wpml_language_code" type="hidden" value="en"><label for="author" class="screen-reader-text">Name</label><input placeholder="Name *" id="author" name="author" type="text" value="" size="30">
 <label for="email" class="screen-reader-text">Email</label><input placeholder="Email *" id="email" name="email" type="email" value="" size="30">
 <label for="url" class="screen-reader-text">Website</label><input placeholder="Website" id="url" name="url" type="url" value="" size="30">
@@ -1597,7 +1628,7 @@ div.ewd-ufaq-faq-body {
 </div>
 
 
-<div class="site-footer footer-bar-active footer-bar-align-left">
+<div class="site-footer footer-bar-active footer-bar-align-right">
 				<div id="footer-widgets" class="site footer-widgets">
 				<div class="footer-widgets-container grid-container">
 					<div class="inside-footer-widgets">
@@ -1641,7 +1672,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2986-Dx1V3lzYCX" data-post_id="2986">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2986-mqe6tFoJqB" data-post_id="2986">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1809,7 +1840,173 @@ div.ewd-ufaq-faq-body {
 <li id="menu-item-2220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2220"><a href="/legal-notice/">Legal notice</a></li>
 </ul></div></aside>		</div>
 						<div class="copyright-bar">
-					<div class="getnet-logo-footer-wrapper"><img src="/wp-content/uploads/PagoNxt_Getnet_logo.png" class="getnet-logo-footer"></div> &copy; 2021 Santander  				</div>
+					<div class="getnet-social-footer-wrapper"><div class="ewd-ufaq-faq-list ewd-ufaq-page-type-distinct" id="ewd-ufaq-faq-list">
+
+	<input type="hidden" name="include_category" value="" id="ewd-ufaq-include-category">
+<input type="hidden" name="exclude_category" value="" id="ewd-ufaq-exclude-category">
+<input type="hidden" name="orderby" value="date" id="ewd-ufaq-orderby">
+<input type="hidden" name="order" value="asc" id="ewd-ufaq-order">
+<input type="hidden" name="post_count" value="-1" id="ewd-ufaq-post-count">
+<input type="hidden" name="current_url" value="/ufaq/10-cookies-use/" id="ewd-ufaq-current-url">
+	
+	
+	<div class="ewd-ufaq-faqs">
+
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2986-3IspBk841Z" data-post_id="2986">
+
+	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
+	
+	<a class="ewd-ufaq-post-margin" href="/ufaq/10-cookies-use/">
+
+		<div class="ewd-ufaq-post-margin-symbol ewd-ufaq-">
+			<span>A</span>
+		</div>
+
+		<div class="ewd-ufaq-faq-title-text">
+
+			<h4>
+				10.	Cookies use			</h4>
+
+		</div>
+
+		<div class="ewd-ufaq-clear"></div>
+
+	</a>
+	
+</div>
+	
+	<div class="ewd-ufaq-faq-body ">
+
+		
+			
+		
+			<div class="ewd-ufaq-post-margin ewd-ufaq-faq-post">
+	
+<p>We use cookies. Cookies are small files that are placed on your computer and stored by your browser. Some functions of our website cannot be offered without the use of technically necessary cookies. Other cookies, on the other hand, enable us to perform various analyses. For example, some cookies can recognize the browser you are using when you visit our website again and transmit various information to us. We use cookies to facilitate and improve the use of our website. Among other things, cookies enable us to make our website more user-friendly and effective for you by, for example, tracking your use of our website and determining your preferred settings (e.g. country and language settings). If third parties process information via cookies, they collect the information directly from your browser. Cookies do not cause any damage to your end device. They cannot execute programs or contain viruses. Various types of cookies are used on our website, the type and function of which we would like to explain below.</p>
+
+
+
+<p><em>Temporary cookies / session cookies</em></p>
+
+
+
+<p>Our website uses so-called <em>temporary cookies or session cookies, </em>which are automatically deleted as soon as you close your browser. With the help of this type of cookie, it is possible to record your session ID. This makes it possible to assign various requests from your browser to a common session and to recognize your device during subsequent visits to the website. These session cookies expire at the end of the session.</p>
+
+
+
+<p><em>Persistent cookies</em></p>
+
+
+
+<p>So-called persistent cookies are used on our website. Persistent cookies are cookies that are stored in your browser for a longer period of time and can transmit information. The respective storage period differs depending on the cookie. You can also manually delete permanent cookies via your browser settings.</p>
+
+
+
+<p><em>Legal basis and storage period</em></p>
+
+
+
+<p>Based on the purposes described, the legal basis for the processing of personal data using cookies is Art. 6 para. 1 lit. f) GDPR. If you have given us your consent to the use of cookies in a consent tool (&#8220;cookie banner&#8221;) issued by us on the website, the legal basis is Art. 6 para. 1 lit. a) GDPR.</p>
+
+
+
+<p>As soon as the data transmitted to us via the cookies is no longer required for the purposes described above, this information is deleted. Further storage may take place in individual cases if this is required by law.</p>
+
+
+
+<p><em>Browser settings configuration</em></p>
+
+
+
+<p>Most web browsers are preset to accept cookies automatically. However, you can configure your respective browser so that it only accepts certain cookies or none at all. However, we would like to point out that you may then no longer be able to use all the functions of our website.</p>
+
+
+
+<p>You can also delete cookies already stored in your browser via your browser settings. Furthermore, it is possible to set your browser to notify you before cookies are stored. Since the various browsers may differ in their respective modes of operation, we ask you to refer to the respective help menu of your browser for the corresponding configuration options.</p>
+
+
+
+<p>Disabling the use of cookies may require the storage of a permanent cookie on your computer. If you delete this cookie, you must then set it again for it to take effect.</p>
+
+
+
+<p>For more information on configuring cookie settings in the respective browsers, please see:</p>
+
+
+
+<ul>
+<li><a href="https://support.microsoft.com/de-de/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank" rel="noreferrer noopener">Internet Explorer</a></li>
+<li><a href="https://support.microsoft.com/de-de/microsoft-edge/cookies-in-microsoft-edge-l%C3%B6schen-63947406-40ac-c3b8-57b9-2a946a29ae09#:~:text=%C3%96ffnen%20Sie%20Microsoft%20Edge%2C%20w%C3%A4hlen,Sie%20Cookies%20und%20andere%20Websitedaten." target="_blank" rel="noreferrer noopener">Edge</a></li>
+<li><a href="https://support.apple.com/de-de/guide/safari/sfri11471/12.0/mac/10.14" target="_blank" rel="noreferrer noopener">Safari</a></li>
+<li><a href="https://support.google.com/chrome/answer/95647?hl=de&#038;hlrm=en" target="_blank" rel="noreferrer noopener">Chrome</a></li>
+<li><a href="https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen" target="_blank" rel="noreferrer noopener">Firefox</a></li>
+<li><a href="https://help.opera.com/de/latest/web-preferences/#cookies" target="_blank" rel="noreferrer noopener">Opera</a></li>
+</ul>
+
+
+
+<p><em>Cookie categories</em><em></em></p>
+
+
+
+<h4>We use the following categories of cookies:</h4>
+
+
+
+<p><strong>a) Necessary cookies</strong></p>
+
+
+
+<p>Necessary cookies ensure functions without which our website cannot be used as intended. These essential cookies serve, for example, to ensure that logged-in users always remain logged in when accessing various sub-pages. They are so-called first-party cookies, which are only set and used by us. These cookies do not require your consent. You can disable cookies in your browser at any time.</p>
+
+
+
+<p><strong>b) Functional cookies</strong></p>
+
+
+
+<p>Functional cookies allow us to extend the functionality of our site to show you additional useful information or to optimize the presentation of our site. The data collected using such cookies may vary depending on the purpose of the cookie and are listed directly with the respective consent tool used.</p>
+
+
+
+<p><strong>c) Statistics cookies</strong></p>
+
+
+
+<p>Statistics cookies can be used to collect information about the use of a website in order to improve its attractiveness, content and functionality. This concerns, for example, the length of time spent on the page, the sub-pages accessed and the functions used (click path).</p>
+
+
+
+<p><strong>d) Marketing cookies</strong></p>
+
+
+
+<p>Marketing cookies can be used to display interest-based advertising to visitors of the website and to measure the effectiveness of advertising campaigns. With the help of these cookies, visitors can be recognized on other websites and personalized ads can be displayed to them there.</p>
+</div>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+
+</div>
+	</div>
+
+	
+</div></div> &copy; 2021 Santander  				</div>
 			</div>
 		</footer>
 		</div>
@@ -1988,7 +2185,7 @@ document.cookie = document.cookie + ";Referrer=" + document.referrer;
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHKSW7K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"10.\tCookies use","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p>We use cookies. Cookies are small files that are placed on your computer and stored by your browser. Some functions of our website cannot be offered without the use of technically necessary cookies. Other cookies, on the other hand, enable us to perform various analyses. For example, some cookies can recognize the browser you are using when you visit our website again and transmit various information to us. We use cookies to facilitate and improve the use of our website. Among other things, cookies enable us to make our website more user-friendly and effective for you by, for example, tracking your use of our website and determining your preferred settings (e.g. country and language settings). If third parties process information via cookies, they collect the information directly from your browser. Cookies do not cause any damage to your end device. They cannot execute programs or contain viruses. Various types of cookies are used on our website, the type and function of which we would like to explain below.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Temporary cookies \/ session cookies<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Our website uses so-called <em>temporary cookies or session cookies, <\/em>which are automatically deleted as soon as you close your browser. With the help of this type of cookie, it is possible to record your session ID. This makes it possible to assign various requests from your browser to a common session and to recognize your device during subsequent visits to the website. These session cookies expire at the end of the session.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Persistent cookies<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>So-called persistent cookies are used on our website. Persistent cookies are cookies that are stored in your browser for a longer period of time and can transmit information. The respective storage period differs depending on the cookie. You can also manually delete permanent cookies via your browser settings.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Legal basis and storage period<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Based on the purposes described, the legal basis for the processing of personal data using cookies is Art. 6 para. 1 lit. f) GDPR. If you have given us your consent to the use of cookies in a consent tool (\"cookie banner\") issued by us on the website, the legal basis is Art. 6 para. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>As soon as the data transmitted to us via the cookies is no longer required for the purposes described above, this information is deleted. Further storage may take place in individual cases if this is required by law.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Browser settings configuration<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Most web browsers are preset to accept cookies automatically. However, you can configure your respective browser so that it only accepts certain cookies or none at all. However, we would like to point out that you may then no longer be able to use all the functions of our website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You can also delete cookies already stored in your browser via your browser settings. Furthermore, it is possible to set your browser to notify you before cookies are stored. Since the various browsers may differ in their respective modes of operation, we ask you to refer to the respective help menu of your browser for the corresponding configuration options.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Disabling the use of cookies may require the storage of a permanent cookie on your computer. If you delete this cookie, you must then set it again for it to take effect.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information on configuring cookie settings in the respective browsers, please see:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li><a href=\"https:\/\/support.microsoft.com\/de-de\/help\/17442\/windows-internet-explorer-delete-manage-cookies\" target=\"_blank\" rel=\"noreferrer noopener\">Internet Explorer<\/a><\/li><li><a href=\"https:\/\/support.microsoft.com\/de-de\/microsoft-edge\/cookies-in-microsoft-edge-l%C3%B6schen-63947406-40ac-c3b8-57b9-2a946a29ae09#:~:text=%C3%96ffnen%20Sie%20Microsoft%20Edge%2C%20w%C3%A4hlen,Sie%20Cookies%20und%20andere%20Websitedaten.\" target=\"_blank\" rel=\"noreferrer noopener\">Edge<\/a><\/li><li><a href=\"https:\/\/support.apple.com\/de-de\/guide\/safari\/sfri11471\/12.0\/mac\/10.14\" target=\"_blank\" rel=\"noreferrer noopener\">Safari<\/a><\/li><li><a href=\"https:\/\/support.google.com\/chrome\/answer\/95647?hl=de&amp;hlrm=en\" target=\"_blank\" rel=\"noreferrer noopener\">Chrome<\/a><\/li><li><a href=\"https:\/\/support.mozilla.org\/de\/kb\/cookies-erlauben-und-ablehnen\" target=\"_blank\" rel=\"noreferrer noopener\">Firefox<\/a><\/li><li><a href=\"https:\/\/help.opera.com\/de\/latest\/web-preferences\/#cookies\" target=\"_blank\" rel=\"noreferrer noopener\">Opera<\/a><\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p><em>Cookie categories<\/em><em><\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4>We use the following categories of cookies:<\/h4>\n<!-- \/wp:heading -->\n\n<!-- wp:paragraph -->\n<p><strong>a) Necessary cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Necessary cookies ensure functions without which our website cannot be used as intended. These essential cookies serve, for example, to ensure that logged-in users always remain logged in when accessing various sub-pages. They are so-called first-party cookies, which are only set and used by us. These cookies do not require your consent. You can disable cookies in your browser at any time.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Functional cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Functional cookies allow us to extend the functionality of our site to show you additional useful information or to optimize the presentation of our site. The data collected using such cookies may vary depending on the purpose of the cookie and are listed directly with the respective consent tool used.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Statistics cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Statistics cookies can be used to collect information about the use of a website in order to improve its attractiveness, content and functionality. This concerns, for example, the length of time spent on the page, the sub-pages accessed and the functions used (click path).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Marketing cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Marketing cookies can be used to display interest-based advertising to visitors of the website and to measure the effectiveness of advertising campaigns. With the help of these cookies, visitors can be recognized on other websites and personalized ads can be displayed to them there.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"10.\tCookies use","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p>We use cookies. Cookies are small files that are placed on your computer and stored by your browser. Some functions of our website cannot be offered without the use of technically necessary cookies. Other cookies, on the other hand, enable us to perform various analyses. For example, some cookies can recognize the browser you are using when you visit our website again and transmit various information to us. We use cookies to facilitate and improve the use of our website. Among other things, cookies enable us to make our website more user-friendly and effective for you by, for example, tracking your use of our website and determining your preferred settings (e.g. country and language settings). If third parties process information via cookies, they collect the information directly from your browser. Cookies do not cause any damage to your end device. They cannot execute programs or contain viruses. Various types of cookies are used on our website, the type and function of which we would like to explain below.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Temporary cookies \/ session cookies<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Our website uses so-called <em>temporary cookies or session cookies, <\/em>which are automatically deleted as soon as you close your browser. With the help of this type of cookie, it is possible to record your session ID. This makes it possible to assign various requests from your browser to a common session and to recognize your device during subsequent visits to the website. These session cookies expire at the end of the session.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Persistent cookies<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>So-called persistent cookies are used on our website. Persistent cookies are cookies that are stored in your browser for a longer period of time and can transmit information. The respective storage period differs depending on the cookie. You can also manually delete permanent cookies via your browser settings.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Legal basis and storage period<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Based on the purposes described, the legal basis for the processing of personal data using cookies is Art. 6 para. 1 lit. f) GDPR. If you have given us your consent to the use of cookies in a consent tool (\"cookie banner\") issued by us on the website, the legal basis is Art. 6 para. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>As soon as the data transmitted to us via the cookies is no longer required for the purposes described above, this information is deleted. Further storage may take place in individual cases if this is required by law.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Browser settings configuration<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Most web browsers are preset to accept cookies automatically. However, you can configure your respective browser so that it only accepts certain cookies or none at all. However, we would like to point out that you may then no longer be able to use all the functions of our website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You can also delete cookies already stored in your browser via your browser settings. Furthermore, it is possible to set your browser to notify you before cookies are stored. Since the various browsers may differ in their respective modes of operation, we ask you to refer to the respective help menu of your browser for the corresponding configuration options.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Disabling the use of cookies may require the storage of a permanent cookie on your computer. If you delete this cookie, you must then set it again for it to take effect.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information on configuring cookie settings in the respective browsers, please see:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li><a href=\"https:\/\/support.microsoft.com\/de-de\/help\/17442\/windows-internet-explorer-delete-manage-cookies\" target=\"_blank\" rel=\"noreferrer noopener\">Internet Explorer<\/a><\/li><li><a href=\"https:\/\/support.microsoft.com\/de-de\/microsoft-edge\/cookies-in-microsoft-edge-l%C3%B6schen-63947406-40ac-c3b8-57b9-2a946a29ae09#:~:text=%C3%96ffnen%20Sie%20Microsoft%20Edge%2C%20w%C3%A4hlen,Sie%20Cookies%20und%20andere%20Websitedaten.\" target=\"_blank\" rel=\"noreferrer noopener\">Edge<\/a><\/li><li><a href=\"https:\/\/support.apple.com\/de-de\/guide\/safari\/sfri11471\/12.0\/mac\/10.14\" target=\"_blank\" rel=\"noreferrer noopener\">Safari<\/a><\/li><li><a href=\"https:\/\/support.google.com\/chrome\/answer\/95647?hl=de&amp;hlrm=en\" target=\"_blank\" rel=\"noreferrer noopener\">Chrome<\/a><\/li><li><a href=\"https:\/\/support.mozilla.org\/de\/kb\/cookies-erlauben-und-ablehnen\" target=\"_blank\" rel=\"noreferrer noopener\">Firefox<\/a><\/li><li><a href=\"https:\/\/help.opera.com\/de\/latest\/web-preferences\/#cookies\" target=\"_blank\" rel=\"noreferrer noopener\">Opera<\/a><\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p><em>Cookie categories<\/em><em><\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4>We use the following categories of cookies:<\/h4>\n<!-- \/wp:heading -->\n\n<!-- wp:paragraph -->\n<p><strong>a) Necessary cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Necessary cookies ensure functions without which our website cannot be used as intended. These essential cookies serve, for example, to ensure that logged-in users always remain logged in when accessing various sub-pages. They are so-called first-party cookies, which are only set and used by us. These cookies do not require your consent. You can disable cookies in your browser at any time.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Functional cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Functional cookies allow us to extend the functionality of our site to show you additional useful information or to optimize the presentation of our site. The data collected using such cookies may vary depending on the purpose of the cookie and are listed directly with the respective consent tool used.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Statistics cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Statistics cookies can be used to collect information about the use of a website in order to improve its attractiveness, content and functionality. This concerns, for example, the length of time spent on the page, the sub-pages accessed and the functions used (click path).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Marketing cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Marketing cookies can be used to display interest-based advertising to visitors of the website and to measure the effectiveness of advertising campaigns. With the help of these cookies, visitors can be recognized on other websites and personalized ads can be displayed to them there.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
+<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"10.\tCookies use","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p>We use cookies. Cookies are small files that are placed on your computer and stored by your browser. Some functions of our website cannot be offered without the use of technically necessary cookies. Other cookies, on the other hand, enable us to perform various analyses. For example, some cookies can recognize the browser you are using when you visit our website again and transmit various information to us. We use cookies to facilitate and improve the use of our website. Among other things, cookies enable us to make our website more user-friendly and effective for you by, for example, tracking your use of our website and determining your preferred settings (e.g. country and language settings). If third parties process information via cookies, they collect the information directly from your browser. Cookies do not cause any damage to your end device. They cannot execute programs or contain viruses. Various types of cookies are used on our website, the type and function of which we would like to explain below.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Temporary cookies \/ session cookies<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Our website uses so-called <em>temporary cookies or session cookies, <\/em>which are automatically deleted as soon as you close your browser. With the help of this type of cookie, it is possible to record your session ID. This makes it possible to assign various requests from your browser to a common session and to recognize your device during subsequent visits to the website. These session cookies expire at the end of the session.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Persistent cookies<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>So-called persistent cookies are used on our website. Persistent cookies are cookies that are stored in your browser for a longer period of time and can transmit information. The respective storage period differs depending on the cookie. You can also manually delete permanent cookies via your browser settings.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Legal basis and storage period<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Based on the purposes described, the legal basis for the processing of personal data using cookies is Art. 6 para. 1 lit. f) GDPR. If you have given us your consent to the use of cookies in a consent tool (\"cookie banner\") issued by us on the website, the legal basis is Art. 6 para. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>As soon as the data transmitted to us via the cookies is no longer required for the purposes described above, this information is deleted. Further storage may take place in individual cases if this is required by law.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Browser settings configuration<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Most web browsers are preset to accept cookies automatically. However, you can configure your respective browser so that it only accepts certain cookies or none at all. However, we would like to point out that you may then no longer be able to use all the functions of our website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You can also delete cookies already stored in your browser via your browser settings. Furthermore, it is possible to set your browser to notify you before cookies are stored. Since the various browsers may differ in their respective modes of operation, we ask you to refer to the respective help menu of your browser for the corresponding configuration options.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Disabling the use of cookies may require the storage of a permanent cookie on your computer. If you delete this cookie, you must then set it again for it to take effect.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information on configuring cookie settings in the respective browsers, please see:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li><a href=\"https:\/\/support.microsoft.com\/de-de\/help\/17442\/windows-internet-explorer-delete-manage-cookies\" target=\"_blank\" rel=\"noreferrer noopener\">Internet Explorer<\/a><\/li><li><a href=\"https:\/\/support.microsoft.com\/de-de\/microsoft-edge\/cookies-in-microsoft-edge-l%C3%B6schen-63947406-40ac-c3b8-57b9-2a946a29ae09#:~:text=%C3%96ffnen%20Sie%20Microsoft%20Edge%2C%20w%C3%A4hlen,Sie%20Cookies%20und%20andere%20Websitedaten.\" target=\"_blank\" rel=\"noreferrer noopener\">Edge<\/a><\/li><li><a href=\"https:\/\/support.apple.com\/de-de\/guide\/safari\/sfri11471\/12.0\/mac\/10.14\" target=\"_blank\" rel=\"noreferrer noopener\">Safari<\/a><\/li><li><a href=\"https:\/\/support.google.com\/chrome\/answer\/95647?hl=de&amp;hlrm=en\" target=\"_blank\" rel=\"noreferrer noopener\">Chrome<\/a><\/li><li><a href=\"https:\/\/support.mozilla.org\/de\/kb\/cookies-erlauben-und-ablehnen\" target=\"_blank\" rel=\"noreferrer noopener\">Firefox<\/a><\/li><li><a href=\"https:\/\/help.opera.com\/de\/latest\/web-preferences\/#cookies\" target=\"_blank\" rel=\"noreferrer noopener\">Opera<\/a><\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p><em>Cookie categories<\/em><em><\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4>We use the following categories of cookies:<\/h4>\n<!-- \/wp:heading -->\n\n<!-- wp:paragraph -->\n<p><strong>a) Necessary cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Necessary cookies ensure functions without which our website cannot be used as intended. These essential cookies serve, for example, to ensure that logged-in users always remain logged in when accessing various sub-pages. They are so-called first-party cookies, which are only set and used by us. These cookies do not require your consent. You can disable cookies in your browser at any time.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Functional cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Functional cookies allow us to extend the functionality of our site to show you additional useful information or to optimize the presentation of our site. The data collected using such cookies may vary depending on the purpose of the cookie and are listed directly with the respective consent tool used.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Statistics cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Statistics cookies can be used to collect information about the use of a website in order to improve its attractiveness, content and functionality. This concerns, for example, the length of time spent on the page, the sub-pages accessed and the functions used (click path).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Marketing cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Marketing cookies can be used to display interest-based advertising to visitors of the website and to measure the effectiveness of advertising campaigns. With the help of these cookies, visitors can be recognized on other websites and personalized ads can be displayed to them there.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"10.\tCookies use","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p>We use cookies. Cookies are small files that are placed on your computer and stored by your browser. Some functions of our website cannot be offered without the use of technically necessary cookies. Other cookies, on the other hand, enable us to perform various analyses. For example, some cookies can recognize the browser you are using when you visit our website again and transmit various information to us. We use cookies to facilitate and improve the use of our website. Among other things, cookies enable us to make our website more user-friendly and effective for you by, for example, tracking your use of our website and determining your preferred settings (e.g. country and language settings). If third parties process information via cookies, they collect the information directly from your browser. Cookies do not cause any damage to your end device. They cannot execute programs or contain viruses. Various types of cookies are used on our website, the type and function of which we would like to explain below.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Temporary cookies \/ session cookies<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Our website uses so-called <em>temporary cookies or session cookies, <\/em>which are automatically deleted as soon as you close your browser. With the help of this type of cookie, it is possible to record your session ID. This makes it possible to assign various requests from your browser to a common session and to recognize your device during subsequent visits to the website. These session cookies expire at the end of the session.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Persistent cookies<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>So-called persistent cookies are used on our website. Persistent cookies are cookies that are stored in your browser for a longer period of time and can transmit information. The respective storage period differs depending on the cookie. You can also manually delete permanent cookies via your browser settings.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Legal basis and storage period<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Based on the purposes described, the legal basis for the processing of personal data using cookies is Art. 6 para. 1 lit. f) GDPR. If you have given us your consent to the use of cookies in a consent tool (\"cookie banner\") issued by us on the website, the legal basis is Art. 6 para. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>As soon as the data transmitted to us via the cookies is no longer required for the purposes described above, this information is deleted. Further storage may take place in individual cases if this is required by law.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Browser settings configuration<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Most web browsers are preset to accept cookies automatically. However, you can configure your respective browser so that it only accepts certain cookies or none at all. However, we would like to point out that you may then no longer be able to use all the functions of our website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You can also delete cookies already stored in your browser via your browser settings. Furthermore, it is possible to set your browser to notify you before cookies are stored. Since the various browsers may differ in their respective modes of operation, we ask you to refer to the respective help menu of your browser for the corresponding configuration options.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Disabling the use of cookies may require the storage of a permanent cookie on your computer. If you delete this cookie, you must then set it again for it to take effect.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information on configuring cookie settings in the respective browsers, please see:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li><a href=\"https:\/\/support.microsoft.com\/de-de\/help\/17442\/windows-internet-explorer-delete-manage-cookies\" target=\"_blank\" rel=\"noreferrer noopener\">Internet Explorer<\/a><\/li><li><a href=\"https:\/\/support.microsoft.com\/de-de\/microsoft-edge\/cookies-in-microsoft-edge-l%C3%B6schen-63947406-40ac-c3b8-57b9-2a946a29ae09#:~:text=%C3%96ffnen%20Sie%20Microsoft%20Edge%2C%20w%C3%A4hlen,Sie%20Cookies%20und%20andere%20Websitedaten.\" target=\"_blank\" rel=\"noreferrer noopener\">Edge<\/a><\/li><li><a href=\"https:\/\/support.apple.com\/de-de\/guide\/safari\/sfri11471\/12.0\/mac\/10.14\" target=\"_blank\" rel=\"noreferrer noopener\">Safari<\/a><\/li><li><a href=\"https:\/\/support.google.com\/chrome\/answer\/95647?hl=de&amp;hlrm=en\" target=\"_blank\" rel=\"noreferrer noopener\">Chrome<\/a><\/li><li><a href=\"https:\/\/support.mozilla.org\/de\/kb\/cookies-erlauben-und-ablehnen\" target=\"_blank\" rel=\"noreferrer noopener\">Firefox<\/a><\/li><li><a href=\"https:\/\/help.opera.com\/de\/latest\/web-preferences\/#cookies\" target=\"_blank\" rel=\"noreferrer noopener\">Opera<\/a><\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p><em>Cookie categories<\/em><em><\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4>We use the following categories of cookies:<\/h4>\n<!-- \/wp:heading -->\n\n<!-- wp:paragraph -->\n<p><strong>a) Necessary cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Necessary cookies ensure functions without which our website cannot be used as intended. These essential cookies serve, for example, to ensure that logged-in users always remain logged in when accessing various sub-pages. They are so-called first-party cookies, which are only set and used by us. These cookies do not require your consent. You can disable cookies in your browser at any time.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Functional cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Functional cookies allow us to extend the functionality of our site to show you additional useful information or to optimize the presentation of our site. The data collected using such cookies may vary depending on the purpose of the cookie and are listed directly with the respective consent tool used.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Statistics cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Statistics cookies can be used to collect information about the use of a website in order to improve its attractiveness, content and functionality. This concerns, for example, the length of time spent on the page, the sub-pages accessed and the functions used (click path).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Marketing cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Marketing cookies can be used to display interest-based advertising to visitors of the website and to measure the effectiveness of advertising campaigns. With the help of these cookies, visitors can be recognized on other websites and personalized ads can be displayed to them there.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"10.\tCookies use","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p>We use cookies. Cookies are small files that are placed on your computer and stored by your browser. Some functions of our website cannot be offered without the use of technically necessary cookies. Other cookies, on the other hand, enable us to perform various analyses. For example, some cookies can recognize the browser you are using when you visit our website again and transmit various information to us. We use cookies to facilitate and improve the use of our website. Among other things, cookies enable us to make our website more user-friendly and effective for you by, for example, tracking your use of our website and determining your preferred settings (e.g. country and language settings). If third parties process information via cookies, they collect the information directly from your browser. Cookies do not cause any damage to your end device. They cannot execute programs or contain viruses. Various types of cookies are used on our website, the type and function of which we would like to explain below.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Temporary cookies \/ session cookies<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Our website uses so-called <em>temporary cookies or session cookies, <\/em>which are automatically deleted as soon as you close your browser. With the help of this type of cookie, it is possible to record your session ID. This makes it possible to assign various requests from your browser to a common session and to recognize your device during subsequent visits to the website. These session cookies expire at the end of the session.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Persistent cookies<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>So-called persistent cookies are used on our website. Persistent cookies are cookies that are stored in your browser for a longer period of time and can transmit information. The respective storage period differs depending on the cookie. You can also manually delete permanent cookies via your browser settings.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Legal basis and storage period<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Based on the purposes described, the legal basis for the processing of personal data using cookies is Art. 6 para. 1 lit. f) GDPR. If you have given us your consent to the use of cookies in a consent tool (\"cookie banner\") issued by us on the website, the legal basis is Art. 6 para. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>As soon as the data transmitted to us via the cookies is no longer required for the purposes described above, this information is deleted. Further storage may take place in individual cases if this is required by law.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><em>Browser settings configuration<\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Most web browsers are preset to accept cookies automatically. However, you can configure your respective browser so that it only accepts certain cookies or none at all. However, we would like to point out that you may then no longer be able to use all the functions of our website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You can also delete cookies already stored in your browser via your browser settings. Furthermore, it is possible to set your browser to notify you before cookies are stored. Since the various browsers may differ in their respective modes of operation, we ask you to refer to the respective help menu of your browser for the corresponding configuration options.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Disabling the use of cookies may require the storage of a permanent cookie on your computer. If you delete this cookie, you must then set it again for it to take effect.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information on configuring cookie settings in the respective browsers, please see:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li><a href=\"https:\/\/support.microsoft.com\/de-de\/help\/17442\/windows-internet-explorer-delete-manage-cookies\" target=\"_blank\" rel=\"noreferrer noopener\">Internet Explorer<\/a><\/li><li><a href=\"https:\/\/support.microsoft.com\/de-de\/microsoft-edge\/cookies-in-microsoft-edge-l%C3%B6schen-63947406-40ac-c3b8-57b9-2a946a29ae09#:~:text=%C3%96ffnen%20Sie%20Microsoft%20Edge%2C%20w%C3%A4hlen,Sie%20Cookies%20und%20andere%20Websitedaten.\" target=\"_blank\" rel=\"noreferrer noopener\">Edge<\/a><\/li><li><a href=\"https:\/\/support.apple.com\/de-de\/guide\/safari\/sfri11471\/12.0\/mac\/10.14\" target=\"_blank\" rel=\"noreferrer noopener\">Safari<\/a><\/li><li><a href=\"https:\/\/support.google.com\/chrome\/answer\/95647?hl=de&amp;hlrm=en\" target=\"_blank\" rel=\"noreferrer noopener\">Chrome<\/a><\/li><li><a href=\"https:\/\/support.mozilla.org\/de\/kb\/cookies-erlauben-und-ablehnen\" target=\"_blank\" rel=\"noreferrer noopener\">Firefox<\/a><\/li><li><a href=\"https:\/\/help.opera.com\/de\/latest\/web-preferences\/#cookies\" target=\"_blank\" rel=\"noreferrer noopener\">Opera<\/a><\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p><em>Cookie categories<\/em><em><\/em><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:heading {\"level\":4} -->\n<h4>We use the following categories of cookies:<\/h4>\n<!-- \/wp:heading -->\n\n<!-- wp:paragraph -->\n<p><strong>a) Necessary cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Necessary cookies ensure functions without which our website cannot be used as intended. These essential cookies serve, for example, to ensure that logged-in users always remain logged in when accessing various sub-pages. They are so-called first-party cookies, which are only set and used by us. These cookies do not require your consent. You can disable cookies in your browser at any time.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Functional cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Functional cookies allow us to extend the functionality of our site to show you additional useful information or to optimize the presentation of our site. The data collected using such cookies may vary depending on the purpose of the cookie and are listed directly with the respective consent tool used.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Statistics cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Statistics cookies can be used to collect information about the use of a website in order to improve its attractiveness, content and functionality. This concerns, for example, the length of time spent on the page, the sub-pages accessed and the functions used (click path).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Marketing cookies<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Marketing cookies can be used to display interest-based advertising to visitors of the website and to measure the effectiveness of advertising campaigns. With the help of these cookies, visitors can be recognized on other websites and personalized ads can be displayed to them there.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
 <link rel="stylesheet" id="cookie-law-info-table-css" href="/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-table.css?ver=2.0.4" media="all">
 <script src="/wp-content/plugins/gp-premium/menu-plus/functions/js/sticky.min.js?ver=2.0.3" id="generate-sticky-js"></script>
 <script src="/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7" id="regenerator-runtime-js"></script>
@@ -1998,7 +2195,7 @@ var wpcf7 = {"api":{"root":"\/wp-json\/","namespace":"contact-form-7\/v1"}};
 </script>
 <script src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2" id="contact-form-7-js"></script>
 <script id="pt-cv-content-views-script-js-extra">
-var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"538c87a8bb","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"49a3b34f88","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
 var PT_CV_PAGINATION = {"first":"«","prev":"‹","next":"›","last":"»","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
 </script>
 <script src="/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=2.4.0.2" id="pt-cv-content-views-script-js"></script>
@@ -2017,6 +2214,7 @@ var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub
 <script src="/wp-includes/js/wp-embed.min.js?ver=5.8" id="wp-embed-js"></script>
 <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
 <script id="ewd-ufaq-js-js-extra">
+var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["10.\tCookies use"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["10.\tCookies use"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["10.\tCookies use"],"display_faq":"0"};
 </script>

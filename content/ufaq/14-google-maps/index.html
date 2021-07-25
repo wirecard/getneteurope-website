@@ -619,6 +619,14 @@ div div.wpsm_tab_content ul li::before {
 	font-weight: bold;
 }
 
+.footer-widgets div.gb-inside-container ul li::before, footer div.gb-inside-container ul li::before {
+	content: '';
+}
+
+.getnet-social-footer-wrapper ul {
+	margin-bottom: 0.5em;
+}
+
 div.gn22-text-and-tabs-container ul.wpsm_nav-tabs li {
 	border-bottom: 1px solid #CEDEE7;
 }
@@ -869,13 +877,36 @@ div.anchor-links-wrapper .gb-button-wrapper::-webkit-scrollbar {
  * Footer style
  * */
 
+#footer-widgets {
+	display: none;
+}
+
+.footer-widgets div p:last-child {
+	display: none;
+}
+
 div.footer-widgets-container {
     padding: 40px 40px 40px 40px;
+}
+
+div.footer-widgets-container ul {
+	margin: 0;
+}
+
+div.footer-widgets-container .gb-grid-column {
+	width: 100%;
+}
+
+div.footer-widgets-container .gb-grid-column h5 {
+	color: #ec0000;
 }
 
 @media (min-width: 769px) {
   div.footer-widgets-container {
     padding: 40px 40px 40px 40px;
+}
+	div.footer-widgets-container .gb-grid-column {
+	width: 16%;
 }
 }
 @media (min-width: 1025px) {
@@ -1408,7 +1439,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2992-ZydytjFU6L" data-post_id="2992">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2992-zQpG64k3P1" data-post_id="2992">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1547,7 +1578,7 @@ div.ewd-ufaq-faq-body {
 		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ufaq/14-google-maps/#respond" style="display:none;">Cancel reply</a></small>
 </h3>
 <form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
-<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="c4c0853133" name="c4c0853133" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a860c93c218ab55406f5ba28120045aa" );document.getElementById("c4c0853133").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="c4c0853133" name="c4c0853133" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "af1dc5d7a9c62044de5f69d4a6ab29eb" );document.getElementById("c4c0853133").setAttribute( "id", "comment" );</script></p>
 <input name="wpml_language_code" type="hidden" value="en"><label for="author" class="screen-reader-text">Name</label><input placeholder="Name *" id="author" name="author" type="text" value="" size="30">
 <label for="email" class="screen-reader-text">Email</label><input placeholder="Email *" id="email" name="email" type="email" value="" size="30">
 <label for="url" class="screen-reader-text">Website</label><input placeholder="Website" id="url" name="url" type="url" value="" size="30">
@@ -1570,7 +1601,7 @@ div.ewd-ufaq-faq-body {
 </div>
 
 
-<div class="site-footer footer-bar-active footer-bar-align-left">
+<div class="site-footer footer-bar-active footer-bar-align-right">
 				<div id="footer-widgets" class="site footer-widgets">
 				<div class="footer-widgets-container grid-container">
 					<div class="inside-footer-widgets">
@@ -1614,7 +1645,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2992-fUGRSw3pST" data-post_id="2992">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2992-VPqLDjdGjp" data-post_id="2992">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1755,7 +1786,146 @@ div.ewd-ufaq-faq-body {
 <li id="menu-item-2220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2220"><a href="/legal-notice/">Legal notice</a></li>
 </ul></div></aside>		</div>
 						<div class="copyright-bar">
-					<div class="getnet-logo-footer-wrapper"><img src="/wp-content/uploads/PagoNxt_Getnet_logo.png" class="getnet-logo-footer"></div> &copy; 2021 Santander  				</div>
+					<div class="getnet-social-footer-wrapper"><div class="ewd-ufaq-faq-list ewd-ufaq-page-type-distinct" id="ewd-ufaq-faq-list">
+
+	<input type="hidden" name="include_category" value="" id="ewd-ufaq-include-category">
+<input type="hidden" name="exclude_category" value="" id="ewd-ufaq-exclude-category">
+<input type="hidden" name="orderby" value="date" id="ewd-ufaq-orderby">
+<input type="hidden" name="order" value="asc" id="ewd-ufaq-order">
+<input type="hidden" name="post_count" value="-1" id="ewd-ufaq-post-count">
+<input type="hidden" name="current_url" value="/ufaq/14-google-maps/" id="ewd-ufaq-current-url">
+	
+	
+	<div class="ewd-ufaq-faqs">
+
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2992-fq3AHEMlRU" data-post_id="2992">
+
+	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
+	
+	<a class="ewd-ufaq-post-margin" href="/ufaq/14-google-maps/">
+
+		<div class="ewd-ufaq-post-margin-symbol ewd-ufaq-">
+			<span>A</span>
+		</div>
+
+		<div class="ewd-ufaq-faq-title-text">
+
+			<h4>
+				14.	Google Maps			</h4>
+
+		</div>
+
+		<div class="ewd-ufaq-clear"></div>
+
+	</a>
+	
+</div>
+	
+	<div class="ewd-ufaq-faq-body ">
+
+		
+			
+		
+			<div class="ewd-ufaq-post-margin ewd-ufaq-faq-post">
+	
+<p><strong>a) Type and scope of data processing</strong></p>
+
+
+
+<p>We integrate the maps of the service Google Maps. Google Maps ist a service of Google Ireland Ltd, Google Building Gordon House, 4 Barrow St, Dublin, D04 E5W5, Irland, E-mail: support-deutschland@google.com (&#8220;Google&#8221;).</p>
+
+
+
+<p>This allows us to display interactive maps directly on our website and enables you to use the map function conveniently.</p>
+
+
+
+<p>If you use the Google Maps component integrated on our website, Google will store a cookie on your end device via your Internet browser and process the following data:</p>
+
+
+
+<ul>
+<li>The operating system         </li>
+<li>Information about the browser type and version used      </li>
+<li>Information about your Internet service provider  </li>
+<li>Your IP address      </li>
+<li>Date and time of access     </li>
+<li>Websites from which you came to our website     </li>
+<li>Websites that you visit through our website</li>
+</ul>
+
+
+
+<p>This occurs regardless of whether Google provides a user account that you are logged in to or whether there is no user account. If you&#8217;re logged in to Google, your information will be directly associated with your account. If you do not want your profile to be associated with Google, you will need to log out.</p>
+
+
+
+<p>The provider Google has its headquarters in the USA (Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Processing of personal data may therefore also take place in a third country (a country outside the European Union or the signatory states to the Agreement on the European Economic Area). Google undertakes to conclude so-called EU Standard Contractual Clauses within the meaning of Art. 46 GDPR. Based on this contractual set of rules, recipients in third countries are also obliged to comply with a data protection standard which essentially corresponds to the European standard. Please note, however, that actual compliance with the requirements resulting from the EU Standard Contractual Clauses cannot be ensured in every case (e.g., due to official access to the data in the recipient country).</p>
+
+
+
+<p><strong>b) Purpose and legal basis</strong></p>
+
+
+
+<p>Google stores your data as user profiles and uses them for the purposes of advertising, market research and/or the design of its website in line with requirements. Such evaluation is carried out in particular (even for users who are not logged in) for the purpose of providing demand-oriented advertising. The evaluation is also carried out to inform other users of the social network about your activities on our website. We use Google Maps to show you maps on our website, especially for directions.</p>
+
+
+
+<p>The legal basis is your consent according to Art. 6 par. 1 lit. a GDPR.</p>
+
+
+
+<p><strong>c) Right to objection</strong></p>
+
+
+
+<p>You have a right of objection to the formation of these user profiles. This is to be addressed to Google.          </p>
+
+
+
+<p>You can prevent the transfer of data to Google by disabling JavaScript in your browser settings. In that case, you will not be able to use Google Maps on our website.</p>
+
+
+
+<p>Learn more about the Google Maps Terms of Use:<br><a rel="noreferrer noopener" href="http://policies.google.com/terms?gl=DE&#038;hl=en" target="_blank">policies.google.com/terms?gl=DE&#038;hl=en</a></p>
+
+
+
+<p>Learn more about the Additional Terms of Service of Google Maps:<br><a rel="noreferrer noopener" href="http://www.google.com/intl/en_US/help/terms_maps.html" target="_blank">www.google.com/intl/en_US/help/terms_maps.html</a></p>
+
+
+
+<p>For more information see Google&#8217;s privacy policy: <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noreferrer noopener">https://policies.google.com/privacy?hl=en</a></p>
+
+
+
+<p>In addition, you can object at any time by changing your cookie settings.</p>
+</div>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+
+</div>
+	</div>
+
+	
+</div></div> &copy; 2021 Santander  				</div>
 			</div>
 		</footer>
 		</div>
@@ -1934,7 +2104,7 @@ document.cookie = document.cookie + ";Referrer=" + document.referrer;
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHKSW7K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"14.\tGoogle Maps","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We integrate the maps of the service Google Maps. Google Maps ist a service of Google Ireland Ltd, Google Building Gordon House, 4 Barrow St, Dublin, D04 E5W5, Irland, E-mail: support-deutschland@google.com (\"Google\").<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This allows us to display interactive maps directly on our website and enables you to use the map function conveniently.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you use the Google Maps component integrated on our website, Google will store a cookie on your end device via your Internet browser and process the following data:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>The operating system&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Information about the browser type and version used&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Information about your Internet service provider&nbsp;&nbsp;<\/li><li>Your IP address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Date and time of access&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Websites from which you came to our website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Websites that you visit through our website<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>This occurs regardless of whether Google provides a user account that you are logged in to or whether there is no user account. If you're logged in to Google, your information will be directly associated with your account. If you do not want your profile to be associated with Google, you will need to log out.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The provider Google has its headquarters in the USA (Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Processing of personal data may therefore also take place in a third country (a country outside the European Union or the signatory states to the Agreement on the European Economic Area). Google undertakes to conclude so-called EU Standard Contractual Clauses within the meaning of Art. 46 GDPR. Based on this contractual set of rules, recipients in third countries are also obliged to comply with a data protection standard which essentially corresponds to the European standard. Please note, however, that actual compliance with the requirements resulting from the EU Standard Contractual Clauses cannot be ensured in every case (e.g., due to official access to the data in the recipient country).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Google stores your data as user profiles and uses them for the purposes of advertising, market research and\/or the design of its website in line with requirements. Such evaluation is carried out in particular (even for users who are not logged in) for the purpose of providing demand-oriented advertising. The evaluation is also carried out to inform other users of the social network about your activities on our website. We use Google Maps to show you maps on our website, especially for directions.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The legal basis is your consent according to Art. 6 par. 1 lit. a GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right to objection<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right of objection to the formation of these user profiles. This is to be addressed to Google.          <\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You can prevent the transfer of data to Google by disabling JavaScript in your browser settings. In that case, you will not be able to use Google Maps on our website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the Google Maps Terms of Use:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/policies.google.com\/terms?gl=DE&amp;hl=en\" target=\"_blank\">policies.google.com\/terms?gl=DE&amp;hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the Additional Terms of Service of Google Maps:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/www.google.com\/intl\/en_US\/help\/terms_maps.html\" target=\"_blank\">www.google.com\/intl\/en_US\/help\/terms_maps.html<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information see Google's privacy policy: <a href=\"https:\/\/policies.google.com\/privacy?hl=en\" target=\"_blank\" rel=\"noreferrer noopener\">https:\/\/policies.google.com\/privacy?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can object at any time by changing your cookie settings.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"14.\tGoogle Maps","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We integrate the maps of the service Google Maps. Google Maps ist a service of Google Ireland Ltd, Google Building Gordon House, 4 Barrow St, Dublin, D04 E5W5, Irland, E-mail: support-deutschland@google.com (\"Google\").<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This allows us to display interactive maps directly on our website and enables you to use the map function conveniently.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you use the Google Maps component integrated on our website, Google will store a cookie on your end device via your Internet browser and process the following data:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>The operating system&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Information about the browser type and version used&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Information about your Internet service provider&nbsp;&nbsp;<\/li><li>Your IP address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Date and time of access&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Websites from which you came to our website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Websites that you visit through our website<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>This occurs regardless of whether Google provides a user account that you are logged in to or whether there is no user account. If you're logged in to Google, your information will be directly associated with your account. If you do not want your profile to be associated with Google, you will need to log out.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The provider Google has its headquarters in the USA (Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Processing of personal data may therefore also take place in a third country (a country outside the European Union or the signatory states to the Agreement on the European Economic Area). Google undertakes to conclude so-called EU Standard Contractual Clauses within the meaning of Art. 46 GDPR. Based on this contractual set of rules, recipients in third countries are also obliged to comply with a data protection standard which essentially corresponds to the European standard. Please note, however, that actual compliance with the requirements resulting from the EU Standard Contractual Clauses cannot be ensured in every case (e.g., due to official access to the data in the recipient country).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Google stores your data as user profiles and uses them for the purposes of advertising, market research and\/or the design of its website in line with requirements. Such evaluation is carried out in particular (even for users who are not logged in) for the purpose of providing demand-oriented advertising. The evaluation is also carried out to inform other users of the social network about your activities on our website. We use Google Maps to show you maps on our website, especially for directions.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The legal basis is your consent according to Art. 6 par. 1 lit. a GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right to objection<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right of objection to the formation of these user profiles. This is to be addressed to Google.          <\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You can prevent the transfer of data to Google by disabling JavaScript in your browser settings. In that case, you will not be able to use Google Maps on our website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the Google Maps Terms of Use:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/policies.google.com\/terms?gl=DE&amp;hl=en\" target=\"_blank\">policies.google.com\/terms?gl=DE&amp;hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the Additional Terms of Service of Google Maps:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/www.google.com\/intl\/en_US\/help\/terms_maps.html\" target=\"_blank\">www.google.com\/intl\/en_US\/help\/terms_maps.html<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information see Google's privacy policy: <a href=\"https:\/\/policies.google.com\/privacy?hl=en\" target=\"_blank\" rel=\"noreferrer noopener\">https:\/\/policies.google.com\/privacy?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can object at any time by changing your cookie settings.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
+<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"14.\tGoogle Maps","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We integrate the maps of the service Google Maps. Google Maps ist a service of Google Ireland Ltd, Google Building Gordon House, 4 Barrow St, Dublin, D04 E5W5, Irland, E-mail: support-deutschland@google.com (\"Google\").<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This allows us to display interactive maps directly on our website and enables you to use the map function conveniently.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you use the Google Maps component integrated on our website, Google will store a cookie on your end device via your Internet browser and process the following data:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>The operating system&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Information about the browser type and version used&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Information about your Internet service provider&nbsp;&nbsp;<\/li><li>Your IP address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Date and time of access&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Websites from which you came to our website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Websites that you visit through our website<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>This occurs regardless of whether Google provides a user account that you are logged in to or whether there is no user account. If you're logged in to Google, your information will be directly associated with your account. If you do not want your profile to be associated with Google, you will need to log out.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The provider Google has its headquarters in the USA (Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Processing of personal data may therefore also take place in a third country (a country outside the European Union or the signatory states to the Agreement on the European Economic Area). Google undertakes to conclude so-called EU Standard Contractual Clauses within the meaning of Art. 46 GDPR. Based on this contractual set of rules, recipients in third countries are also obliged to comply with a data protection standard which essentially corresponds to the European standard. Please note, however, that actual compliance with the requirements resulting from the EU Standard Contractual Clauses cannot be ensured in every case (e.g., due to official access to the data in the recipient country).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Google stores your data as user profiles and uses them for the purposes of advertising, market research and\/or the design of its website in line with requirements. Such evaluation is carried out in particular (even for users who are not logged in) for the purpose of providing demand-oriented advertising. The evaluation is also carried out to inform other users of the social network about your activities on our website. We use Google Maps to show you maps on our website, especially for directions.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The legal basis is your consent according to Art. 6 par. 1 lit. a GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right to objection<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right of objection to the formation of these user profiles. This is to be addressed to Google.          <\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You can prevent the transfer of data to Google by disabling JavaScript in your browser settings. In that case, you will not be able to use Google Maps on our website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the Google Maps Terms of Use:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/policies.google.com\/terms?gl=DE&amp;hl=en\" target=\"_blank\">policies.google.com\/terms?gl=DE&amp;hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the Additional Terms of Service of Google Maps:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/www.google.com\/intl\/en_US\/help\/terms_maps.html\" target=\"_blank\">www.google.com\/intl\/en_US\/help\/terms_maps.html<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information see Google's privacy policy: <a href=\"https:\/\/policies.google.com\/privacy?hl=en\" target=\"_blank\" rel=\"noreferrer noopener\">https:\/\/policies.google.com\/privacy?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can object at any time by changing your cookie settings.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"14.\tGoogle Maps","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We integrate the maps of the service Google Maps. Google Maps ist a service of Google Ireland Ltd, Google Building Gordon House, 4 Barrow St, Dublin, D04 E5W5, Irland, E-mail: support-deutschland@google.com (\"Google\").<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This allows us to display interactive maps directly on our website and enables you to use the map function conveniently.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you use the Google Maps component integrated on our website, Google will store a cookie on your end device via your Internet browser and process the following data:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>The operating system&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Information about the browser type and version used&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Information about your Internet service provider&nbsp;&nbsp;<\/li><li>Your IP address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Date and time of access&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Websites from which you came to our website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Websites that you visit through our website<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>This occurs regardless of whether Google provides a user account that you are logged in to or whether there is no user account. If you're logged in to Google, your information will be directly associated with your account. If you do not want your profile to be associated with Google, you will need to log out.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The provider Google has its headquarters in the USA (Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Processing of personal data may therefore also take place in a third country (a country outside the European Union or the signatory states to the Agreement on the European Economic Area). Google undertakes to conclude so-called EU Standard Contractual Clauses within the meaning of Art. 46 GDPR. Based on this contractual set of rules, recipients in third countries are also obliged to comply with a data protection standard which essentially corresponds to the European standard. Please note, however, that actual compliance with the requirements resulting from the EU Standard Contractual Clauses cannot be ensured in every case (e.g., due to official access to the data in the recipient country).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Google stores your data as user profiles and uses them for the purposes of advertising, market research and\/or the design of its website in line with requirements. Such evaluation is carried out in particular (even for users who are not logged in) for the purpose of providing demand-oriented advertising. The evaluation is also carried out to inform other users of the social network about your activities on our website. We use Google Maps to show you maps on our website, especially for directions.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The legal basis is your consent according to Art. 6 par. 1 lit. a GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right to objection<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right of objection to the formation of these user profiles. This is to be addressed to Google.          <\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You can prevent the transfer of data to Google by disabling JavaScript in your browser settings. In that case, you will not be able to use Google Maps on our website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the Google Maps Terms of Use:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/policies.google.com\/terms?gl=DE&amp;hl=en\" target=\"_blank\">policies.google.com\/terms?gl=DE&amp;hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the Additional Terms of Service of Google Maps:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/www.google.com\/intl\/en_US\/help\/terms_maps.html\" target=\"_blank\">www.google.com\/intl\/en_US\/help\/terms_maps.html<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information see Google's privacy policy: <a href=\"https:\/\/policies.google.com\/privacy?hl=en\" target=\"_blank\" rel=\"noreferrer noopener\">https:\/\/policies.google.com\/privacy?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can object at any time by changing your cookie settings.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"14.\tGoogle Maps","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We integrate the maps of the service Google Maps. Google Maps ist a service of Google Ireland Ltd, Google Building Gordon House, 4 Barrow St, Dublin, D04 E5W5, Irland, E-mail: support-deutschland@google.com (\"Google\").<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>This allows us to display interactive maps directly on our website and enables you to use the map function conveniently.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If you use the Google Maps component integrated on our website, Google will store a cookie on your end device via your Internet browser and process the following data:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>The operating system&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Information about the browser type and version used&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Information about your Internet service provider&nbsp;&nbsp;<\/li><li>Your IP address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Date and time of access&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Websites from which you came to our website&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<\/li><li>Websites that you visit through our website<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>This occurs regardless of whether Google provides a user account that you are logged in to or whether there is no user account. If you're logged in to Google, your information will be directly associated with your account. If you do not want your profile to be associated with Google, you will need to log out.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The provider Google has its headquarters in the USA (Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Processing of personal data may therefore also take place in a third country (a country outside the European Union or the signatory states to the Agreement on the European Economic Area). Google undertakes to conclude so-called EU Standard Contractual Clauses within the meaning of Art. 46 GDPR. Based on this contractual set of rules, recipients in third countries are also obliged to comply with a data protection standard which essentially corresponds to the European standard. Please note, however, that actual compliance with the requirements resulting from the EU Standard Contractual Clauses cannot be ensured in every case (e.g., due to official access to the data in the recipient country).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Google stores your data as user profiles and uses them for the purposes of advertising, market research and\/or the design of its website in line with requirements. Such evaluation is carried out in particular (even for users who are not logged in) for the purpose of providing demand-oriented advertising. The evaluation is also carried out to inform other users of the social network about your activities on our website. We use Google Maps to show you maps on our website, especially for directions.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The legal basis is your consent according to Art. 6 par. 1 lit. a GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right to objection<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right of objection to the formation of these user profiles. This is to be addressed to Google.          <\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You can prevent the transfer of data to Google by disabling JavaScript in your browser settings. In that case, you will not be able to use Google Maps on our website.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the Google Maps Terms of Use:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/policies.google.com\/terms?gl=DE&amp;hl=en\" target=\"_blank\">policies.google.com\/terms?gl=DE&amp;hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the Additional Terms of Service of Google Maps:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/www.google.com\/intl\/en_US\/help\/terms_maps.html\" target=\"_blank\">www.google.com\/intl\/en_US\/help\/terms_maps.html<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For more information see Google's privacy policy: <a href=\"https:\/\/policies.google.com\/privacy?hl=en\" target=\"_blank\" rel=\"noreferrer noopener\">https:\/\/policies.google.com\/privacy?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can object at any time by changing your cookie settings.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
 <link rel="stylesheet" id="cookie-law-info-table-css" href="/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-table.css?ver=2.0.4" media="all">
 <script src="/wp-content/plugins/gp-premium/menu-plus/functions/js/sticky.min.js?ver=2.0.3" id="generate-sticky-js"></script>
 <script src="/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7" id="regenerator-runtime-js"></script>
@@ -1944,7 +2114,7 @@ var wpcf7 = {"api":{"root":"\/wp-json\/","namespace":"contact-form-7\/v1"}};
 </script>
 <script src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2" id="contact-form-7-js"></script>
 <script id="pt-cv-content-views-script-js-extra">
-var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"538c87a8bb","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"49a3b34f88","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
 var PT_CV_PAGINATION = {"first":"«","prev":"‹","next":"›","last":"»","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
 </script>
 <script src="/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=2.4.0.2" id="pt-cv-content-views-script-js"></script>
@@ -1963,6 +2133,7 @@ var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub
 <script src="/wp-includes/js/wp-embed.min.js?ver=5.8" id="wp-embed-js"></script>
 <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
 <script id="ewd-ufaq-js-js-extra">
+var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["14.\tGoogle Maps"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["14.\tGoogle Maps"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["14.\tGoogle Maps"],"display_faq":"0"};
 </script>

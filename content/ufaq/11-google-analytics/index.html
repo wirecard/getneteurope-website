@@ -619,6 +619,14 @@ div div.wpsm_tab_content ul li::before {
 	font-weight: bold;
 }
 
+.footer-widgets div.gb-inside-container ul li::before, footer div.gb-inside-container ul li::before {
+	content: '';
+}
+
+.getnet-social-footer-wrapper ul {
+	margin-bottom: 0.5em;
+}
+
 div.gn22-text-and-tabs-container ul.wpsm_nav-tabs li {
 	border-bottom: 1px solid #CEDEE7;
 }
@@ -869,13 +877,36 @@ div.anchor-links-wrapper .gb-button-wrapper::-webkit-scrollbar {
  * Footer style
  * */
 
+#footer-widgets {
+	display: none;
+}
+
+.footer-widgets div p:last-child {
+	display: none;
+}
+
 div.footer-widgets-container {
     padding: 40px 40px 40px 40px;
+}
+
+div.footer-widgets-container ul {
+	margin: 0;
+}
+
+div.footer-widgets-container .gb-grid-column {
+	width: 100%;
+}
+
+div.footer-widgets-container .gb-grid-column h5 {
+	color: #ec0000;
 }
 
 @media (min-width: 769px) {
   div.footer-widgets-container {
     padding: 40px 40px 40px 40px;
+}
+	div.footer-widgets-container .gb-grid-column {
+	width: 16%;
 }
 }
 @media (min-width: 1025px) {
@@ -1408,7 +1439,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2988-zuPj1JyXqB" data-post_id="2988">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2988-FxLqpGUssu" data-post_id="2988">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1534,7 +1565,7 @@ div.ewd-ufaq-faq-body {
 		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ufaq/11-google-analytics/#respond" style="display:none;">Cancel reply</a></small>
 </h3>
 <form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
-<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="d2902367eb" name="d2902367eb" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a4722b1ad949102c2218d025c0b98070" );document.getElementById("d2902367eb").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="d2902367eb" name="d2902367eb" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a0672d36faa1b6392192de056d48714a" );document.getElementById("d2902367eb").setAttribute( "id", "comment" );</script></p>
 <input name="wpml_language_code" type="hidden" value="en"><label for="author" class="screen-reader-text">Name</label><input placeholder="Name *" id="author" name="author" type="text" value="" size="30">
 <label for="email" class="screen-reader-text">Email</label><input placeholder="Email *" id="email" name="email" type="email" value="" size="30">
 <label for="url" class="screen-reader-text">Website</label><input placeholder="Website" id="url" name="url" type="url" value="" size="30">
@@ -1557,7 +1588,7 @@ div.ewd-ufaq-faq-body {
 </div>
 
 
-<div class="site-footer footer-bar-active footer-bar-align-left">
+<div class="site-footer footer-bar-active footer-bar-align-right">
 				<div id="footer-widgets" class="site footer-widgets">
 				<div class="footer-widgets-container grid-container">
 					<div class="inside-footer-widgets">
@@ -1601,7 +1632,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2988-A5j886TLeK" data-post_id="2988">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2988-UCbOYdTUVU" data-post_id="2988">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1729,7 +1760,133 @@ div.ewd-ufaq-faq-body {
 <li id="menu-item-2220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2220"><a href="/legal-notice/">Legal notice</a></li>
 </ul></div></aside>		</div>
 						<div class="copyright-bar">
-					<div class="getnet-logo-footer-wrapper"><img src="/wp-content/uploads/PagoNxt_Getnet_logo.png" class="getnet-logo-footer"></div> &copy; 2021 Santander  				</div>
+					<div class="getnet-social-footer-wrapper"><div class="ewd-ufaq-faq-list ewd-ufaq-page-type-distinct" id="ewd-ufaq-faq-list">
+
+	<input type="hidden" name="include_category" value="" id="ewd-ufaq-include-category">
+<input type="hidden" name="exclude_category" value="" id="ewd-ufaq-exclude-category">
+<input type="hidden" name="orderby" value="date" id="ewd-ufaq-orderby">
+<input type="hidden" name="order" value="asc" id="ewd-ufaq-order">
+<input type="hidden" name="post_count" value="-1" id="ewd-ufaq-post-count">
+<input type="hidden" name="current_url" value="/ufaq/11-google-analytics/" id="ewd-ufaq-current-url">
+	
+	
+	<div class="ewd-ufaq-faqs">
+
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2988-DMGU7WHMoY" data-post_id="2988">
+
+	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
+	
+	<a class="ewd-ufaq-post-margin" href="/ufaq/11-google-analytics/">
+
+		<div class="ewd-ufaq-post-margin-symbol ewd-ufaq-">
+			<span>A</span>
+		</div>
+
+		<div class="ewd-ufaq-faq-title-text">
+
+			<h4>
+				11.	Google Analytics			</h4>
+
+		</div>
+
+		<div class="ewd-ufaq-clear"></div>
+
+	</a>
+	
+</div>
+	
+	<div class="ewd-ufaq-faq-body ">
+
+		
+			
+		
+			<div class="ewd-ufaq-post-margin ewd-ufaq-faq-post">
+	
+<p><strong>a) Type and scope of data processing</strong></p>
+
+
+
+<p>On this website, we use the analysis tool Google Analytics. Google Analytics is a web analytics service provided by Google Ireland Limited, Gordon House, 4 Barrow Street, Dublin D04 E5W5, Ireland, Phone: +353 1 543 1000, Fax: +353 1 686 5660 (“Google”).</p>
+
+
+
+<p>Google Analytics uses cookies, which are text files placed on your computer, to help us analyze how users interact with the website. The information generated by the cookie about your use of the website will generally be transmitted to and stored by Google on servers in the United States.</p>
+
+
+
+<p>On behalf of the website operator, Google will use this information for the purpose of systematically evaluating the user’s interaction with the website, compiling reports on website activity and providing similar statistical and analytical services relating to the website activity to us as the website operator.</p>
+
+
+
+<p>If individual pages of the website are accessed, the following data is processed:</p>
+
+
+
+<ul>
+<li>Three bytes of the IP address of the user’s system (anonymized IP address)</li>
+<li>The visited website</li>
+<li>The website from which the user was forwarded to the page (referrer)</li>
+<li>The subpages that are viewed from the visited page</li>
+<li>The time spent on the website</li>
+<li>The frequency of visits of a site</li>
+</ul>
+
+
+
+<p>We use Google Analytics with IP anonymization enabled. With IP anonymization, the IP addresses are shortened by the last octet (e.g. 192.168.79.***; so-called IP masking). It is no longer possible to trace back the abbreviated IP address to the user&#8217;s end device.</p>
+
+
+
+<p><strong>b) Purpose and legal basis</strong></p>
+
+
+
+<p>The Google Analytics service is used to analyze the usage behavior on this website. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.</p>
+
+
+
+<p><strong>c) Right of objection</strong></p>
+
+
+
+<p>You may disable the use of cookies by selecting the appropriate settings on your browser. However, please note that in this case, you may not be able to use the full functionality of this website. You can also prevent Google from collecting the data generated by the cookie and relating to your use of the website (including your IP address) and from processing this data by installing the browser plug-in available under the following link: <a rel="noreferrer noopener" href="http://tools.google.com/dlpage/gaoptout?hl=en" target="_blank">http://tools.google.com/dlpage/gaoptout?hl=en</a></p>
+
+
+
+<p>Learn more about the terms of use of Google Analytics:<br><a rel="noreferrer noopener" href="http://www.google.com/analytics/terms/gb.html" target="_blank">http://www.google.com/analytics/terms/gb.html</a></p>
+
+
+
+<p>For further information, please see Google Analytics’ data practices: <a href="https://support.google.com/analytics/answer/6004245?hl=en">https://support.</a><a rel="noreferrer noopener" href="https://support.google.com/analytics/answer/6004245?hl=en" target="_blank">google</a><a href="https://support.google.com/analytics/answer/6004245?hl=en">.com/analytics/answer/6004245?hl=en</a></p>
+
+
+
+<p>In addition, you can object at any time by changing your cookie settings.</p>
+</div>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+
+</div>
+	</div>
+
+	
+</div></div> &copy; 2021 Santander  				</div>
 			</div>
 		</footer>
 		</div>
@@ -1908,7 +2065,7 @@ document.cookie = document.cookie + ";Referrer=" + document.referrer;
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHKSW7K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"11.\tGoogle Analytics","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On this website, we use the analysis tool Google Analytics. Google Analytics is a web analytics service provided by Google Ireland Limited, Gordon House, 4 Barrow Street, Dublin D04 E5W5, Ireland, Phone: +353 1 543 1000, Fax: +353 1 686 5660 (“Google”).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Google Analytics uses cookies, which are text files placed on your computer, to help us analyze how users interact with the website. The information generated by the cookie about your use of the website will generally be transmitted to and stored by Google on servers in the United States.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On behalf of the website operator, Google will use this information for the purpose of systematically evaluating the user’s interaction with the website, compiling reports on website activity and providing similar statistical and analytical services relating to the website activity to us as the website operator.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If individual pages of the website are accessed, the following data is processed:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Three bytes of the IP address of the user’s system (anonymized IP address)<\/li><li>The visited website<\/li><li>The website from which the user was forwarded to the page (referrer)<\/li><li>The subpages that are viewed from the visited page<\/li><li>The time spent on the website<\/li><li>The frequency of visits of a site<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>We use Google Analytics with IP anonymization enabled. With IP anonymization, the IP addresses are shortened by the last octet (e.g. 192.168.79.***; so-called IP masking). It is no longer possible to trace back the abbreviated IP address to the user's end device.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The Google Analytics service is used to analyze the usage behavior on this website. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right of objection<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may disable the use of cookies by selecting the appropriate settings on your browser. However, please note that in this case, you may not be able to use the full functionality of this website. You can also prevent Google from collecting the data generated by the cookie and relating to your use of the website (including your IP address) and from processing this data by installing the browser plug-in available under the following link: <a rel=\"noreferrer noopener\" href=\"http:\/\/tools.google.com\/dlpage\/gaoptout?hl=en\" target=\"_blank\">http:\/\/tools.google.com\/dlpage\/gaoptout?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the terms of use of Google Analytics:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/www.google.com\/analytics\/terms\/gb.html\" target=\"_blank\">http:\/\/www.google.com\/analytics\/terms\/gb.html<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For further information, please see Google Analytics’ data practices: <a href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\">https:\/\/support.<\/a><a rel=\"noreferrer noopener\" href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\" target=\"_blank\">google<\/a><a href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\">.com\/analytics\/answer\/6004245?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can object at any time by changing your cookie settings.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"11.\tGoogle Analytics","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On this website, we use the analysis tool Google Analytics. Google Analytics is a web analytics service provided by Google Ireland Limited, Gordon House, 4 Barrow Street, Dublin D04 E5W5, Ireland, Phone: +353 1 543 1000, Fax: +353 1 686 5660 (“Google”).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Google Analytics uses cookies, which are text files placed on your computer, to help us analyze how users interact with the website. The information generated by the cookie about your use of the website will generally be transmitted to and stored by Google on servers in the United States.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On behalf of the website operator, Google will use this information for the purpose of systematically evaluating the user’s interaction with the website, compiling reports on website activity and providing similar statistical and analytical services relating to the website activity to us as the website operator.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If individual pages of the website are accessed, the following data is processed:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Three bytes of the IP address of the user’s system (anonymized IP address)<\/li><li>The visited website<\/li><li>The website from which the user was forwarded to the page (referrer)<\/li><li>The subpages that are viewed from the visited page<\/li><li>The time spent on the website<\/li><li>The frequency of visits of a site<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>We use Google Analytics with IP anonymization enabled. With IP anonymization, the IP addresses are shortened by the last octet (e.g. 192.168.79.***; so-called IP masking). It is no longer possible to trace back the abbreviated IP address to the user's end device.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The Google Analytics service is used to analyze the usage behavior on this website. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right of objection<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may disable the use of cookies by selecting the appropriate settings on your browser. However, please note that in this case, you may not be able to use the full functionality of this website. You can also prevent Google from collecting the data generated by the cookie and relating to your use of the website (including your IP address) and from processing this data by installing the browser plug-in available under the following link: <a rel=\"noreferrer noopener\" href=\"http:\/\/tools.google.com\/dlpage\/gaoptout?hl=en\" target=\"_blank\">http:\/\/tools.google.com\/dlpage\/gaoptout?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the terms of use of Google Analytics:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/www.google.com\/analytics\/terms\/gb.html\" target=\"_blank\">http:\/\/www.google.com\/analytics\/terms\/gb.html<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For further information, please see Google Analytics’ data practices: <a href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\">https:\/\/support.<\/a><a rel=\"noreferrer noopener\" href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\" target=\"_blank\">google<\/a><a href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\">.com\/analytics\/answer\/6004245?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can object at any time by changing your cookie settings.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
+<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"11.\tGoogle Analytics","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On this website, we use the analysis tool Google Analytics. Google Analytics is a web analytics service provided by Google Ireland Limited, Gordon House, 4 Barrow Street, Dublin D04 E5W5, Ireland, Phone: +353 1 543 1000, Fax: +353 1 686 5660 (“Google”).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Google Analytics uses cookies, which are text files placed on your computer, to help us analyze how users interact with the website. The information generated by the cookie about your use of the website will generally be transmitted to and stored by Google on servers in the United States.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On behalf of the website operator, Google will use this information for the purpose of systematically evaluating the user’s interaction with the website, compiling reports on website activity and providing similar statistical and analytical services relating to the website activity to us as the website operator.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If individual pages of the website are accessed, the following data is processed:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Three bytes of the IP address of the user’s system (anonymized IP address)<\/li><li>The visited website<\/li><li>The website from which the user was forwarded to the page (referrer)<\/li><li>The subpages that are viewed from the visited page<\/li><li>The time spent on the website<\/li><li>The frequency of visits of a site<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>We use Google Analytics with IP anonymization enabled. With IP anonymization, the IP addresses are shortened by the last octet (e.g. 192.168.79.***; so-called IP masking). It is no longer possible to trace back the abbreviated IP address to the user's end device.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The Google Analytics service is used to analyze the usage behavior on this website. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right of objection<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may disable the use of cookies by selecting the appropriate settings on your browser. However, please note that in this case, you may not be able to use the full functionality of this website. You can also prevent Google from collecting the data generated by the cookie and relating to your use of the website (including your IP address) and from processing this data by installing the browser plug-in available under the following link: <a rel=\"noreferrer noopener\" href=\"http:\/\/tools.google.com\/dlpage\/gaoptout?hl=en\" target=\"_blank\">http:\/\/tools.google.com\/dlpage\/gaoptout?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the terms of use of Google Analytics:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/www.google.com\/analytics\/terms\/gb.html\" target=\"_blank\">http:\/\/www.google.com\/analytics\/terms\/gb.html<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For further information, please see Google Analytics’ data practices: <a href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\">https:\/\/support.<\/a><a rel=\"noreferrer noopener\" href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\" target=\"_blank\">google<\/a><a href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\">.com\/analytics\/answer\/6004245?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can object at any time by changing your cookie settings.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"11.\tGoogle Analytics","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On this website, we use the analysis tool Google Analytics. Google Analytics is a web analytics service provided by Google Ireland Limited, Gordon House, 4 Barrow Street, Dublin D04 E5W5, Ireland, Phone: +353 1 543 1000, Fax: +353 1 686 5660 (“Google”).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Google Analytics uses cookies, which are text files placed on your computer, to help us analyze how users interact with the website. The information generated by the cookie about your use of the website will generally be transmitted to and stored by Google on servers in the United States.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On behalf of the website operator, Google will use this information for the purpose of systematically evaluating the user’s interaction with the website, compiling reports on website activity and providing similar statistical and analytical services relating to the website activity to us as the website operator.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If individual pages of the website are accessed, the following data is processed:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Three bytes of the IP address of the user’s system (anonymized IP address)<\/li><li>The visited website<\/li><li>The website from which the user was forwarded to the page (referrer)<\/li><li>The subpages that are viewed from the visited page<\/li><li>The time spent on the website<\/li><li>The frequency of visits of a site<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>We use Google Analytics with IP anonymization enabled. With IP anonymization, the IP addresses are shortened by the last octet (e.g. 192.168.79.***; so-called IP masking). It is no longer possible to trace back the abbreviated IP address to the user's end device.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The Google Analytics service is used to analyze the usage behavior on this website. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right of objection<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may disable the use of cookies by selecting the appropriate settings on your browser. However, please note that in this case, you may not be able to use the full functionality of this website. You can also prevent Google from collecting the data generated by the cookie and relating to your use of the website (including your IP address) and from processing this data by installing the browser plug-in available under the following link: <a rel=\"noreferrer noopener\" href=\"http:\/\/tools.google.com\/dlpage\/gaoptout?hl=en\" target=\"_blank\">http:\/\/tools.google.com\/dlpage\/gaoptout?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the terms of use of Google Analytics:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/www.google.com\/analytics\/terms\/gb.html\" target=\"_blank\">http:\/\/www.google.com\/analytics\/terms\/gb.html<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For further information, please see Google Analytics’ data practices: <a href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\">https:\/\/support.<\/a><a rel=\"noreferrer noopener\" href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\" target=\"_blank\">google<\/a><a href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\">.com\/analytics\/answer\/6004245?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can object at any time by changing your cookie settings.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"11.\tGoogle Analytics","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On this website, we use the analysis tool Google Analytics. Google Analytics is a web analytics service provided by Google Ireland Limited, Gordon House, 4 Barrow Street, Dublin D04 E5W5, Ireland, Phone: +353 1 543 1000, Fax: +353 1 686 5660 (“Google”).<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Google Analytics uses cookies, which are text files placed on your computer, to help us analyze how users interact with the website. The information generated by the cookie about your use of the website will generally be transmitted to and stored by Google on servers in the United States.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>On behalf of the website operator, Google will use this information for the purpose of systematically evaluating the user’s interaction with the website, compiling reports on website activity and providing similar statistical and analytical services relating to the website activity to us as the website operator.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>If individual pages of the website are accessed, the following data is processed:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:list -->\n<ul><li>Three bytes of the IP address of the user’s system (anonymized IP address)<\/li><li>The visited website<\/li><li>The website from which the user was forwarded to the page (referrer)<\/li><li>The subpages that are viewed from the visited page<\/li><li>The time spent on the website<\/li><li>The frequency of visits of a site<\/li><\/ul>\n<!-- \/wp:list -->\n\n<!-- wp:paragraph -->\n<p>We use Google Analytics with IP anonymization enabled. With IP anonymization, the IP addresses are shortened by the last octet (e.g. 192.168.79.***; so-called IP masking). It is no longer possible to trace back the abbreviated IP address to the user's end device.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The Google Analytics service is used to analyze the usage behavior on this website. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Right of objection<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may disable the use of cookies by selecting the appropriate settings on your browser. However, please note that in this case, you may not be able to use the full functionality of this website. You can also prevent Google from collecting the data generated by the cookie and relating to your use of the website (including your IP address) and from processing this data by installing the browser plug-in available under the following link: <a rel=\"noreferrer noopener\" href=\"http:\/\/tools.google.com\/dlpage\/gaoptout?hl=en\" target=\"_blank\">http:\/\/tools.google.com\/dlpage\/gaoptout?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Learn more about the terms of use of Google Analytics:<br/><a rel=\"noreferrer noopener\" href=\"http:\/\/www.google.com\/analytics\/terms\/gb.html\" target=\"_blank\">http:\/\/www.google.com\/analytics\/terms\/gb.html<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>For further information, please see Google Analytics’ data practices: <a href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\">https:\/\/support.<\/a><a rel=\"noreferrer noopener\" href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\" target=\"_blank\">google<\/a><a href=\"https:\/\/support.google.com\/analytics\/answer\/6004245?hl=en\">.com\/analytics\/answer\/6004245?hl=en<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can object at any time by changing your cookie settings.<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
 <link rel="stylesheet" id="cookie-law-info-table-css" href="/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-table.css?ver=2.0.4" media="all">
 <script src="/wp-content/plugins/gp-premium/menu-plus/functions/js/sticky.min.js?ver=2.0.3" id="generate-sticky-js"></script>
 <script src="/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7" id="regenerator-runtime-js"></script>
@@ -1918,7 +2075,7 @@ var wpcf7 = {"api":{"root":"\/wp-json\/","namespace":"contact-form-7\/v1"}};
 </script>
 <script src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2" id="contact-form-7-js"></script>
 <script id="pt-cv-content-views-script-js-extra">
-var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"538c87a8bb","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"49a3b34f88","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
 var PT_CV_PAGINATION = {"first":"«","prev":"‹","next":"›","last":"»","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
 </script>
 <script src="/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=2.4.0.2" id="pt-cv-content-views-script-js"></script>
@@ -1937,6 +2094,7 @@ var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub
 <script src="/wp-includes/js/wp-embed.min.js?ver=5.8" id="wp-embed-js"></script>
 <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
 <script id="ewd-ufaq-js-js-extra">
+var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["11.\tGoogle Analytics"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["11.\tGoogle Analytics"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["11.\tGoogle Analytics"],"display_faq":"0"};
 </script>
