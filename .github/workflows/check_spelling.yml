@@ -19,5 +19,5 @@ jobs:
         with:
           path: ~/go/pkg/mod
           key: ${{ runner.os }}-go-pkg-mod
-      - run: go install github.com/client9/misspell/cmd/misspell
+      - run: go install github.com/client9/misspell/cmd/misspell@v0.3.4
       - run: misspell -error -source text content/**/*.html
