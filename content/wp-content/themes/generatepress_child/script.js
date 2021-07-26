@@ -15,18 +15,36 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
 		});
 	}
 	
-	var homeform = !!document.getElementById('mshome00N3O000002DEkw');
-	var omnichannelform = !!document.getElementById('msomnichannel00N3O000002DEkw');
-	var travelform = !!document.getElementById('mstravel00N3O000002DEkw');
+	var homeform = !!document.getElementById('mshomecountry');
+	var omnichannelform = !!document.getElementById('msomnichannelcountry');
+	var travelform = !!document.getElementById('mstravelcountry');
 	
 	if(homeform) {
-		let mySelectHome = new vanillaSelectBox("#mshome00N3O000002DEkw",{search: true});
+		let mySelectHome = new vanillaSelectBox("#mshomecountry",{search: true, placeHolder: "-Please select-", translations: { "all": "All european countries", "items": "european countries"}});
 	}
 	if(omnichannelform) {
-		let mySelectOmnichannel = new vanillaSelectBox("#msomnichannel00N3O000002DEkw",{search: true});
+		let mySelectOmnichannel = new vanillaSelectBox("#msomnichannelcountry",{search: true, placeHolder: "-Please select-", translations: { "all": "All european countries", "items": "european countries"}});
 	}
 	if(travelform) {
-		let mySelectTravel = new vanillaSelectBox("#mstravel00N3O000002DEkw",{search: true});
+		let mySelectTravel = new vanillaSelectBox("#mstravelcountry",{search: true, placeHolder: "-Please select-", translations: { "all": "All european countries", "items": "european countries"}});
+	}
+	
+	var countrySelectElements = document.getElementsByClassName("vsb-main");
+	var myFunction = function(event) {
+		var attribute = this.getAttribute("data-myattribute");
+		console.log('myFunction', event);
+		if(event && event.currentTarget) {
+			var searchField = event.currentTarget.getElementsByTagName("INPUT")[0];
+			if(searchField) {
+				searchField.focus();
+			}
+			console.log('searchField', searchField);
+		}
+	};
+	
+		console.log('countrySelectElements', countrySelectElements);
+	for (var i = 0; i < countrySelectElements.length; i++) {
+		countrySelectElements[i].addEventListener('click', myFunction, false);
 	}
 	
 
