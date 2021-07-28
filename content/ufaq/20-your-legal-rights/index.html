@@ -619,6 +619,14 @@ div div.wpsm_tab_content ul li::before {
 	font-weight: bold;
 }
 
+.footer-widgets div.gb-inside-container ul li::before, footer div.gb-inside-container ul li::before {
+	content: '';
+}
+
+.getnet-social-footer-wrapper ul {
+	margin-bottom: 0.5em;
+}
+
 div.gn22-text-and-tabs-container ul.wpsm_nav-tabs li {
 	border-bottom: 1px solid #CEDEE7;
 }
@@ -869,13 +877,36 @@ div.anchor-links-wrapper .gb-button-wrapper::-webkit-scrollbar {
  * Footer style
  * */
 
+#footer-widgets {
+	display: none;
+}
+
+.footer-widgets > div > p:last-child {
+	display: none;
+}
+
 div.footer-widgets-container {
     padding: 40px 40px 40px 40px;
+}
+
+div.footer-widgets-container ul {
+	margin: 0;
+}
+
+div.footer-widgets-container .gb-grid-column {
+	width: 100%;
+}
+
+div.footer-widgets-container .gb-grid-column h5 {
+	color: #ec0000;
 }
 
 @media (min-width: 769px) {
   div.footer-widgets-container {
     padding: 40px 40px 40px 40px;
+}
+	div.footer-widgets-container .gb-grid-column {
+	width: 16%;
 }
 }
 @media (min-width: 1025px) {
@@ -1227,7 +1258,7 @@ div.ewd-ufaq-faq-body {
 		Log in
 	</a>
 	<a class="gn-button gn-cta__button" href="/contact-sales-team/">
-		Contact Sales
+		Contact us
 	</a>
 </div>
 </div>		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" data-nav="site-navigation">
@@ -1308,7 +1339,7 @@ div.ewd-ufaq-faq-body {
 		Log in
 	</a>
 	<a class="gn-button gn-cta__button" href="/contact-sales-team/">
-		Contact Sales
+		Contact us
 	</a>
 </div>
 </div>			</div>
@@ -1377,7 +1408,7 @@ div.ewd-ufaq-faq-body {
 		Log in
 	</a>
 	<a class="gn-button gn-cta__button" href="/contact-sales-team/">
-		Contact Sales
+		Contact us
 	</a>
 </div>
 </div>			</div>
@@ -1408,7 +1439,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-3000-z7Vz1s1lVO" data-post_id="3000">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-3000-3xKApCkCri" data-post_id="3000">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1571,7 +1602,7 @@ div.ewd-ufaq-faq-body {
 		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ufaq/20-your-legal-rights/#respond" style="display:none;">Cancel reply</a></small>
 </h3>
 <form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
-<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="cf63bdbbf9" name="cf63bdbbf9" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a18c861ab4040492f44d740364ae9ce3" );document.getElementById("cf63bdbbf9").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="cf63bdbbf9" name="cf63bdbbf9" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a4e70d8ec8e842c098778b753ca3a77e" );document.getElementById("cf63bdbbf9").setAttribute( "id", "comment" );</script></p>
 <input name="wpml_language_code" type="hidden" value="en"><label for="author" class="screen-reader-text">Name</label><input placeholder="Name *" id="author" name="author" type="text" value="" size="30">
 <label for="email" class="screen-reader-text">Email</label><input placeholder="Email *" id="email" name="email" type="email" value="" size="30">
 <label for="url" class="screen-reader-text">Website</label><input placeholder="Website" id="url" name="url" type="url" value="" size="30">
@@ -1594,7 +1625,7 @@ div.ewd-ufaq-faq-body {
 </div>
 
 
-<div class="site-footer footer-bar-active footer-bar-align-left">
+<div class="site-footer footer-bar-active footer-bar-align-right">
 				<div id="footer-widgets" class="site footer-widgets">
 				<div class="footer-widgets-container grid-container">
 					<div class="inside-footer-widgets">
@@ -1617,7 +1648,7 @@ div.ewd-ufaq-faq-body {
 		<div class="footer-widget-3">
 		<aside id="nav_menu-6" class="widget inner-padding widget_nav_menu"><div class="menu-footer-widget-3-container"><ul id="menu-footer-widget-3" class="menu">
 <li id="menu-item-2241" class="footer-widget-headline menu-item menu-item-type-custom menu-item-object-custom menu-item-2241"><a>Developers</a></li>
-<li id="menu-item-3500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3500"><a target="_blank" rel="noopener" href="https://docs.getneteurope.com/">Documentation</a></li>
+<li id="menu-item-3500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3500"><a target="_blank" rel="noopener" href="https://docs.getneteurope.com/">Docs</a></li>
 </ul></div></aside>	</div>
 		<div class="footer-widget-4">
 		<aside id="nav_menu-7" class="widget inner-padding widget_nav_menu"><div class="menu-footer-widget-4-container"><ul id="menu-footer-widget-4" class="menu">
@@ -1638,7 +1669,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-3000-x5MAcDrdZK" data-post_id="3000">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-3000-0JpzI1Rb1c" data-post_id="3000">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1799,11 +1830,174 @@ div.ewd-ufaq-faq-body {
 			<aside id="nav_menu-3" class="widget inner-padding widget_nav_menu"><h2 class="widget-title">Footer Menu</h2>
 <div class="menu-getnet-footer-menu-container"><ul id="menu-getnet-footer-menu" class="menu">
 <li id="menu-item-2325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2325"><a href="/privacy-policy-2/">Privacy policy</a></li>
-<li id="menu-item-2373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2373"><a href="/cookies/">Cookies</a></li>
 <li id="menu-item-2220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2220"><a href="/legal-notice/">Legal notice</a></li>
+<li id="menu-item-2373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2373"><a href="/cookies/">Cookie Policy</a></li>
 </ul></div></aside>		</div>
 						<div class="copyright-bar">
-					<div class="getnet-logo-footer-wrapper"><img src="/wp-content/uploads/PagoNxt_Getnet_logo.png" class="getnet-logo-footer"></div> &copy; 2021 Santander  				</div>
+					<div class="getnet-social-footer-wrapper"><div class="ewd-ufaq-faq-list ewd-ufaq-page-type-distinct" id="ewd-ufaq-faq-list">
+
+	<input type="hidden" name="include_category" value="" id="ewd-ufaq-include-category">
+<input type="hidden" name="exclude_category" value="" id="ewd-ufaq-exclude-category">
+<input type="hidden" name="orderby" value="date" id="ewd-ufaq-orderby">
+<input type="hidden" name="order" value="asc" id="ewd-ufaq-order">
+<input type="hidden" name="post_count" value="-1" id="ewd-ufaq-post-count">
+<input type="hidden" name="current_url" value="/ufaq/20-your-legal-rights/" id="ewd-ufaq-current-url">
+	
+	
+	<div class="ewd-ufaq-faqs">
+
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-3000-e4UA5b1Ou4" data-post_id="3000">
+
+	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
+	
+	<a class="ewd-ufaq-post-margin" href="/ufaq/20-your-legal-rights/">
+
+		<div class="ewd-ufaq-post-margin-symbol ewd-ufaq-">
+			<span>A</span>
+		</div>
+
+		<div class="ewd-ufaq-faq-title-text">
+
+			<h4>
+				20. Your legal rights			</h4>
+
+		</div>
+
+		<div class="ewd-ufaq-clear"></div>
+
+	</a>
+	
+</div>
+	
+	<div class="ewd-ufaq-faq-body ">
+
+		
+			
+		
+			<div class="ewd-ufaq-post-margin ewd-ufaq-faq-post">
+	
+<p>Below you can find your legal rights in relation to your personal data. Details can be found in Articles 7, 15-22 and 77 of the GDPR. You can also contact us as the controller (No. 2) or our data protection officer (No. 3) in this regard.</p>
+
+
+
+<p><strong>a) <strong>Right to revoke your data protection consent pursuant to Art. 7 para. 3 s. 1 GDPR</strong></strong></p>
+
+
+
+<p>You may revoke your consent to the processing of your personal data at any time with effect for the future. However, the lawfulness of the processing carried out until the revocation is not affected by this.</p>
+
+
+
+<p><strong>b)</strong> <strong>Right to information according to Art. 15 GDPR</strong></p>
+
+
+
+<p>You have the right to request confirmation as to whether we are processing personal data concerning you. If this is the case, you have the right to obtain information about this personal data as well as further information, e.g. the purposes of processing, the categories of personal data processed, the recipients and the planned duration of storage or the criteria for determining the duration.</p>
+
+
+
+<p><strong>c)</strong> <strong>Right to rectification and completion according to Art. 16 GDPR</strong></p>
+
+
+
+<p>You have the right to request the correction of inaccurate data without undue delay. Taking into account the purposes of the processing, you have the right to request the completion of incomplete data.</p>
+
+
+
+<p><strong>d) Right to erasure (&#8220;right to be forgotten&#8221;) according to Art. 17 GDPR</strong></p>
+
+
+
+<p>You have a right to erasure insofar as the processing is no longer necessary. This is the case, for example, if your data is no longer required for the original purposes, you have revoked your declaration of consent under data protection law or the data was processed unlawfully.</p>
+
+
+
+<p><strong>e) Right to restriction of processing according to Art. 18 GDPR</strong></p>
+
+
+
+<p>You have a right to restrict processing, e.g. if you believe that the personal data is incorrect.</p>
+
+
+
+<p><strong>f) Right to data portability according to Art. 20 GDPR</strong></p>
+
+
+
+<p>You have the right to receive the personal data concerning you that you have provided to us in a structured, common and machine-readable format.</p>
+
+
+
+<p><strong>g) Right of objection according to Art. 21 GDPR</strong></p>
+
+
+
+<p>You have the right to object at any time, on grounds relating to your particular situation, to the processing of certain personal data concerning you.</p>
+
+
+
+<p>In the event of direct marketing, you as the data subject have the right to object at any time to processing of personal data concerning you for the purposes of such marketing; this also applies to profiling insofar as it is related to such direct marketing.</p>
+
+
+
+<p><strong>h) Automated decision in individual cases including profiling according to Art. 22 GDPR</strong></p>
+
+
+
+<p>You have the right not to be subject to a decision based solely on automated processing &#8211; including profiling &#8211; except in the exceptional circumstances mentioned in Article 22 of the GDPR.</p>
+
+
+
+<p>Decision-making based exclusively on automated processing &#8211; including profiling &#8211; does not take place.</p>
+
+
+
+<p><strong>i) Complaint to a data protection supervisory authority pursuant to Art. 77 GDPR</strong></p>
+
+
+
+<p>In addition, you can lodge a complaint with a data protection supervisory authority at any time, for example if you believe that the data processing does not comply with data protection regulations.</p>
+
+
+
+<p>Competent supervisory authority:</p>
+
+
+
+<p>Bavarian State Office for Data Protection Supervision<br>Promenade 18<br>91522 Ansbach, Germany</p>
+
+
+
+<p>Phone: +49 (0) 981 180093-0<br>Fax: +49 (0) 981 180093-800 <br>E-mail: <a href="mailto:poststelle@lda.bayern.de">poststelle@lda.bayern.de</a></p>
+
+
+
+<p></p>
+</div>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+
+</div>
+	</div>
+
+	
+</div></div> &copy; 2021 Santander  				</div>
 			</div>
 		</footer>
 		</div>
@@ -1982,7 +2176,7 @@ document.cookie = document.cookie + ";Referrer=" + document.referrer;
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHKSW7K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"20. Your legal rights","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p>Below you can find your legal rights in relation to your personal data. Details can be found in Articles 7, 15-22 and 77 of the GDPR. You can also contact us as the controller (No. 2) or our data protection officer (No. 3) in this regard.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>a) <strong>Right to revoke your data protection consent pursuant to Art. 7 para. 3 s. 1 GDPR<\/strong><\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may revoke your consent to the processing of your personal data at any time with effect for the future. However, the lawfulness of the processing carried out until the revocation is not affected by this.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b)<\/strong> <strong>Right to information according to Art. 15 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to request confirmation as to whether we are processing personal data concerning you. If this is the case, you have the right to obtain information about this personal data as well as further information, e.g. the purposes of processing, the categories of personal data processed, the recipients and the planned duration of storage or the criteria for determining the duration.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c)<\/strong> <strong>Right to rectification and completion according to Art. 16 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to request the correction of inaccurate data without undue delay. Taking into account the purposes of the processing, you have the right to request the completion of incomplete data.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Right to erasure (\"right to be forgotten\") according to Art. 17 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right to erasure insofar as the processing is no longer necessary. This is the case, for example, if your data is no longer required for the original purposes, you have revoked your declaration of consent under data protection law or the data was processed unlawfully.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>e) Right to restriction of processing according to Art. 18 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right to restrict processing, e.g. if you believe that the personal data is incorrect.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>f) Right to data portability according to Art. 20 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to receive the personal data concerning you that you have provided to us in a structured, common and machine-readable format.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>g) Right of objection according to Art. 21 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to object at any time, on grounds relating to your particular situation, to the processing of certain personal data concerning you.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In the event of direct marketing, you as the data subject have the right to object at any time to processing of personal data concerning you for the purposes of such marketing; this also applies to profiling insofar as it is related to such direct marketing.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>h) Automated decision in individual cases including profiling according to Art. 22 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right not to be subject to a decision based solely on automated processing - including profiling - except in the exceptional circumstances mentioned in Article 22 of the GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Decision-making based exclusively on automated processing - including profiling - does not take place.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>i) Complaint to a data protection supervisory authority pursuant to Art. 77 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can lodge a complaint with a data protection supervisory authority at any time, for example if you believe that the data processing does not comply with data protection regulations.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Competent supervisory authority:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Bavarian State Office for Data Protection Supervision<br/>Promenade 18<br/>91522 Ansbach, Germany<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Phone: +49 (0) 981 180093-0<br/>Fax: +49 (0) 981 180093-800 <br/>E-mail: <a href=\"mailto:poststelle@lda.bayern.de\">poststelle@lda.bayern.de<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"20. Your legal rights","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p>Below you can find your legal rights in relation to your personal data. Details can be found in Articles 7, 15-22 and 77 of the GDPR. You can also contact us as the controller (No. 2) or our data protection officer (No. 3) in this regard.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>a) <strong>Right to revoke your data protection consent pursuant to Art. 7 para. 3 s. 1 GDPR<\/strong><\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may revoke your consent to the processing of your personal data at any time with effect for the future. However, the lawfulness of the processing carried out until the revocation is not affected by this.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b)<\/strong> <strong>Right to information according to Art. 15 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to request confirmation as to whether we are processing personal data concerning you. If this is the case, you have the right to obtain information about this personal data as well as further information, e.g. the purposes of processing, the categories of personal data processed, the recipients and the planned duration of storage or the criteria for determining the duration.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c)<\/strong> <strong>Right to rectification and completion according to Art. 16 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to request the correction of inaccurate data without undue delay. Taking into account the purposes of the processing, you have the right to request the completion of incomplete data.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Right to erasure (\"right to be forgotten\") according to Art. 17 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right to erasure insofar as the processing is no longer necessary. This is the case, for example, if your data is no longer required for the original purposes, you have revoked your declaration of consent under data protection law or the data was processed unlawfully.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>e) Right to restriction of processing according to Art. 18 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right to restrict processing, e.g. if you believe that the personal data is incorrect.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>f) Right to data portability according to Art. 20 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to receive the personal data concerning you that you have provided to us in a structured, common and machine-readable format.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>g) Right of objection according to Art. 21 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to object at any time, on grounds relating to your particular situation, to the processing of certain personal data concerning you.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In the event of direct marketing, you as the data subject have the right to object at any time to processing of personal data concerning you for the purposes of such marketing; this also applies to profiling insofar as it is related to such direct marketing.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>h) Automated decision in individual cases including profiling according to Art. 22 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right not to be subject to a decision based solely on automated processing - including profiling - except in the exceptional circumstances mentioned in Article 22 of the GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Decision-making based exclusively on automated processing - including profiling - does not take place.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>i) Complaint to a data protection supervisory authority pursuant to Art. 77 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can lodge a complaint with a data protection supervisory authority at any time, for example if you believe that the data processing does not comply with data protection regulations.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Competent supervisory authority:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Bavarian State Office for Data Protection Supervision<br/>Promenade 18<br/>91522 Ansbach, Germany<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Phone: +49 (0) 981 180093-0<br/>Fax: +49 (0) 981 180093-800 <br/>E-mail: <a href=\"mailto:poststelle@lda.bayern.de\">poststelle@lda.bayern.de<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
+<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"20. Your legal rights","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p>Below you can find your legal rights in relation to your personal data. Details can be found in Articles 7, 15-22 and 77 of the GDPR. You can also contact us as the controller (No. 2) or our data protection officer (No. 3) in this regard.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>a) <strong>Right to revoke your data protection consent pursuant to Art. 7 para. 3 s. 1 GDPR<\/strong><\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may revoke your consent to the processing of your personal data at any time with effect for the future. However, the lawfulness of the processing carried out until the revocation is not affected by this.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b)<\/strong> <strong>Right to information according to Art. 15 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to request confirmation as to whether we are processing personal data concerning you. If this is the case, you have the right to obtain information about this personal data as well as further information, e.g. the purposes of processing, the categories of personal data processed, the recipients and the planned duration of storage or the criteria for determining the duration.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c)<\/strong> <strong>Right to rectification and completion according to Art. 16 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to request the correction of inaccurate data without undue delay. Taking into account the purposes of the processing, you have the right to request the completion of incomplete data.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Right to erasure (\"right to be forgotten\") according to Art. 17 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right to erasure insofar as the processing is no longer necessary. This is the case, for example, if your data is no longer required for the original purposes, you have revoked your declaration of consent under data protection law or the data was processed unlawfully.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>e) Right to restriction of processing according to Art. 18 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right to restrict processing, e.g. if you believe that the personal data is incorrect.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>f) Right to data portability according to Art. 20 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to receive the personal data concerning you that you have provided to us in a structured, common and machine-readable format.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>g) Right of objection according to Art. 21 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to object at any time, on grounds relating to your particular situation, to the processing of certain personal data concerning you.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In the event of direct marketing, you as the data subject have the right to object at any time to processing of personal data concerning you for the purposes of such marketing; this also applies to profiling insofar as it is related to such direct marketing.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>h) Automated decision in individual cases including profiling according to Art. 22 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right not to be subject to a decision based solely on automated processing - including profiling - except in the exceptional circumstances mentioned in Article 22 of the GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Decision-making based exclusively on automated processing - including profiling - does not take place.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>i) Complaint to a data protection supervisory authority pursuant to Art. 77 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can lodge a complaint with a data protection supervisory authority at any time, for example if you believe that the data processing does not comply with data protection regulations.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Competent supervisory authority:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Bavarian State Office for Data Protection Supervision<br/>Promenade 18<br/>91522 Ansbach, Germany<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Phone: +49 (0) 981 180093-0<br/>Fax: +49 (0) 981 180093-800 <br/>E-mail: <a href=\"mailto:poststelle@lda.bayern.de\">poststelle@lda.bayern.de<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"20. Your legal rights","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p>Below you can find your legal rights in relation to your personal data. Details can be found in Articles 7, 15-22 and 77 of the GDPR. You can also contact us as the controller (No. 2) or our data protection officer (No. 3) in this regard.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>a) <strong>Right to revoke your data protection consent pursuant to Art. 7 para. 3 s. 1 GDPR<\/strong><\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may revoke your consent to the processing of your personal data at any time with effect for the future. However, the lawfulness of the processing carried out until the revocation is not affected by this.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b)<\/strong> <strong>Right to information according to Art. 15 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to request confirmation as to whether we are processing personal data concerning you. If this is the case, you have the right to obtain information about this personal data as well as further information, e.g. the purposes of processing, the categories of personal data processed, the recipients and the planned duration of storage or the criteria for determining the duration.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c)<\/strong> <strong>Right to rectification and completion according to Art. 16 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to request the correction of inaccurate data without undue delay. Taking into account the purposes of the processing, you have the right to request the completion of incomplete data.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Right to erasure (\"right to be forgotten\") according to Art. 17 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right to erasure insofar as the processing is no longer necessary. This is the case, for example, if your data is no longer required for the original purposes, you have revoked your declaration of consent under data protection law or the data was processed unlawfully.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>e) Right to restriction of processing according to Art. 18 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right to restrict processing, e.g. if you believe that the personal data is incorrect.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>f) Right to data portability according to Art. 20 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to receive the personal data concerning you that you have provided to us in a structured, common and machine-readable format.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>g) Right of objection according to Art. 21 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to object at any time, on grounds relating to your particular situation, to the processing of certain personal data concerning you.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In the event of direct marketing, you as the data subject have the right to object at any time to processing of personal data concerning you for the purposes of such marketing; this also applies to profiling insofar as it is related to such direct marketing.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>h) Automated decision in individual cases including profiling according to Art. 22 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right not to be subject to a decision based solely on automated processing - including profiling - except in the exceptional circumstances mentioned in Article 22 of the GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Decision-making based exclusively on automated processing - including profiling - does not take place.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>i) Complaint to a data protection supervisory authority pursuant to Art. 77 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can lodge a complaint with a data protection supervisory authority at any time, for example if you believe that the data processing does not comply with data protection regulations.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Competent supervisory authority:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Bavarian State Office for Data Protection Supervision<br/>Promenade 18<br/>91522 Ansbach, Germany<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Phone: +49 (0) 981 180093-0<br/>Fax: +49 (0) 981 180093-800 <br/>E-mail: <a href=\"mailto:poststelle@lda.bayern.de\">poststelle@lda.bayern.de<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"20. Your legal rights","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p>Below you can find your legal rights in relation to your personal data. Details can be found in Articles 7, 15-22 and 77 of the GDPR. You can also contact us as the controller (No. 2) or our data protection officer (No. 3) in this regard.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>a) <strong>Right to revoke your data protection consent pursuant to Art. 7 para. 3 s. 1 GDPR<\/strong><\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You may revoke your consent to the processing of your personal data at any time with effect for the future. However, the lawfulness of the processing carried out until the revocation is not affected by this.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b)<\/strong> <strong>Right to information according to Art. 15 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to request confirmation as to whether we are processing personal data concerning you. If this is the case, you have the right to obtain information about this personal data as well as further information, e.g. the purposes of processing, the categories of personal data processed, the recipients and the planned duration of storage or the criteria for determining the duration.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c)<\/strong> <strong>Right to rectification and completion according to Art. 16 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to request the correction of inaccurate data without undue delay. Taking into account the purposes of the processing, you have the right to request the completion of incomplete data.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Right to erasure (\"right to be forgotten\") according to Art. 17 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right to erasure insofar as the processing is no longer necessary. This is the case, for example, if your data is no longer required for the original purposes, you have revoked your declaration of consent under data protection law or the data was processed unlawfully.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>e) Right to restriction of processing according to Art. 18 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have a right to restrict processing, e.g. if you believe that the personal data is incorrect.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>f) Right to data portability according to Art. 20 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to receive the personal data concerning you that you have provided to us in a structured, common and machine-readable format.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>g) Right of objection according to Art. 21 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right to object at any time, on grounds relating to your particular situation, to the processing of certain personal data concerning you.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In the event of direct marketing, you as the data subject have the right to object at any time to processing of personal data concerning you for the purposes of such marketing; this also applies to profiling insofar as it is related to such direct marketing.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>h) Automated decision in individual cases including profiling according to Art. 22 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>You have the right not to be subject to a decision based solely on automated processing - including profiling - except in the exceptional circumstances mentioned in Article 22 of the GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Decision-making based exclusively on automated processing - including profiling - does not take place.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>i) Complaint to a data protection supervisory authority pursuant to Art. 77 GDPR<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, you can lodge a complaint with a data protection supervisory authority at any time, for example if you believe that the data processing does not comply with data protection regulations.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Competent supervisory authority:<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Bavarian State Office for Data Protection Supervision<br/>Promenade 18<br/>91522 Ansbach, Germany<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Phone: +49 (0) 981 180093-0<br/>Fax: +49 (0) 981 180093-800 <br/>E-mail: <a href=\"mailto:poststelle@lda.bayern.de\">poststelle@lda.bayern.de<\/a><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
 <link rel="stylesheet" id="cookie-law-info-table-css" href="/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-table.css?ver=2.0.4" media="all">
 <script src="/wp-content/plugins/gp-premium/menu-plus/functions/js/sticky.min.js?ver=2.0.3" id="generate-sticky-js"></script>
 <script src="/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7" id="regenerator-runtime-js"></script>
@@ -1992,7 +2186,7 @@ var wpcf7 = {"api":{"root":"\/wp-json\/","namespace":"contact-form-7\/v1"}};
 </script>
 <script src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2" id="contact-form-7-js"></script>
 <script id="pt-cv-content-views-script-js-extra">
-var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"538c87a8bb","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"d6e997f54c","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
 var PT_CV_PAGINATION = {"first":"«","prev":"‹","next":"›","last":"»","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
 </script>
 <script src="/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=2.4.0.2" id="pt-cv-content-views-script-js"></script>
@@ -2011,6 +2205,7 @@ var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub
 <script src="/wp-includes/js/wp-embed.min.js?ver=5.8" id="wp-embed-js"></script>
 <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
 <script id="ewd-ufaq-js-js-extra">
+var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["20. Your legal rights"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["20. Your legal rights"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["20. Your legal rights"],"display_faq":"0"};
 </script>
