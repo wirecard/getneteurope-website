@@ -667,47 +667,7 @@ var CLI=
     reload_current_page:function()
     {	
 		
-    	if(typeof cli_flush_cache!=='undefined' && cli_flush_cache === true)
-    	{
-            window.location.href=this.add_clear_cache_url_query();
-    	}else
-    	{
-    		window.location.reload(true);
-    	}
-    },
-    add_clear_cache_url_query:function()
-    {
-    	var cli_rand=new Date().getTime()/1000;
-    	var cli_url=window.location.href;
-    	var cli_hash_arr=cli_url.split('#');
-    	var cli_urlparts= cli_hash_arr[0].split('?');
-    	if(cli_urlparts.length>=2) 
-    	{
-    		var cli_url_arr=cli_urlparts[1].split('&');
-    		cli_url_temp_arr=new Array();
-    		for(var cli_i=0; cli_i<cli_url_arr.length; cli_i++)
-    		{   			
-    			var cli_temp_url_arr=cli_url_arr[cli_i].split('=');
-    			if(cli_temp_url_arr[0]=='cli_action')
-    			{
-
-    			}else
-    			{
-    				cli_url_temp_arr.push(cli_url_arr[cli_i]);
-    			}
-    		}
-    		cli_urlparts[1]=cli_url_temp_arr.join('&');
-    		cli_url=cli_urlparts.join('?')+(cli_url_temp_arr.length>0 ? '&': '')+'cli_action=';
-    	}else
-    	{
-    		cli_url=cli_hash_arr[0]+'?cli_action=';
-    	}
-    	cli_url+=cli_rand;
-    	if(cli_hash_arr.length>1)
-    	{
-    		cli_url+='#'+cli_hash_arr[1];
-    	}
-    	return cli_url;
+    	window.location.reload(true);
     },
 	closeOnScroll:function() 
 	{
