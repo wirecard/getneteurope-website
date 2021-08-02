@@ -30,8 +30,8 @@ img.emoji {
 <link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=5.8" media="all">
 <link rel="stylesheet" id="contact-form-7-css" href="/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4.2" media="all">
 <style id="contact-form-7-inline-css">.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}.wpcf7 .wpcf7-recaptcha[data-align="center"] > div {margin: 0 auto;}.wpcf7 .wpcf7-recaptcha[data-align="right"] > div {margin: 0 0 0 auto;}</style>
-<link rel="stylesheet" id="cookie-law-info-css" href="/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=2.0.4" media="all">
-<link rel="stylesheet" id="cookie-law-info-gdpr-css" href="/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=2.0.4" media="all">
+<link rel="stylesheet" id="cookie-law-info-css" href="/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css?ver=2.0.5" media="all">
+<link rel="stylesheet" id="cookie-law-info-gdpr-css" href="/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css?ver=2.0.5" media="all">
 <link rel="stylesheet" id="wpsm_tabs_pro_font-icon-picker-glyphicon_style-css" href="/wp-content/plugins/tabs-pro/assets/css/mul-type-icon-picker/picker/glyphicon.css?ver=5.8" media="all">
 <link rel="stylesheet" id="wpsm_tabs_pro_font-icon-picker-dashicons_style-css" href="/wp-content/plugins/tabs-pro/assets/css/mul-type-icon-picker/picker/dashicons.css?ver=5.8" media="all">
 <link rel="stylesheet" id="wpsm_tabs_pro-font-awesome-front-css" href="/wp-content/plugins/tabs-pro/assets/css/font-awesome/css/font-awesome.min.css?ver=5.8" media="all">
@@ -59,7 +59,7 @@ var Cli_Data = {"nn_cookie_ids":[],"cookielist":[],"non_necessary_cookies":{"mar
 var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#222222","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#ec0000","button_1_button_hover":"#bd0000","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#dedfe0","button_3_button_hover":"#b2b2b3","button_3_link_colour":"#333333","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#ffffff","button_4_button_hover":"#cccccc","button_4_link_colour":"#333333","button_4_as_button":"1","button_7_button_colour":"#ec0000","button_7_button_hover":"#bd0000","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#ffffff","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"Cookie Policy","cookie_bar_as":"popup","popup_showagain_position":"bottom-right","widget_position":"left"};
 var log_object = {"ajax_url":"\/wp-admin\/admin-ajax.php"};
 </script>
-<script src="/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js?ver=2.0.4" id="cookie-law-info-js"></script>
+<script src="/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js?ver=2.0.5" id="cookie-law-info-js"></script>
 <script src="/wp-content/plugins/tabs-pro/assets/js/bootstrap-tabcollapse.js?ver=5.8" id="wpsm_tabs_pro_bootstrap-collapse-front-js"></script>
 <script src="/wp-content/plugins/tabs-pro/assets/js/scrollbar/jquery.mCustomScrollbar.concat.min.js?ver=5.8" id="wpsm_tabs_pro_scrollbar_script-js"></script>
 <script src="/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-dropdown/script.min.js?ver=1" id="wpml-legacy-dropdown-0-js"></script>
@@ -623,8 +623,25 @@ div div.wpsm_tab_content ul li::before {
 	content: '';
 }
 
+.getnet-social-footer-wrapper {
+	display: inline-block;
+	margin-right: 40px;
+	position: relative;
+	top: 10px;
+}
+
 .getnet-social-footer-wrapper ul {
 	margin-bottom: 0.5em;
+}
+
+.getnet-copyright-footer-wrapper {
+	display: inline-block;
+	color: #767676;
+	font-size: 14px;
+}
+
+.wp-block-social-links.has-large-icon-size {
+	font-size: 34px;
 }
 
 div.gn22-text-and-tabs-container ul.wpsm_nav-tabs li {
@@ -658,8 +675,12 @@ div.gb-inside-container ul {
 div.gb-inside-container ul li {
 	position: relative;
 	line-height: 1.2em;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	text-align: left!important;
+}
+
+div.gb-inside-container ul li.footer-widget-headline {
+	margin-bottom: 17px;
 }
 
 div.gb-inside-container ul li::before { 
@@ -691,6 +712,12 @@ div div.gb-button-wrapper .gn-button, button.gn-button, div a.gn-button.gn-page-
 	color: #fff;
 	margin-right: 24px;
 }
+
+div div.gb-button-wrapper a.gb-button.gb-button-footer-menu {
+	padding: 12px 40px;
+	white-space: nowrap;
+}
+
 div#user-session a.gn-cta__button {
 	padding: 6px 20px;
 }
@@ -887,6 +914,8 @@ div.anchor-links-wrapper .gb-button-wrapper::-webkit-scrollbar {
 
 div.footer-widgets-container {
     padding: 40px 40px 40px 40px;
+	max-width: 1440px;
+margin: 0 auto;
 }
 
 div.footer-widgets-container ul {
@@ -894,8 +923,12 @@ div.footer-widgets-container ul {
 }
 
 div.footer-widgets-container .gb-grid-column {
-	width: 100%;
+	width: 50%;
+	margin-bottom: 42px;
 }
+	div.menu-footer-widget-2-container {
+		margin-bottom: 42px;
+	}
 
 div.footer-widgets-container .gb-grid-column h5 {
 	color: #ec0000;
@@ -910,8 +943,15 @@ div.footer-widgets-container .gb-grid-column h5 {
     flex-wrap: wrap;
 }
 	div.footer-widgets-container .gb-grid-column {
-	width: 16%;
+	width: 19%;
 }
+	div.footer-widgets-container .gb-grid-column:last-child {
+	width: 24%;
+		padding-left: 50px;
+}
+	div.menu-footer-widget-2-container {
+		margin-bottom: 40px;
+	}
 }
 @media (min-width: 1025px) {
   div.footer-widgets-container {
@@ -1329,7 +1369,7 @@ div.ewd-ufaq-faq-body {
 						<path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" fill-rule="nonzero"></path>
 					</svg></span></span></a>
 <ul class="sub-menu">
-	<li id="menu-item-2727" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2727"><a href="/about-us/">About us</a></li>
+	<li id="menu-item-2727" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2727"><a href="/about-us/">About Getnet</a></li>
 	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2316"><a href="/careers/">Careers <span class="menu-hint">(We&#8217;re hiring)</span></a></li>
 </ul>
 </li>
@@ -1443,7 +1483,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2984-QKfMDEaduM" data-post_id="2984">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2984-Krj75oVnVD" data-post_id="2984">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1542,7 +1582,7 @@ div.ewd-ufaq-faq-body {
 		<h3 id="reply-title" class="comment-reply-title">Leave a Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ufaq/9-newsletter/#respond" style="display:none;">Cancel reply</a></small>
 </h3>
 <form action="/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
-<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="h7b49afc23" name="h7b49afc23" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a0f88e534cbc8d7b0145f3ee41f772fc" );document.getElementById("h7b49afc23").setAttribute( "id", "comment" );</script></p>
+<p class="comment-form-comment"><label for="comment" class="screen-reader-text">Comment</label><textarea autocomplete="new-password" id="a446a593cb" name="a446a593cb" cols="45" rows="8" aria-required="true" required></textarea><textarea id="comment" aria-hidden="true" name="comment" autocomplete="new-password" style="padding:0 !important;clip:rect(1px, 1px, 1px, 1px) !important;position:absolute !important;white-space:nowrap !important;height:1px !important;width:1px !important;overflow:hidden !important;" tabindex="-1"></textarea><script data-noptimize type="text/javascript">document.getElementById("comment").setAttribute( "id", "a97578f792dba3d9b2c099cfbb11522d" );document.getElementById("a446a593cb").setAttribute( "id", "comment" );</script></p>
 <input name="wpml_language_code" type="hidden" value="en"><label for="author" class="screen-reader-text">Name</label><input placeholder="Name *" id="author" name="author" type="text" value="" size="30">
 <label for="email" class="screen-reader-text">Email</label><input placeholder="Email *" id="email" name="email" type="email" value="" size="30">
 <label for="url" class="screen-reader-text">Website</label><input placeholder="Website" id="url" name="url" type="url" value="" size="30">
@@ -1584,18 +1624,117 @@ div.ewd-ufaq-faq-body {
 		<aside id="nav_menu-5" class="widget inner-padding widget_nav_menu"><div class="menu-footer-widget-2-container"><ul id="menu-footer-widget-2" class="menu">
 <li id="menu-item-2240" class="footer-widget-headline menu-item menu-item-type-custom menu-item-object-custom menu-item-2240"><a>Resources</a></li>
 <li id="menu-item-2904" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2904"><a href="/white-papers/">White Papers</a></li>
-</ul></div></aside>	</div>
-		<div class="footer-widget-3">
-		<aside id="nav_menu-6" class="widget inner-padding widget_nav_menu"><div class="menu-footer-widget-3-container"><ul id="menu-footer-widget-3" class="menu">
+</ul></div></aside><aside id="nav_menu-8" class="widget inner-padding widget_nav_menu"><div class="menu-footer-widget-3-container"><ul id="menu-footer-widget-3" class="menu">
 <li id="menu-item-2241" class="footer-widget-headline menu-item menu-item-type-custom menu-item-object-custom menu-item-2241"><a>Developers</a></li>
 <li id="menu-item-3500" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3500"><a target="_blank" rel="noopener" href="https://docs.getneteurope.com/">Docs</a></li>
 </ul></div></aside>	</div>
-		<div class="footer-widget-4">
-		<aside id="nav_menu-7" class="widget inner-padding widget_nav_menu"><div class="menu-footer-widget-4-container"><ul id="menu-footer-widget-4" class="menu">
+		<div class="footer-widget-3">
+		<aside id="nav_menu-6" class="widget inner-padding widget_nav_menu"><div class="menu-footer-widget-4-container"><ul id="menu-footer-widget-4" class="menu">
 <li id="menu-item-2242" class="footer-widget-headline menu-item menu-item-type-custom menu-item-object-custom menu-item-2242"><a>Company</a></li>
-<li id="menu-item-2879" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2879"><a href="/about-us/">About us</a></li>
+<li id="menu-item-2879" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2879"><a href="/about-us/">About Getnet</a></li>
 <li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2318"><a href="/careers/">Careers <span class="menu-hint">(We&#8217;re hiring)</span></a></li>
 </ul></div></aside>	</div>
+		<div class="footer-widget-4">
+		<aside id="reblex-widget-4" class="widget inner-padding widget_reblex-widget"><div class="ewd-ufaq-faq-list ewd-ufaq-page-type-distinct" id="ewd-ufaq-faq-list">
+
+	<input type="hidden" name="include_category" value="" id="ewd-ufaq-include-category">
+<input type="hidden" name="exclude_category" value="" id="ewd-ufaq-exclude-category">
+<input type="hidden" name="orderby" value="date" id="ewd-ufaq-orderby">
+<input type="hidden" name="order" value="asc" id="ewd-ufaq-order">
+<input type="hidden" name="post_count" value="-1" id="ewd-ufaq-post-count">
+<input type="hidden" name="current_url" value="/ufaq/9-newsletter/" id="ewd-ufaq-current-url">
+	
+	
+	<div class="ewd-ufaq-faqs">
+
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2984-T3kNRSq6Z3" data-post_id="2984">
+
+	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
+	
+	<a class="ewd-ufaq-post-margin" href="/ufaq/9-newsletter/">
+
+		<div class="ewd-ufaq-post-margin-symbol ewd-ufaq-">
+			<span>A</span>
+		</div>
+
+		<div class="ewd-ufaq-faq-title-text">
+
+			<h4>
+				9. Call recording			</h4>
+
+		</div>
+
+		<div class="ewd-ufaq-clear"></div>
+
+	</a>
+	
+</div>
+	
+	<div class="ewd-ufaq-faq-body ">
+
+		
+			
+		
+			<div class="ewd-ufaq-post-margin ewd-ufaq-faq-post">
+	
+<p><strong>a) Type and scope of data processing</strong></p>
+
+
+
+<p>In the case of customer telephone calls, you can consent to the recording of the telephone conversation. We will only record telephone conversations with you if you consent to such recording before or during the telephone call. You can withdraw your consent at any time. In addition to call recordings, we store technical call data such as call number, start of call, end of call and call time. If necessary, we make written notes on the course of the conversation. These notes are used to document the content of the call.</p>
+
+
+
+<p><strong>b) Purpose and legal basis of the data processing</strong></p>
+
+
+
+<p>We use the information and data obtained for training purposes and to improve service quality. We analyze some calls regarding communication with our customers, compliance with corporate standards, and optimization of our customer processes. Only in individual cases do we refer to specific passages of the telephone call in employee appraisals. This serves to train our employees. Our aim is to constantly improve communication with our customers and thus offer them better service and consulting quality. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.</p>
+
+
+
+<p><strong>c) Storage period</strong></p>
+
+
+
+<p>All call recordings will be deleted after 24 months at the latest, or before if you have withdrawn your consent.</p>
+
+
+
+<p><strong>d) Data transfer</strong></p>
+
+
+
+<p>The data collected is processed and used exclusively by internal departments or by a processor and is not passed on to third parties.</p>
+
+
+
+<p>In addition, we may be obliged by law, administrative or court order to disclose your data to public authorities (e.g. public prosecutor&#8217;s office, police, supervisory authorities, tax office, social security institutions, etc.).</p>
+</div>
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+	</div>
+
+</div>
+	</div>
+
+	
+</div></aside>	</div>
 		<div class="footer-widget-5">
 		<aside id="reblex-widget-3" class="widget inner-padding widget_reblex-widget"><div class="ewd-ufaq-faq-list ewd-ufaq-page-type-distinct" id="ewd-ufaq-faq-list">
 
@@ -1609,7 +1748,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2984-FvguJFkWsj" data-post_id="2984">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2984-ET00m1eYMa" data-post_id="2984">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1722,7 +1861,7 @@ div.ewd-ufaq-faq-body {
 	
 	<div class="ewd-ufaq-faqs">
 
-		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2984-7lw2LH02EL" data-post_id="2984">
+		<div class="ewd-ufaq-faq-div ewd-ufaq-faq-column-count-one ewd-ufaq-faq-responsive-columns- ewd-ufaq-faq-display-style-default ewd-ufaq-can-be-toggled" id="ewd-ufaq-post-2984-R8t81HFdXs" data-post_id="2984">
 
 	<div class="ewd-ufaq-faq-title ewd-ufaq-faq-toggle">
 	
@@ -1809,7 +1948,8 @@ div.ewd-ufaq-faq-body {
 	</div>
 
 	
-</div></div> &copy; 2021 Santander  				</div>
+</div></div> 
+<div class="getnet-copyright-footer-wrapper">&copy; 2021 Santander</div>  				</div>
 			</div>
 		</footer>
 		</div>
@@ -1853,8 +1993,8 @@ div.ewd-ufaq-faq-body {
                     <span class="cli-necessary-caption">Always Enabled</span> 						</div>
 						<div class="cli-tab-content">
 							<div class="cli-tab-pane cli-fade" data-id="necessary">
-								<p>Essential cookies enable basic functions and are necessary for the proper function of the website.
-</p>
+								<div class="wt-cli-cookie-description">
+									Essential cookies enable basic functions and are necessary for the proper function of the website.
 <table class="cookielawinfo-row-cat-table cookielawinfo-winter">
 <thead><tr>
 <th class="cookielawinfo-column-1">Cookie</th>
@@ -1901,7 +2041,7 @@ div.ewd-ufaq-faq-body {
 </tr>
 </tbody>
 </table>
-
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1915,8 +2055,8 @@ div.ewd-ufaq-faq-body {
                     </div>						</div>
 						<div class="cli-tab-content">
 							<div class="cli-tab-pane cli-fade" data-id="marketing">
-								<p>Marketing cookies are used by third-party advertisers or publishers to display personalized ads. They do this by tracking visitors across websites.
-</p>
+								<div class="wt-cli-cookie-description">
+									Marketing cookies are used by third-party advertisers or publishers to display personalized ads. They do this by tracking visitors across websites.
 <table class="cookielawinfo-row-cat-table cookielawinfo-winter">
 <thead><tr>
 <th class="cookielawinfo-column-1">Cookie</th>
@@ -1944,7 +2084,7 @@ div.ewd-ufaq-faq-body {
 <td class="cookielawinfo-column-4">Used by the web audience analysis tool to differentiate unique users. Saved data: Used to distinguish users.</td>
 </tr>
 </tbody>
-</table>
+</table>								</div>
 							</div>
 						</div>
 					</div>
@@ -1976,8 +2116,8 @@ document.cookie = document.cookie + ";Referrer=" + document.referrer;
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHKSW7K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"9. Call recording","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In the case of customer telephone calls, you can consent to the recording of the telephone conversation. We will only record telephone conversations with you if you consent to such recording before or during the telephone call. You can withdraw your consent at any time. In addition to call recordings, we store technical call data such as call number, start of call, end of call and call time. If necessary, we make written notes on the course of the conversation. These notes are used to document the content of the call.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis of the data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We use the information and data obtained for training purposes and to improve service quality. We analyze some calls regarding communication with our customers, compliance with corporate standards, and optimization of our customer processes. Only in individual cases do we refer to specific passages of the telephone call in employee appraisals. This serves to train our employees. Our aim is to constantly improve communication with our customers and thus offer them better service and consulting quality. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Storage period<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>All call recordings will be deleted after 24 months at the latest, or before if you have withdrawn your consent.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Data transfer<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The data collected is processed and used exclusively by internal departments or by a processor and is not passed on to third parties.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, we may be obliged by law, administrative or court order to disclose your data to public authorities (e.g. public prosecutor's office, police, supervisory authorities, tax office, social security institutions, etc.).<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"9. Call recording","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In the case of customer telephone calls, you can consent to the recording of the telephone conversation. We will only record telephone conversations with you if you consent to such recording before or during the telephone call. You can withdraw your consent at any time. In addition to call recordings, we store technical call data such as call number, start of call, end of call and call time. If necessary, we make written notes on the course of the conversation. These notes are used to document the content of the call.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis of the data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We use the information and data obtained for training purposes and to improve service quality. We analyze some calls regarding communication with our customers, compliance with corporate standards, and optimization of our customer processes. Only in individual cases do we refer to specific passages of the telephone call in employee appraisals. This serves to train our employees. Our aim is to constantly improve communication with our customers and thus offer them better service and consulting quality. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Storage period<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>All call recordings will be deleted after 24 months at the latest, or before if you have withdrawn your consent.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Data transfer<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The data collected is processed and used exclusively by internal departments or by a processor and is not passed on to third parties.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, we may be obliged by law, administrative or court order to disclose your data to public authorities (e.g. public prosecutor's office, police, supervisory authorities, tax office, social security institutions, etc.).<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"9. Call recording","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In the case of customer telephone calls, you can consent to the recording of the telephone conversation. We will only record telephone conversations with you if you consent to such recording before or during the telephone call. You can withdraw your consent at any time. In addition to call recordings, we store technical call data such as call number, start of call, end of call and call time. If necessary, we make written notes on the course of the conversation. These notes are used to document the content of the call.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis of the data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We use the information and data obtained for training purposes and to improve service quality. We analyze some calls regarding communication with our customers, compliance with corporate standards, and optimization of our customer processes. Only in individual cases do we refer to specific passages of the telephone call in employee appraisals. This serves to train our employees. Our aim is to constantly improve communication with our customers and thus offer them better service and consulting quality. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Storage period<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>All call recordings will be deleted after 24 months at the latest, or before if you have withdrawn your consent.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Data transfer<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The data collected is processed and used exclusively by internal departments or by a processor and is not passed on to third parties.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, we may be obliged by law, administrative or court order to disclose your data to public authorities (e.g. public prosecutor's office, police, supervisory authorities, tax office, social security institutions, etc.).<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
-<link rel="stylesheet" id="cookie-law-info-table-css" href="/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-table.css?ver=2.0.4" media="all">
+<!-- End Google Tag Manager (noscript) --><script type="application/ld+json" class="ewd-ufaq-ld-json-data">{"@context":"https:\/\/schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"9. Call recording","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In the case of customer telephone calls, you can consent to the recording of the telephone conversation. We will only record telephone conversations with you if you consent to such recording before or during the telephone call. You can withdraw your consent at any time. In addition to call recordings, we store technical call data such as call number, start of call, end of call and call time. If necessary, we make written notes on the course of the conversation. These notes are used to document the content of the call.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis of the data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We use the information and data obtained for training purposes and to improve service quality. We analyze some calls regarding communication with our customers, compliance with corporate standards, and optimization of our customer processes. Only in individual cases do we refer to specific passages of the telephone call in employee appraisals. This serves to train our employees. Our aim is to constantly improve communication with our customers and thus offer them better service and consulting quality. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Storage period<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>All call recordings will be deleted after 24 months at the latest, or before if you have withdrawn your consent.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Data transfer<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The data collected is processed and used exclusively by internal departments or by a processor and is not passed on to third parties.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, we may be obliged by law, administrative or court order to disclose your data to public authorities (e.g. public prosecutor's office, police, supervisory authorities, tax office, social security institutions, etc.).<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"9. Call recording","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In the case of customer telephone calls, you can consent to the recording of the telephone conversation. We will only record telephone conversations with you if you consent to such recording before or during the telephone call. You can withdraw your consent at any time. In addition to call recordings, we store technical call data such as call number, start of call, end of call and call time. If necessary, we make written notes on the course of the conversation. These notes are used to document the content of the call.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis of the data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We use the information and data obtained for training purposes and to improve service quality. We analyze some calls regarding communication with our customers, compliance with corporate standards, and optimization of our customer processes. Only in individual cases do we refer to specific passages of the telephone call in employee appraisals. This serves to train our employees. Our aim is to constantly improve communication with our customers and thus offer them better service and consulting quality. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Storage period<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>All call recordings will be deleted after 24 months at the latest, or before if you have withdrawn your consent.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Data transfer<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The data collected is processed and used exclusively by internal departments or by a processor and is not passed on to third parties.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, we may be obliged by law, administrative or court order to disclose your data to public authorities (e.g. public prosecutor's office, police, supervisory authorities, tax office, social security institutions, etc.).<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"9. Call recording","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In the case of customer telephone calls, you can consent to the recording of the telephone conversation. We will only record telephone conversations with you if you consent to such recording before or during the telephone call. You can withdraw your consent at any time. In addition to call recordings, we store technical call data such as call number, start of call, end of call and call time. If necessary, we make written notes on the course of the conversation. These notes are used to document the content of the call.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis of the data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We use the information and data obtained for training purposes and to improve service quality. We analyze some calls regarding communication with our customers, compliance with corporate standards, and optimization of our customer processes. Only in individual cases do we refer to specific passages of the telephone call in employee appraisals. This serves to train our employees. Our aim is to constantly improve communication with our customers and thus offer them better service and consulting quality. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Storage period<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>All call recordings will be deleted after 24 months at the latest, or before if you have withdrawn your consent.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Data transfer<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The data collected is processed and used exclusively by internal departments or by a processor and is not passed on to third parties.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, we may be obliged by law, administrative or court order to disclose your data to public authorities (e.g. public prosecutor's office, police, supervisory authorities, tax office, social security institutions, etc.).<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}},{"@type":"Question","name":"9. Call recording","acceptedAnswer":{"@type":"Answer","text":"<!-- wp:paragraph -->\n<p><strong>a) Type and scope of data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In the case of customer telephone calls, you can consent to the recording of the telephone conversation. We will only record telephone conversations with you if you consent to such recording before or during the telephone call. You can withdraw your consent at any time. In addition to call recordings, we store technical call data such as call number, start of call, end of call and call time. If necessary, we make written notes on the course of the conversation. These notes are used to document the content of the call.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>b) Purpose and legal basis of the data processing<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We use the information and data obtained for training purposes and to improve service quality. We analyze some calls regarding communication with our customers, compliance with corporate standards, and optimization of our customer processes. Only in individual cases do we refer to specific passages of the telephone call in employee appraisals. This serves to train our employees. Our aim is to constantly improve communication with our customers and thus offer them better service and consulting quality. The legal basis is your consent according to Art. 6 par. 1 lit. a) GDPR.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>c) Storage period<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>All call recordings will be deleted after 24 months at the latest, or before if you have withdrawn your consent.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>d) Data transfer<\/strong><\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>The data collected is processed and used exclusively by internal departments or by a processor and is not passed on to third parties.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>In addition, we may be obliged by law, administrative or court order to disclose your data to public authorities (e.g. public prosecutor's office, police, supervisory authorities, tax office, social security institutions, etc.).<\/p>\n<!-- \/wp:paragraph -->","author":{"@type":"Person","name":"suphi"}}}]}</script><link rel="stylesheet" id="ewd-ufaq-css-css" href="/wp-content/plugins/ultimate-faqs/assets/css/ewd-ufaq.css?ver=5.8" media="all">
+<link rel="stylesheet" id="cookie-law-info-table-css" href="/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-table.css?ver=2.0.5" media="all">
 <script src="/wp-content/plugins/gp-premium/menu-plus/functions/js/sticky.min.js?ver=2.0.3" id="generate-sticky-js"></script>
 <script src="/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7" id="regenerator-runtime-js"></script>
 <script src="/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
@@ -1986,7 +2126,7 @@ var wpcf7 = {"api":{"root":"\/wp-json\/","namespace":"contact-form-7\/v1"}};
 </script>
 <script src="/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2" id="contact-form-7-js"></script>
 <script id="pt-cv-content-views-script-js-extra">
-var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"cea48b51d3","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"0d17d27eb0","is_admin":"","is_mobile":"","ajaxurl":"\/wp-admin\/admin-ajax.php","lang":"en","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
 var PT_CV_PAGINATION = {"first":"«","prev":"‹","next":"›","last":"»","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
 </script>
 <script src="/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=2.4.0.2" id="pt-cv-content-views-script-js"></script>
@@ -2005,6 +2145,7 @@ var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub
 <script src="/wp-includes/js/wp-embed.min.js?ver=5.8" id="wp-embed-js"></script>
 <script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1" id="jquery-ui-core-js"></script>
 <script id="ewd-ufaq-js-js-extra">
+var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["9. Call recording"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["9. Call recording"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["9. Call recording"],"display_faq":"0"};
 var ewd_ufaq_php_data = {"faq_accordion":"1","category_accordion":null,"faq_scroll":null,"reveal_effect":null,"retrieving_results":"Retrieving Results","highlight_search_term":null,"autocomplete_question":null,"question_titles":["9. Call recording"],"display_faq":"0"};
