@@ -311,6 +311,11 @@ div.vsb-main button {
   transition: all 0.28s ease;
 }
 
+.cf-form-column input:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+         color: transparent;
+    }
+
 .form-group select ~ .control-label,
 .form-group input:focus ~ .control-label,
 .form-group input:valid ~ .control-label,
