@@ -187,7 +187,7 @@ jQuery(document).ready(function() {
 		if ( jQuery( '#ewd-ufaq-ajax-text-input' ).val() != '' ) { ewd_ufaq_ajax_reload(); }
 	}
 
-	if ( ewd_ufaq_php_data.display_faq != 0 ) {
+	if ( typeof ewd_ufaq_php_data != 'undefined' && ewd_ufaq_php_data.display_faq ) {
 		
 		var faq = jQuery( '.ewd-ufaq-faq-div[data-post_id="' + ewd_ufaq_php_data.display_faq + '"]' );
 
