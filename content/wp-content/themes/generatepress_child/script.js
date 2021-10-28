@@ -32,17 +32,14 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
 	var countrySelectElements = document.getElementsByClassName("vsb-main");
 	var myFunction = function(event) {
 		var attribute = this.getAttribute("data-myattribute");
-		console.log('myFunction', event);
 		if(event && event.currentTarget) {
 			var searchField = event.currentTarget.getElementsByTagName("INPUT")[0];
 			if(searchField) {
 				searchField.focus();
 			}
-			console.log('searchField', searchField);
 		}
 	};
 	
-		console.log('countrySelectElements', countrySelectElements);
 	for (var i = 0; i < countrySelectElements.length; i++) {
 		countrySelectElements[i].addEventListener('click', myFunction, false);
 	}
@@ -57,4 +54,41 @@ function checkAndSetACookieExists() {
 	}
 }
 
+function showHideOverviewElements(elementsClass, show) {
+	document.querySelectorAll('.' + elementsClass).forEach((element, index, array) => {
+		element.style.display = show ? 'flex' : 'none';
+	});
+}
+
+function highlightTabElement(elementsClass) {
+	document.querySelectorAll('.overview-tab-link').forEach((element, index, array) => {
+		element.classList.remove("overview-tab-link-active")
+	});
+	document.querySelectorAll('.' + elementsClass).forEach((element, index, array) => {
+		element.classList.add("overview-tab-link-active")
+	});
+}
+
 checkAndSetACookieExists();
+
+function scrollToContent() {
+	showHideOverviewElements('overview-area', false);
+	if(location.hash.length === 5 && location.hash.indexOf('-')) {
+		var groupChar = location.hash.slice(1,2);
+		showHideOverviewElements('overview-area-' + groupChar.toLowerCase(), true);
+		highlightTabElement('overview-tab-link-' + groupChar.toLowerCase());
+		var groupId = location.hash.slice(1,3);
+		var descriptionId = location.hash.slice(4,5);
+		var element = document.getElementById(groupId);
+		element.scrollIntoView({behavior: "smooth"});
+		// overview-area overview-area-b
+	} else {
+		showHideOverviewElements('overview-area-a', true);
+	}
+}
+
+showHideOverviewElements('overview-area', false);
+
+scrollToContent();
+
+window.onhashchange = scrollToContent;
