@@ -75,13 +75,15 @@ function scrollToContent() {
 	showHideOverviewElements('overview-area', false);
 	if(location.hash.length === 5 && location.hash.indexOf('-')) {
 		var groupChar = location.hash.slice(1,2);
+		var clickedLevel = location.hash.slice(2,3);
 		showHideOverviewElements('overview-area-' + groupChar.toLowerCase(), true);
 		highlightTabElement('overview-tab-link-' + groupChar.toLowerCase());
 		var groupId = location.hash.slice(1,3);
 		var descriptionId = location.hash.slice(4,5);
 		var element = document.getElementById(groupId);
-		element.scrollIntoView({behavior: "smooth"});
-		// overview-area overview-area-b
+		if(clickedLevel != 0) {			
+			element.scrollIntoView({behavior: "smooth"});
+		}
 	} else {
 		showHideOverviewElements('overview-area-a', true);
 	}
