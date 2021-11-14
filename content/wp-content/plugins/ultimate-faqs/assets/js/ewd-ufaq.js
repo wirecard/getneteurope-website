@@ -93,6 +93,11 @@ function ufaqSetClickHandlers() {
 
 		jQuery( 'html, body' ).animate( { scrollTop: faq.offset().top - 20 }, 100 );
 	});
+
+	jQuery( '.ewd-ufaq-text-input ' ).on( 'search', function() {
+
+		ewd_ufaq_ajax_reload();
+	});
 }
 
 function UFAQSetAutoCompleteClickHandlers() {
