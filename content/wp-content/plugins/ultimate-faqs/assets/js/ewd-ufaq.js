@@ -123,7 +123,13 @@ function EWD_UFAQ_Reveal_FAQ( faq_element ) {
 
 	var post_id = faq_element.data( 'post_id' );
 
-	var data = 'post_id=' + post_id + '&action=ewd_ufaq_record_view';
+	var params = {};
+
+	params.nonce   = ewd_ufaq_php_data.nonce;
+	params.post_id = post_id;
+	params.action  = 'ewd_ufaq_record_view';
+
+	var data = jQuery.param( params );
     jQuery.post(ajaxurl, data, function(response) {});
 
     faq_element.find( '.ewd-ufaq-post-margin-symbol' ).html( faq_element.find( '.ewd-ufaq-post-margin-symbol' ).html().toUpperCase() );
@@ -239,7 +245,23 @@ function ewd_ufaq_ajax_reload( pagination, append_results, search_string ) {
 
     if (show_on_load == 'No' && Question.length == 0) {jQuery('#ewd-ufaq-ajax-results').html(''); return;} 
 
-    var data = 'search_string=' + search_string + '&include_category=' + include_cat + '&exclude_category=' + exclude_cat + '&orderby=' + orderby + '&order=' + order + '&post_count=' + post_count + '&request_count=' + request_count + '&current_url=' + current_url + '&faqs_only=' + faqs_only + '&faq_page=' + faq_page + '&action=ewd_ufaq_search';
+    var params = {};
+
+    params.search_string    = search_string;
+    params.include_category = include_cat;
+    params.exclude_category = exclude_cat;
+    params.orderby = orderby;
+    params.order   = order;
+    params.post_count    = post_count;
+    params.request_count = request_count;
+    params.current_url   = current_url;
+    params.faqs_only = faqs_only;
+    params.faq_page  = faq_page;
+    params.action = 'ewd_ufaq_search';
+    params.nonce  = ewd_ufaq_php_data.nonce;
+
+    var data = jQuery.param( params );
+
     jQuery.post( ajaxurl, data, function( response ) {
 		
 		if ( response.data.request_count == request_count ) {
@@ -277,9 +299,15 @@ function UFAQSetRatingHandlers() {
 		if ( jQuery( this ).hasClass( 'ewd-ufaq-up-vote' ) ) { vote_type = 'up'; }
 		else { vote_type = 'down'; }
 
-		var data = 'faq_id=' + faq_id + '&vote_type=' + vote_type + '&action=ewd_ufaq_update_rating';
-    	
-    	jQuery.post( ajaxurl, data );
+		var params = {};
+
+		params.action = 'ewd_ufaq_update_rating'
+		params.nonce  = ewd_ufaq_php_data.nonce;
+		params.faq_id = faq_id;
+		params.vote_type = vote_type;
+
+		var data = jQuery.param( params );
+		jQuery.post( ajaxurl, data );
 	});
 }
 
