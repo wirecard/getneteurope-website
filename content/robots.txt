@@ -5,3 +5,12 @@ Sitemap: https://www.getneteurope.com/sitemap.xml
 
 User-agent: *
 Disallow: /*.pdf$
+Disallow: https://www.getneteurope.com/thank-you
+Disallow: https://www.getneteurope.com/thank-you/
+Disallow: https://www.getneteurope.com/de/danke/
+Disallow: https://www.getneteurope.com/thank-you-travel-payment-whitepaper
+Disallow: https://www.getneteurope.com/thank-you-download-omnichannel
+Disallow: https://www.getneteurope.com/thank-you-download-omnichannel/
+Disallow: https://www.getneteurope.com/de/danke-download-beyond-omnichannel/
+Disallow: https://www.getneteurope.com/de/danke-download-travel-payment-whitepaper/
+Disallow: https://www.getneteurope.com/thank-you-travel-payment-whitepaper/
