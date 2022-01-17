@@ -11,11 +11,11 @@
 	<atom:link href="/es/comments/feed/" rel="self" type="application/rss+xml" />
 	<link>/es/</link>
 	<description>We make payments easier for everyone, everywhere.</description>
-	<lastBuildDate>Wed, 05 Jan 2022 14:52:27 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 17 Jan 2022 20:26:05 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.8.2</generator>
+	<generator>https://wordpress.org/?v=5.8.3</generator>
 </channel>
 </rss>
