@@ -192,7 +192,21 @@ var log_object = {"ajax_url":"\/wp-admin\/admin-ajax.php"};
     }</style>
 <style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 <link rel="stylesheet" href="/wp-content/themes/generatepress_child/vanilla.tabs.css" type="text/css">
-<link rel="icon" href="/wp-content/uploads/favicon.jpg" sizes="32x32">
+<script type="text/javascript">
+	var referrer404 = document.referrer;
+	var locationPathname = document.location.pathname;
+	if(referrer404 && referrer404.indexOf('/de/') > -1) {
+		document.location.href = "/de/404/"
+	} else if(referrer404 && referrer404.indexOf('/es/') > -1) {
+		document.location.href = "/es/404/"
+	} else if(referrer404 && referrer404.indexOf('/pt/') > -1) {
+		document.location.href = "/pt/404/"
+	} else if(referrer404 && referrer404.indexOf('/pl/') > -1) {
+		document.location.href = "/pl/404/"
+	}
+	console.log('referrer404= ', referrer404);
+
+</script><link rel="icon" href="/wp-content/uploads/favicon.jpg" sizes="32x32">
 <link rel="icon" href="/wp-content/uploads/favicon.jpg" sizes="192x192">
 <link rel="apple-touch-icon" href="/wp-content/uploads/favicon.jpg">
 <meta name="msapplication-TileImage" content="/wp-content/uploads/favicon.jpg">
