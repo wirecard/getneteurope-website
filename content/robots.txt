@@ -1,12 +1,5 @@
 User-agent: *
 Allow: /
-
+Disallow: /*.pdf$
 Sitemap: https://www.getneteurope.com/sitemap.xml
 
-User-agent: *
-Disallow: /*.pdf$
-
-
-<FilesMatch ".pdf$">
-Header set x-robots-tag: noindex
-</FilesMatch>
