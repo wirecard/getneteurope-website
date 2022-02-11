@@ -106,7 +106,7 @@ function UFAQSetAutoCompleteClickHandlers() {
 
 		jQuery( '.ewd-ufaq-text-auto-complete' ).autocomplete({
 
-			source: ewd_ufaq_php_data.question_titles,
+			source: typeof ewd_ufaq_php_data != 'undefined' ? ewd_ufaq_php_data.question_titles : '',
 			minLength: 3,
 			appendTo: '#ewd-ufaq-jquery-ajax-search',
 			select: function( event, ui ) {
@@ -125,7 +125,7 @@ function EWD_UFAQ_Reveal_FAQ( faq_element ) {
 
 	var params = {};
 
-	params.nonce   = ewd_ufaq_php_data.nonce;
+	params.nonce   = typeof ewd_ufaq_php_data != 'undefined' ? ewd_ufaq_php_data.nonce : '';
 	params.post_id = post_id;
 	params.action  = 'ewd_ufaq_record_view';
 
@@ -235,13 +235,13 @@ function ewd_ufaq_ajax_reload( pagination, append_results, search_string ) {
 
     	var retrieving_results = typeof ewd_ufaq_php_data != 'undefined' ? ewd_ufaq_php_data.retrieving_results : 'Retrieving Results';
 
-    	jQuery( '.ewd-ufaq-faqs' ).html( '<h3>' + ewd_ufaq_php_data.retrieving_results + '</h3>' );
+    	jQuery( '.ewd-ufaq-faqs' ).html( '<h3>' + retrieving_results + '</h3>' );
 
     	var faqs_only = 'No';
     	var faq_page = 0;
     }
 
-    request_count = request_count + 1;
+    request_count = request_count + 1;	
 
     if (show_on_load == 'No' && Question.length == 0) {jQuery('#ewd-ufaq-ajax-results').html(''); return;} 
 
@@ -258,7 +258,7 @@ function ewd_ufaq_ajax_reload( pagination, append_results, search_string ) {
     params.faqs_only = faqs_only;
     params.faq_page  = faq_page;
     params.action = 'ewd_ufaq_search';
-    params.nonce  = ewd_ufaq_php_data.nonce;
+    params.nonce  = typeof ewd_ufaq_php_data != 'undefined' ? ewd_ufaq_php_data.nonce : '';
 
     var data = jQuery.param( params );
 
@@ -302,7 +302,7 @@ function UFAQSetRatingHandlers() {
 		var params = {};
 
 		params.action = 'ewd_ufaq_update_rating'
-		params.nonce  = ewd_ufaq_php_data.nonce;
+		params.nonce  = typeof ewd_ufaq_php_data != 'undefined' ? ewd_ufaq_php_data.nonce : '';
 		params.faq_id = faq_id;
 		params.vote_type = vote_type;
 
@@ -315,7 +315,7 @@ function UFAQSetExpandCollapseHandlers() {
 
 	jQuery('.ewd-ufaq-expand-all').off('click').on('click', function() {
 		
-		var accordion_setting = ewd_ufaq_php_data.faq_accordion;
+		var accordion_setting = typeof ewd_ufaq_php_data != 'undefined' ? ewd_ufaq_php_data.faq_accordion : false;
 		ewd_ufaq_php_data.faq_accordion = false; // turn FAQ accordion off while expanding all
 
 		jQuery( '.ewd-ufaq-faq-toggle' ).each( function() {
@@ -327,7 +327,7 @@ function UFAQSetExpandCollapseHandlers() {
 			EWD_UFAQ_Reveal_FAQ( faq );
 		});
 
-		ewd_ufaq_php_data.faq_accordion = accordion_setting; //reset FAQ accordion setting
+		if ( typeof ewd_ufaq_php_data != 'undefined' ) { ewd_ufaq_php_data.faq_accordion = accordion_setting; } //reset FAQ accordion setting 
 
 		jQuery('.ewd-ufaq-faq-category-inner').removeClass('ewd-ufaq-faq-category-body-hidden');
 		jQuery('.ewd-ufaq-collapse-all').removeClass('ewd-ufaq-hidden');
