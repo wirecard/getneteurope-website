@@ -432,7 +432,7 @@ function UFAQWPFormsHandler() {
 
 		var search_string = jQuery( this ).val();
 
-		if ( search_string.length > 12 ) {
+		if ( search_string.length >= wpforms_integration.ufaq_minimum_characters ) {
 
 			jQuery( '.ewd-ufaq-wpforms-faq-results' ).removeClass( 'ewd-ufaq-hidden' );
 			jQuery( '.ewd-ufaq-wpforms-label' ).removeClass( 'ewd-ufaq-hidden' );
