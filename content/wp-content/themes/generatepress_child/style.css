@@ -271,6 +271,11 @@ div.vsb-main button {
     width: 100%;
 }
 
+.cf-form-column-xxs {
+	flex: initial;
+	width: 10%;
+}
+
 .cf-form-column-xs {
 	flex: initial;
 	width: 15%;
@@ -279,6 +284,11 @@ div.vsb-main button {
 .cf-form-column-m {
 	flex: initial;
 	width: 35%;
+}
+
+.cf-form-column-l {
+	flex: initial;
+	width: 40%;
 }
 
 @media (max-width: 768px) {

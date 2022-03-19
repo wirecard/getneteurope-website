@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
 	var homeform = !!document.getElementById('mshomecountry');
 	var omnichannelform = !!document.getElementById('msomnichannelcountry');
 	var travelform = !!document.getElementById('mstravelcountry');
+	var airlineformSelectBool = !!document.getElementById('airlinecountry');
+	var europeanformSelectBool = !!document.getElementById('europeancountry');
+	var airlineformSelect = document.getElementById('airlinecountry');
+	var europeanformSelect = document.getElementById('europeancountry');
 	
 	if(homeform) {
 		let mySelectHome = new vanillaSelectBox("#mshomecountry",{search: true, placeHolder: "-Please select-", translations: { "all": "All european countries", "items": "european countries"}});
@@ -28,6 +32,45 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
 	if(travelform) {
 		let mySelectTravel = new vanillaSelectBox("#mstravelcountry",{search: true, placeHolder: "-Please select-", translations: { "all": "All european countries", "items": "european countries"}});
 	}
+	
+	let mySelectEuropeanCountry;
+	let mySelectAirlineCountry;
+	
+	if(europeanformSelectBool) {
+		mySelectEuropeanCountry = new vanillaSelectBox("#europeancountry",{search: true, placeHolder: "-Please select-", translations:  { "all": "All european countries", "items": "european countries"}});
+	}
+	
+	
+	var elementAirlineCheckbox = document.getElementById("airlinecheckbox");
+	
+	function toggleCountrySelect(showAirline) {
+		if(showAirline) {
+			mySelectAirlineCountry = new vanillaSelectBox("#airlinecountry",{search: true, placeHolder: "-Please select-", translations: { "all": "All countries", "items": " countries"}});
+			mySelectEuropeanCountry.destroy();
+			airlineformSelect.disabled=false;
+			europeanformSelect.style.display = "none";
+			europeanformSelect.disabled=true;
+		} else {
+			europeanformSelect.disabled=false;
+			mySelectAirlineCountry.destroy();
+			airlineformSelect.style.display = "none";
+			mySelectEuropeanCountry = new vanillaSelectBox("#europeancountry",{search: true, placeHolder: "-Please select-", translations: { "all": "All european countries", "items": "european countries"}});
+			airlineformSelect.disabled=true;
+			europeanformSelect.disabled=false;
+		}
+	}
+
+  if(elementAirlineCheckbox) {
+  elementAirlineCheckbox.addEventListener('change', function(e){
+		e.preventDefault();
+		
+		if(airlineformSelectBool) {
+			toggleCountrySelect(elementAirlineCheckbox.checked);
+		}
+      
+    });
+  }
+	
 	
 	var countrySelectElements = document.getElementsByClassName("vsb-main");
 	var myFunction = function(event) {
