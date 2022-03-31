@@ -271,6 +271,11 @@ div.vsb-main button {
     width: 100%;
 }
 
+.cf-form-column-xxs {
+	flex: initial;
+	width: 10%;
+}
+
 .cf-form-column-xs {
 	flex: initial;
 	width: 15%;
@@ -279,6 +284,11 @@ div.vsb-main button {
 .cf-form-column-m {
 	flex: initial;
 	width: 35%;
+}
+
+.cf-form-column-l {
+	flex: initial;
+	width: 40%;
 }
 
 @media (max-width: 768px) {
@@ -319,10 +329,12 @@ div.vsb-main button {
 .form-group select ~ .control-label,
 .form-group input:focus ~ .control-label,
 .form-group input:valid ~ .control-label,
+.form-group input:invalid ~ .control-label,
 .form-group input.form-file ~ .control-label,
 .form-group input.has-value ~ .control-label,
 .form-group textarea:focus ~ .control-label,
 .form-group textarea:valid ~ .control-label,
+.form-group textarea:invalid ~ .control-label,
 .form-group textarea.form-file ~ .control-label,
 .form-group textarea.has-value ~ .control-label {
   font-size: 12px;

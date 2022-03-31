@@ -15,9 +15,22 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
 		});
 	}
 	
+	/*let megaMenuHealines = document.querySelectorAll(".mega-menu-headline > a");
+	megaMenuHealines.forEach (function (megaMenuHealine) {
+		megaMenuHealine.addEventListener ("click", function (event) {
+			console.log("clicked mega menu header");
+			event.preventDefault();
+			return false;
+		})
+	})*/
+	
 	var homeform = !!document.getElementById('mshomecountry');
 	var omnichannelform = !!document.getElementById('msomnichannelcountry');
 	var travelform = !!document.getElementById('mstravelcountry');
+	var airlineformSelectBool = !!document.getElementById('airlinecountry');
+	var europeanformSelectBool = !!document.getElementById('europeancountry');
+	var airlineformSelect = document.getElementById('airlinecountry');
+	var europeanformSelect = document.getElementById('europeancountry');
 	
 	if(homeform) {
 		let mySelectHome = new vanillaSelectBox("#mshomecountry",{search: true, placeHolder: "-Please select-", translations: { "all": "All european countries", "items": "european countries"}});
@@ -28,6 +41,51 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
 	if(travelform) {
 		let mySelectTravel = new vanillaSelectBox("#mstravelcountry",{search: true, placeHolder: "-Please select-", translations: { "all": "All european countries", "items": "european countries"}});
 	}
+	
+	let mySelectEuropeanCountry;
+	let mySelectAirlineCountry;
+	
+	if(europeanformSelectBool) {
+		mySelectEuropeanCountry = new vanillaSelectBox("#europeancountry",{search: true, placeHolder: "-Please select-", translations:  { "all": "All european countries", "items": "european countries"}});
+	}
+	
+	
+	var elementAirlineCheckbox = document.getElementById("airlinecheckbox");
+	
+	function toggleCountrySelect(showAirline) {
+		if(showAirline) {
+			mySelectAirlineCountry = new vanillaSelectBox("#airlinecountry",{search: true, placeHolder: "-Please select-", translations: { "all": "All countries", "items": " countries"}});
+			mySelectEuropeanCountry.destroy();
+			airlineformSelect.disabled=false;
+			europeanformSelect.style.display = "none";
+			europeanformSelect.disabled=true;
+			if(europeanformSelect.options[0].value === "all") {
+				europeanformSelect.remove(0)
+			}
+		} else {
+			europeanformSelect.disabled=false;
+			mySelectAirlineCountry.destroy();
+			airlineformSelect.style.display = "none";
+			mySelectEuropeanCountry = new vanillaSelectBox("#europeancountry",{search: true, placeHolder: "-Please select-", translations: { "all": "All european countries", "items": "european countries"}});
+			airlineformSelect.disabled=true;
+			europeanformSelect.disabled=false;
+			if(airlineformSelect.options[0].value === "all") {
+				airlineformSelect.remove(0)
+			}
+		}
+	}
+
+  if(elementAirlineCheckbox) {
+  elementAirlineCheckbox.addEventListener('change', function(e){
+		e.preventDefault();
+		
+		if(airlineformSelectBool) {
+			toggleCountrySelect(elementAirlineCheckbox.checked);
+		}
+      
+    });
+  }
+	
 	
 	var countrySelectElements = document.getElementsByClassName("vsb-main");
 	var myFunction = function(event) {
