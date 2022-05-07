@@ -205,6 +205,10 @@ div.vsb-main button {
     height: auto;
 }
 
+div.vsb-main.error button {
+    border-bottom: 1px solid #CC0000!important;
+}
+
 .vsb-main .vsb-menu, .vsb-main .vsb-menu .multi {
 	width: 100%;
 	max-width: 100%!important;
