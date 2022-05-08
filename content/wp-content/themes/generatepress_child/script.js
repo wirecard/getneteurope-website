@@ -16,15 +16,6 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
         });
     }
 
-    /*let megaMenuHealines = document.querySelectorAll(".mega-menu-headline > a");
-    megaMenuHealines.forEach (function (megaMenuHealine) {
-    	megaMenuHealine.addEventListener ("click", function (event) {
-    		console.log("clicked mega menu header");
-    		event.preventDefault();
-    		return false;
-    	})
-    })*/
-
     var homeform = !!document.getElementById('mshomecountry');
     var omnichannelform = !!document.getElementById('msomnichannelcountry');
     var travelform = !!document.getElementById('mstravelcountry');
@@ -32,34 +23,77 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
     var europeanformSelectBool = !!document.getElementById('europeancountry');
     var airlineformSelect = document.getElementById('airlinecountry');
     var europeanformSelect = document.getElementById('europeancountry');
+	var selectPlaceholder = "-Please select-";
+	var allEuropeanCountries = "All european countries";
+    var europeanCountries = " european countries";
+	var allCountries = "All countries";
+    var countryItems = " countries";
+	var selectAllTranslation = "Select all";
+	var clearAllTranslation = "Clear all";
+	
+	if (location.pathname && location.pathname.indexOf("/de/") >= 0) {
+		selectPlaceholder = "-Bitte wählen-";
+		allEuropeanCountries = "Alle europäischen Länder";
+		europeanCountries = " europäische Länder";
+		allCountries = "Alle Länder";
+		countryItems = " Länder";
+		selectAllTranslation = "Wählen Sie Alle";
+		clearAllTranslation = "Alle abwählen";
+	}
+	
+	if (location.pathname && location.pathname.indexOf("/es/") >= 0) {
+		selectPlaceholder = "-Por favor seleccione-";
+		allEuropeanCountries = "Todos los países europeos";
+		europeanCountries = " países europeos";
+		allCountries = "Todos los países";
+		countryItems = " los paises";
+		selectAllTranslation = "Seleccionar todo";
+		clearAllTranslation = "deseleccionar todo";
+	}
+	
+	if (location.pathname && location.pathname.indexOf("/pl/") >= 0) {
+		selectPlaceholder = "-Proszę wybrać-";
+		allEuropeanCountries = "Wszystkie kraje europejskie";
+		europeanCountries = " kraje europejskie";
+		allCountries = "Wszystkie kraje";
+		countryItems = " kraje";
+		selectAllTranslation = "Zaznacz wszystko";
+		clearAllTranslation = "odznacz wszystkie";
+	}
 
     if (homeform) {
         let mySelectHome = new vanillaSelectBox("#mshomecountry", {
             search: true,
-            placeHolder: "-Please select-",
+            placeHolder: selectPlaceholder,
             translations: {
-                "all": "All european countries",
-                "items": "european countries"
+                "all": allEuropeanCountries,
+                "items": europeanCountries,
+				"selectAll": selectAllTranslation,
+				"clearAll": clearAllTranslation
             }
         });
     }
     if (omnichannelform) {
         let mySelectOmnichannel = new vanillaSelectBox("#msomnichannelcountry", {
             search: true,
-            placeHolder: "-Please select-",
+            placeHolder: selectPlaceholder,
             translations: {
-                "all": "All european countries",
-                "items": "european countries"
+                "all": allEuropeanCountries,
+                "items": europeanCountries,
+				"selectAll": selectAllTranslation,
+				"clearAll": clearAllTranslation
             }
         });
     }
     if (travelform) {
         let mySelectTravel = new vanillaSelectBox("#mstravelcountry", {
             search: true,
-            placeHolder: "-Please select-",
+            placeHolder: selectPlaceholder,
             translations: {
-                "all": "All european countries",
-                "items": "european countries"
+                "all": allEuropeanCountries,
+                "items": europeanCountries,
+				"selectAll": selectAllTranslation,
+				"clearAll": clearAllTranslation
             }
         });
     }
@@ -70,10 +104,12 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
     if (europeanformSelectBool) {
         mySelectEuropeanCountry = new vanillaSelectBox("#europeancountry", {
             search: true,
-            placeHolder: "-Please select-",
+            placeHolder: selectPlaceholder,
             translations: {
-                "all": "All european countries",
-                "items": "european countries"
+                "all": allEuropeanCountries,
+                "items": europeanCountries,
+				"selectAll": selectAllTranslation,
+				"clearAll": clearAllTranslation
             }
         });
     }
@@ -90,10 +126,12 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
         if (showAirline) {
             mySelectAirlineCountry = new vanillaSelectBox("#airlinecountry", {
                 search: true,
-                placeHolder: "-Please select-",
+                placeHolder: selectPlaceholder,
                 translations: {
-                    "all": "All countries",
-                    "items": " countries"
+                    "all": allCountries,
+                    "items": countryItems,
+					"selectAll": selectAllTranslation,
+					"clearAll": clearAllTranslation
                 }
             });
             mySelectEuropeanCountry.destroy();
@@ -112,10 +150,12 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
             airlineformSelect.style.display = "none";
             mySelectEuropeanCountry = new vanillaSelectBox("#europeancountry", {
                 search: true,
-                placeHolder: "-Please select-",
+                placeHolder: selectPlaceholder,
                 translations: {
-                    "all": "All european countries",
-                    "items": "european countries"
+                    "all": allEuropeanCountries,
+                    "items": europeanCountries,
+					"selectAll": selectAllTranslation,
+					"clearAll": clearAllTranslation
                 }
             });
             airlineformSelect.disabled = true;
