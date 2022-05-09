@@ -1,6 +1,69 @@
 var filtering_running = false;
 var wpforms_search_running = 'No';
 
+var ajax_ctrlr = {
+	last_run: new Date(),
+	srch_str: '',
+	schdl_to_run_state: false,
+	schdl_to_run_delay: 250,
+	schdl_to_run_cntr: 0,
+	schdl_to_run_hndl: null,
+	schedule_to_run: function() {
+		ajax_ctrlr.schdl_to_run_cntr++;
+
+		if(ajax_ctrlr.schdl_to_run_cntr % 5 == 0) {
+			ajax_ctrlr.schdl_to_run_delay += 250;
+			ajax_ctrlr.schdl_to_run_reset();
+		}
+
+		if( ! ajax_ctrlr.schdl_to_run_state) {
+			return;
+		}
+
+		let crnt_run = new Date();
+
+		if(crnt_run - ajax_ctrlr.last_run > ajax_ctrlr.schdl_to_run_delay) {
+			ajax_ctrlr.schdl_to_run_state = false;
+			ajax_ctrlr.schdl_to_run_cntr = 0;
+			ajax_ctrlr.last_run = new Date();
+			ewd_ufaq_ajax_reload();
+		}
+	},
+	schdl_to_run_reset: function () {
+		clearInterval(ajax_ctrlr.schdl_to_run_hndl);
+		ajax_ctrlr.schdl_to_run_hndl = setInterval(ajax_ctrlr.schedule_to_run, ajax_ctrlr.schdl_to_run_delay);
+	},
+	run_search_ajax: function( elm ) {
+		ajax_ctrlr.clear_field( elm );
+
+		let srch_str = jQuery(elm).val();
+
+		if( ajax_ctrlr.schdl_to_run_delay > 250 ) {
+			ajax_ctrlr.schdl_to_run_delay = 250;
+			ajax_ctrlr.schdl_to_run_reset();
+		}
+
+		if(srch_str != ajax_ctrlr.srch_str) {
+			ajax_ctrlr.srch_str = srch_str;
+			ajax_ctrlr.schdl_to_run_state = true;
+			ajax_ctrlr.last_run = new Date();
+		}
+	},
+	clear_field: function ( srch_elm ) {
+		let cf = jQuery(srch_elm).parent('.search-field').find('.clear-field').eq(0);
+		if( 0 < jQuery(srch_elm).val().length ) {
+			if( 'hidden' == cf.data('state') ) {
+				cf.data('state', 'visible');
+				cf.removeClass('slide-out').addClass('slide-in');
+			}
+		}
+		else {
+			cf.data('state', 'hidden');
+			cf.removeClass('slide-in').addClass('slide-out');
+		}
+	}
+};
+
 jQuery(function(){ //DOM Ready
     ufaqSetClickHandlers();
     UFAQSetAutoCompleteClickHandlers();
@@ -93,11 +156,6 @@ function ufaqSetClickHandlers() {
 
 		jQuery( 'html, body' ).animate( { scrollTop: faq.offset().top - 20 }, 100 );
 	});
-
-	jQuery( '.ewd-ufaq-text-input ' ).on( 'search', function() {
-
-		ewd_ufaq_ajax_reload();
-	});
 }
 
 function UFAQSetAutoCompleteClickHandlers() {
@@ -111,7 +169,7 @@ function UFAQSetAutoCompleteClickHandlers() {
 			appendTo: '#ewd-ufaq-jquery-ajax-search',
 			select: function( event, ui ) {
 				jQuery( this ).val( ui.item.value );
-        		ewd_ufaq_ajax_reload();
+				ewd_ufaq_ajax_reload();
 			}
 		});
 
@@ -174,29 +232,30 @@ function EWD_UFAQ_Hide_FAQ( faq_element ) {
 
 jQuery(document).ready(function() {
 
-    jQuery( '#ewd-ufaq-ajax-search-submit' ).click( function() {
-
-    	jQuery( '.ewd-ufaq-bottom' ).data( 'current_page', 1 );
-
-		ewd_ufaq_ajax_reload();
-    });
-
-	jQuery( '#ewd-ufaq-ajax-form' ).submit( function( event ) {
-
-		event.preventDefault();
-
-		ewd_ufaq_ajax_reload();
-	});
-
-	jQuery( '#ewd-ufaq-jquery-ajax-search .ewd-ufaq-text-input' ).keyup( function() {
-		
-		ewd_ufaq_ajax_reload();
-	});
-
-	if ( jQuery( '#ewd-ufaq-ajax-text-input' ).length ) {
-
-		if ( jQuery( '#ewd-ufaq-ajax-text-input' ).val() != '' ) { ewd_ufaq_ajax_reload(); }
+	if( 0 < jQuery( '#ewd-ufaq-jquery-ajax-search .ewd-ufaq-text-input' ).eq(0).length ) {
+		ajax_ctrlr.schdl_to_run_hndl = setInterval(ajax_ctrlr.schedule_to_run, ajax_ctrlr.schdl_to_run_delay);
 	}
+
+	jQuery( '#ewd-ufaq-ajax-search-submit' ).click( function() {
+		jQuery( '.ewd-ufaq-bottom' ).data( 'current_page', 1 );
+		let elm = jQuery( '#ewd-ufaq-jquery-ajax-search .ewd-ufaq-text-input' ).eq(0);
+		ajax_ctrlr.run_search_ajax( elm[0] );
+	});
+
+	jQuery( '#ewd-ufaq-jquery-ajax-search' ).on( 'keyup', '.ewd-ufaq-text-input', function() {
+		ajax_ctrlr.run_search_ajax( this );
+	});
+
+	// clear search field
+	jQuery( '#ewd-ufaq-jquery-ajax-search' ).on( 'click', '.clear-field', function() {
+		let elm = jQuery( '#ewd-ufaq-jquery-ajax-search .ewd-ufaq-text-input' ).eq(0);
+		jQuery(elm).val('');
+		ajax_ctrlr.run_search_ajax( elm );
+	});
+
+	jQuery( '.ewd-ufaq-text-input ' ).on( 'search', function() {
+		ajax_ctrlr.run_search_ajax( this );
+	});
 
 	if ( typeof ewd_ufaq_php_data != 'undefined' && ewd_ufaq_php_data.display_faq > 0 ) {
 		
@@ -239,11 +298,15 @@ function ewd_ufaq_ajax_reload( pagination, append_results, search_string ) {
 
     	var faqs_only = 'No';
     	var faq_page = 0;
+    	jQuery( '.ewd-ufaq-bottom' ).remove();
     }
 
-    request_count = request_count + 1;	
+    request_count = request_count + 1;
 
-    if (show_on_load == 'No' && Question.length == 0) {jQuery('#ewd-ufaq-ajax-results').html(''); return;} 
+    if ( jQuery( '.ewd-ufaq-text-input' ).length && 'yes' != show_on_load.toLocaleLowerCase() && search_string.length == 0 ) {
+    	jQuery('.ewd-ufaq-faqs').html('');
+    	return;
+    }
 
     var params = {};
 
@@ -257,6 +320,7 @@ function ewd_ufaq_ajax_reload( pagination, append_results, search_string ) {
     params.current_url   = current_url;
     params.faqs_only = faqs_only;
     params.faq_page  = faq_page;
+    params.show_on_load = show_on_load;
     params.action = 'ewd_ufaq_search';
     params.nonce  = typeof ewd_ufaq_php_data != 'undefined' ? ewd_ufaq_php_data.nonce : '';
 
@@ -266,8 +330,16 @@ function ewd_ufaq_ajax_reload( pagination, append_results, search_string ) {
 		
 		if ( response.data.request_count == request_count ) {
 
-			if ( append_results == 'Yes' ) { jQuery( '.ewd-ufaq-faqs' ).append( response.data.output ); }
-			else { jQuery( '.ewd-ufaq-faqs' ).html( response.data.output ); }
+			if ( append_results == 'Yes' ) {
+				jQuery( '.ewd-ufaq-faqs' ).append( response.data.output );
+			}
+			else {
+				jQuery( '.ewd-ufaq-faqs' ).html( response.data.output );
+				if( '' != response.data.pagination ) {
+					jQuery('.ewd-ufaq-faq-list .ewd-ufaq-bottom').remove();
+					jQuery('.ewd-ufaq-faq-list').append(response.data.pagination);
+				}
+			}
 
 			jQuery( '.ewd-ufaq-bottom' ).data( 'max_page', response.data.max_page );
 
