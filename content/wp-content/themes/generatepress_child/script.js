@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
     };
 
     function eventContenSave(event) {
-        console.log('eventContenSave', event);
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
             'event': 'consentSave'
@@ -193,6 +192,89 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
     for (var i = 0; i < countrySelectElements.length; i++) {
         countrySelectElements[i].addEventListener('click', myFunction, false);
     }
+	
+	var linkPopupOpen = document.querySelectorAll(".link-popup a");
+	var contentPopupBackground = document.querySelector("#bg-dark-popup");
+	var allContentPopups = document.getElementsByClassName("popup-content-wrapper");
+	var allPopupCloseIcons = document.getElementsByClassName("close-popup-content");
+	
+	
+	if(contentPopupBackground) {
+		var hideAllPopups = function() {
+			for (var i = 0; i < allContentPopups.length; i++) {
+				allContentPopups[i].style.display = "none";
+			}
+		}
+
+		var hideAllPopupsAndBackground = function() {
+			hideAllPopups();
+			contentPopupBackground.style.display = "none";
+		}
+		contentPopupBackground.addEventListener('click', hideAllPopupsAndBackground, false);
+		for (var i = 0; i < allPopupCloseIcons.length; i++) {
+			allPopupCloseIcons[i].addEventListener('click', hideAllPopupsAndBackground, false);
+		}
+
+
+		var linkPopupOpen = document.querySelectorAll(".link-popup a");
+		var openPopups = function(event) {
+			var hrefAttr = this.getAttribute("href");
+			var currentContentPopup = document.querySelector(hrefAttr);
+			if (event && event.currentTarget && currentContentPopup) {
+				hideAllPopups();
+				contentPopupBackground.style.display = "block";
+				currentContentPopup.style.display = "block";
+			}
+		};
+		for (var i = 0; i < linkPopupOpen.length; i++) {
+			linkPopupOpen[i].addEventListener('click', openPopups, false);
+		}
+	}
+	
+	function tabContentClick(_tabNavLabels) {
+		var tabNavFunction = function(event) {
+			var tabvalue = this.getAttribute("data-tabvalue");
+			if (event && event.currentTarget && tabvalue) {
+				window.location.hash = '#' + tabvalue;
+			}
+		};
+
+		for (var i = 0; i < _tabNavLabels.length; i++) {
+			_tabNavLabels[i].addEventListener('click', tabNavFunction, false);
+		}
+	}
+	
+	var tabNavLabels = document.getElementsByClassName("tabs-nav-label");
+	if(tabNavLabels && tabNavLabels.length > 0) {
+		tabContentClick(tabNavLabels);
+	}
+	
+	const scrollTabNav = document.querySelector("#tabs-nav-wrapper");
+	const tabNavArrowLeft = document.querySelector("#tabs-nav-arrow-left");
+	const tabNavArrowRight = document.querySelector("#tabs-nav-arrow-right");
+	if(scrollTabNav) {
+		scrollTabNav.addEventListener("scroll", event => {
+			/*
+			console.log("scrollLeft  366", scrollTabNav.scrollLeft);
+			console.log("clientWidth 375", scrollTabNav.clientWidth);
+			console.log("scrollWidth 741", scrollTabNav.scrollWidth);
+			*/
+			if(scrollTabNav.scrollLeft > 5) {
+				tabNavArrowLeft.classList.add("showarrow");
+			} else {
+				tabNavArrowLeft.classList.remove("showarrow");
+			}
+			
+			if((scrollTabNav.scrollLeft + scrollTabNav.clientWidth + 5) >= scrollTabNav.scrollWidth) {
+				tabNavArrowRight.classList.add("hidearrow");
+			} else {
+				tabNavArrowRight.classList.remove("hidearrow");
+			}
+			tabNavArrowLeft.classList.add("anotherclass");
+			
+			
+        }, { passive: true });
+	}
 
 
 });

@@ -253,6 +253,41 @@ div.vsb-main.error button {
 	color: #767676;
 }
 
+/**
+ * Video Styles
+ * */
+.Video-PopUp-Content .vp-flex {
+	max-width: 1280px;
+	height: 720px;
+}
+
+.video-content-poster {
+	position: relative;
+}
+
+.video-content-poster a.vp-a {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+}
+
+.video-content-poster a.vp-a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    background: url("/wp-content/uploads/Play-Filled.svg") no-repeat;
+
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.video-content-poster a:hover::after {
+    background: url("/wp-content/uploads/Play-Filled-hover.svg") no-repeat;
+}
+
 
 /**
  * Column Form
@@ -746,4 +781,215 @@ div.wpml-ls-legacy-dropdown {
 .menu-item-description {
 	display: none;
 }
+
+/**
+TABS CSS STYLES and FUNCTION 
+*/
+/* Tabs mit radio-Buttons */
+.tabs-content-container { 
+   display: block; 
+   margin-left: 0; 
+   clear: both;
+}
+.tabs-Content .gb-inside-container > input,
+.tabs-content-container > .gb-inside-container > div { display: none; }
+
+.tabs-content-container .gb-inside-container > div {
+  padding: 20px;
+  width: 100%;
+}
+
+.tabs-Content {
+	position: relative;
+}
+
+.tabs-Content nav.tabs-nav {
+	display: flex;
+	position: relative;
+	z-index: 5;
+	background-color: transparent;
+}
+
+.tabs-Content .tabs-nav-arrow-right, .tabs-Content .tabs-nav-arrow-left {
+    background-color: rgba(0,0,0,0);
+	padding: 0px 5px 30px;
+	cursor: pointer;
+	color: #ec0000;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+	transition: opacity .2s ease-in-out;
+}
+
+.tabs-Content .tabs-nav-arrow-left {
+	right: auto;
+	left: 0;
+	opacity: 0;
+}
+
+.tabs-Content .tabs-nav-arrow-right.hidearrow {
+	opacity: 0;
+}
+
+.tabs-Content .tabs-nav-arrow-left.showarrow {
+	opacity: 1;
+}
+
+
+.tabs-Content nav label {
+	display: inline-block;
+   padding: 18px 15px 15px;
+   border-bottom: 1px solid #CEDEE7;
+   color: #444;
+   cursor: pointer;
+	white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+	.tabs-Content nav.tabs-nav {
+		overflow: auto;
+	}
+}
+
+@media (min-width: 769px) {
+	.tabs-Content .tabs-nav-arrow-right, .tabs-Content .tabs-nav-arrow-left {
+		display: none;
+	}
+	.tabs-Content nav.tabs-nav {
+		position: absolute;
+		bottom: 50px;
+		width: 100%;
+		justify-content: center;
+	}
+	
+	.tabs-Content nav label {
+		white-space: auto;
+		padding: 18px 15px 15px;
+	}
+}
+
+#tab1:checked ~ .tabs-content-container .content-tab1,
+#tab2:checked ~ .tabs-content-container .content-tab2,
+#tab3:checked ~ .tabs-content-container .content-tab3,
+#tab4:checked ~ .tabs-content-container .content-tab4,
+#tab5:checked ~ .tabs-content-container .content-tab5,
+#tab6:checked ~ .tabs-content-container .content-tab6 { display: block; }
+
+/*
+#tab1:checked ~ .tabs-content-container .content-tab1 .gb-inside-container > div,
+#tab2:checked ~ .tabs-content-container .content-tab2 .gb-inside-container > div,
+#tab3:checked ~ .tabs-content-container .content-tab3 .gb-inside-container > div,
+#tab4:checked ~ .tabs-content-container .content-tab4 .gb-inside-container > div,
+#tab5:checked ~ .tabs-content-container .content-tab5 .gb-inside-container > div,
+#tab6:checked ~ .tabs-content-container .content-tab6 .gb-inside-container > div { display: inherit; }
+*/
+
+.tabs-Content nav label:nth-child(1) { border-left: none; }
+.tabs-Content nav label:hover { border-bottom: 2px solid #CEDEE7; }
+.tabs-Content nav label:active { background: none; }
+
+.tabs-Content #tab1:checked ~ nav label[for="tab1"],
+.tabs-Content #tab2:checked ~ nav label[for="tab2"],
+.tabs-Content #tab3:checked ~ nav label[for="tab3"],
+.tabs-Content #tab4:checked ~ nav label[for="tab4"],
+.tabs-Content #tab5:checked ~ nav label[for="tab5"],
+.tabs-Content #tab6:checked ~ nav label[for="tab6"] {
+  position: relative;
+  border-bottom: 2px solid #EC0000;
+}
+/*
+.tabs-Content #tab1:checked ~ nav label[for="tab1"]:after,
+.tabs-Content #tab2:checked ~ nav label[for="tab2"]:after,
+.tabs-Content #tab3:checked ~ nav label[for="tab3"]:after,
+.tabs-Content #tab4:checked ~ nav label[for="tab4"]:after,
+.tabs-Content #tab5:checked ~ nav label[for="tab5"]:after,
+.tabs-Content #tab6:checked ~ nav label[for="tab6"]:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: white;
+  left: 0;
+  bottom: -1px;
+}*/
+
+.bg-dark-popup {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	display: none;
+}
+
+.close-popup-content {
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding: 10px;
+}
+
+.popup-content-wrapper {
+	position: fixed;
+	z-index: 1001;
+	width: 90%;
+	height: 90%;
+	max-width: 550px;
+	max-height: 580px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: inset 0 0 5px #CEDEE7; 
+	display: none;
+}
+
+.popup-content-wrapper .popup-content-header {
+	position: relative;
+}
+
+.popup-content-wrapper .popup-content-main {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-right: 20px;
+	max-height: 400px;
+	overflow-y: auto;
+	scrollbar-color: #EC0000 #CEDEE7;
+	scrollbar-width: thin;
+}
+
+/**
+ * Scrollbar styles
+ * */
+/* width */
+.popup-content-wrapper .popup-content-main::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+
+.popup-content-wrapper .popup-content-main::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #CEDEE7; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+
+.popup-content-wrapper .popup-content-main::-webkit-scrollbar-thumb {
+  background: #EC0000; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.popup-content-wrapper .popup-content-main::-webkit-scrollbar-thumb:hover {
+  background: #990000; 
+}
+
+
+
+
 
