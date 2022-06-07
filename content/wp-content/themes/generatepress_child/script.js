@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function(eventdomloaded) {
     var elementAirlineCheckbox = document.getElementById("airlinecheckbox");
 
     function toggleCountrySelect(showAirline) {
-        const selectBoxesCountry = document.getElementsByName("00N3O000002DEkw");
+        const selectBoxesCountry = document.getElementsByName("00N09000005yjfz");
         if (selectBoxesCountry && selectBoxesCountry.length > 1) {
             selectBoxesCountry[0].selectedIndex = -1;
             selectBoxesCountry[1].selectedIndex = -1;
@@ -333,10 +333,10 @@ function scrollToContent() {
 
     function logSubmit(event) {
         const countryFieldWrapper = document.getElementById("btn-group-europeancountry");
-        const selectBoxesCountry = document.getElementsByName("00N3O000002DEkw");
+        const selectBoxesCountry = document.getElementsByName("00N09000005yjfz");
         const airlineChecked = (document.getElementById("airlinecheckbox") && document.getElementById("airlinecheckbox").checked);
         if (selectBoxesCountry && selectBoxesCountry.length > 1) {
-            if ((!airlineChecked && selectBoxesCountry[0].selectedIndex === -1) || (airlineChecked && selectBoxesCountry[1].selectedIndex === -1)) {
+            if (!airlineChecked && selectBoxesCountry[0].selectedIndex === -1) {
 
 				scrollToElementById("btn-group-europeancountry");
 				countryFieldWrapper.classList.add("error");
