@@ -783,6 +783,32 @@ div.wpml-ls-legacy-dropdown {
 }
 
 /**
+ * Slider Styles
+ * */
+div.n2-ss-slider .n2-ss-section-main-content {
+	display: block;
+}
+
+/**
+ * Support Banner
+ * */
+.support-banner-tel-container {
+	display: inline-block;
+	color: #fff;
+	background-color: #EC0000;
+	padding: 12px 24px;
+	border-radius: 40px;
+	margin: 20px 0 60px;
+}
+
+@media (min-width: 769px) {
+	.support-banner-tel-container {
+		margin: 60px 0;
+	}
+}
+
+
+/**
 TABS CSS STYLES and FUNCTION 
 */
 /* Tabs mit radio-Buttons */
