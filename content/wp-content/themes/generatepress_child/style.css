@@ -332,12 +332,7 @@ div.vsb-main.error button {
 
 @media (max-width: 768px) {
 	
-.cf-form-column-xs {
-	flex: 1;
-	width: 100%;
-}
-
-.cf-form-column-m {
+.cf-form-column-xs, .cf-form-column-xxs, .cf-form-column-m, .cf-form-column-l {
 	flex: 1;
 	width: 100%;
 }
