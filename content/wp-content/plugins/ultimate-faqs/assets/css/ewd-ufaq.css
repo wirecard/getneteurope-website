@@ -690,3 +690,14 @@ Pagination
     transform: translateX(15px);
   }
 }
+
+
+/***************
+BLOCK PATTERNS
+***************/
+.ewd-ufaq-pattern-faqs,
+.ewd-ufaq-pattern-featured-faqs,
+.ewd-ufaq-pattern-search,
+.ewd-ufaq-pattern-submit {
+	width: 100%;
+}
