@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'vp-close-icon';
-  src:  url('/wp-content/plugins/video-popup/css/vp-close-icon/fonts/vp-close-icon-font.eot?lv4qfq');
-  src:  url('/wp-content/plugins/video-popup/css/vp-close-icon/fonts/vp-close-icon-font.eot?lv4qfq#iefix') format('embedded-opentype'),
-    url('/wp-content/plugins/video-popup/css/vp-close-icon/fonts/vp-close-icon-font.ttf?lv4qfq') format('truetype'),
-    url('/wp-content/plugins/video-popup/css/vp-close-icon/fonts/vp-close-icon-font.woff?lv4qfq') format('woff'),
-    url('/wp-content/plugins/video-popup/css/vp-close-icon/fonts/vp-close-icon-font.svg?lv4qfq#icomoon') format('svg');
+  src:  url('https://www.getneteurope.com/wp-content/plugins/video-popup/css/vp-close-icon/fonts/vp-close-icon-font.eot?lv4qfq');
+  src:  url('https://www.getneteurope.com/wp-content/plugins/video-popup/css/vp-close-icon/fonts/vp-close-icon-font.eot?lv4qfq#iefix') format('embedded-opentype'),
+    url('https://www.getneteurope.com/wp-content/plugins/video-popup/css/vp-close-icon/fonts/vp-close-icon-font.ttf?lv4qfq') format('truetype'),
+    url('https://www.getneteurope.com/wp-content/plugins/video-popup/css/vp-close-icon/fonts/vp-close-icon-font.woff?lv4qfq') format('woff'),
+    url('https://www.getneteurope.com/wp-content/plugins/video-popup/css/vp-close-icon/fonts/vp-close-icon-font.svg?lv4qfq#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
