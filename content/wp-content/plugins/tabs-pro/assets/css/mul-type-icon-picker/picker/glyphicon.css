@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  src: url('https://www.getneteurope.com/wp-content/plugins/tabs-pro/assets/css/mul-type-icon-picker/fonts/glyphicons-halflings-regular.eot');
-  src: url('https://www.getneteurope.com/wp-content/plugins/tabs-pro/assets/css/mul-type-icon-picker/fonts/glyphicons-halflings-regular.eot#iefix') format('embedded-opentype'), url('https://www.getneteurope.com/wp-content/plugins/tabs-pro/assets/css/mul-type-icon-picker/fonts/glyphicons-halflings-regular.woff') format('woff'), url('https://www.getneteurope.com/wp-content/plugins/tabs-pro/assets/css/mul-type-icon-picker/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('https://www.getneteurope.com/wp-content/plugins/tabs-pro/assets/css/mul-type-icon-picker/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('/wp-content/plugins/tabs-pro/assets/css/mul-type-icon-picker/fonts/glyphicons-halflings-regular.eot');
+  src: url('/wp-content/plugins/tabs-pro/assets/css/mul-type-icon-picker/fonts/glyphicons-halflings-regular.eot#iefix') format('embedded-opentype'), url('/wp-content/plugins/tabs-pro/assets/css/mul-type-icon-picker/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/wp-content/plugins/tabs-pro/assets/css/mul-type-icon-picker/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/wp-content/plugins/tabs-pro/assets/css/mul-type-icon-picker/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
  .glyphicon {
   position: relative;

@@ -160,13 +160,13 @@
 	-webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #fff url("https://www.getneteurope.com/wp-content/uploads/ARROW_FORM_DOWN.png") no-repeat;
+  background: #fff url("/wp-content/uploads/ARROW_FORM_DOWN.png") no-repeat;
   background-position: right 5px top 50%;
 	width: 100%;
 }
 
 .vsb-main .caret {
-  background: #fff url("https://www.getneteurope.com/wp-content/uploads/ARROW_FORM_DOWN.png") no-repeat!important;
+  background: #fff url("/wp-content/uploads/ARROW_FORM_DOWN.png") no-repeat!important;
   background-position: right 5px top 50%!important;
   border: none;
   width: 30px;
@@ -187,7 +187,7 @@
 
 .cf-form .cf-form-row .vsb-js-search-zone  input[type="text"] {
 	border: none;
-	background: #f6f6f6 url("https://www.getneteurope.com/wp-content/uploads/SEARCH.png") no-repeat right 5px top 50%;
+	background: #f6f6f6 url("/wp-content/uploads/SEARCH.png") no-repeat right 5px top 50%;
 }
 
 div.gb-inside-container .vsb-menu ul li::before {
@@ -278,14 +278,14 @@ div.vsb-main.error button {
     left: 50%;
     width: 32px;
     height: 32px;
-    background: url("https://www.getneteurope.com/wp-content/uploads/Play-Filled.svg") no-repeat;
+    background: url("/wp-content/uploads/Play-Filled.svg") no-repeat;
 
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
 
 .video-content-poster a:hover::after {
-    background: url("https://www.getneteurope.com/wp-content/uploads/Play-Filled-hover.svg") no-repeat;
+    background: url("/wp-content/uploads/Play-Filled-hover.svg") no-repeat;
 }
 
 
@@ -665,13 +665,13 @@ nav.main-navigation #primary-menu ul li.sfHover::after {
 }
 
 #primary-menu > ul.menu > li:not(.gn-main-menu) {
-	background: url(https://www.getneteurope.com/wp-content/uploads/Global-international.png) no-repeat 0 50%;
+	background: url(/wp-content/uploads/Global-international.png) no-repeat 0 50%;
 	padding-left: 15px;
 	margin-left: 10px;
 }
 
 a.js-wpml-ls-item-toggle, .wpml-ls-legacy-dropdown .wpml-ls-current-language:hover > a {
-	background: url(https://www.getneteurope.com/wp-content/uploads/Global-international.png) no-repeat 0 50%;
+	background: url(/wp-content/uploads/Global-international.png) no-repeat 0 50%;
 	padding-left: 30px;
 	margin-left: 10px;
 	display: inline-block;
